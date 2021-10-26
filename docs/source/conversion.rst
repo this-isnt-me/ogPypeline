@@ -1,7 +1,6 @@
 Conversion Modules
 ==================
 
-
 Usage
 ------------
 The functions in the conversion modules all work in the same manner. A value (integer or float) and units (string) are passed into the function and a dictionary is returned using the different units as the key. See example of temperature conversion in the code below:
@@ -32,6 +31,7 @@ Drilling Conversions
 
 Dogleg units
 ^^^^^^^^^^^^
-The _dogleg(value, units)_ function converts degrees per 100ft into degrees per 30m and vice versa. The input units are as per the list below:
+The dogleg(value, units) function converts degrees per 100ft into degrees per 30m and vice versa. The input units are as per the list below:
+
    1) degrees per 100ft : 'deg/100ft'
    2) degrees per 30m : 'deg/30m'
