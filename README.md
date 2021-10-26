@@ -4,7 +4,7 @@ A python package for the oil and gas industry. Initial release is focused on 64 
 Developed by Tim Clarke (c) 2021
 
 ## Table of Contents
-**[Installation Instructions](#files)**
+**[Installation](#installation)**
 **[Conversion Modules](#conversion-modules)**
 *[Drilling Conversions](#drilling-conversions)*
 *[Production Conversions](#production-conversions)*
@@ -13,6 +13,12 @@ Developed by Tim Clarke (c) 2021
 *[Gas Conversions](#gas-conversions)*
 *[General Conversions](#general-conversions)*
 **[License](#license)**
+
+## Installation
+
+You can install ogPypeline from [PyPI](https://pypi.org/project/ogPypeline/):
+
+    python -m pip install ogPypeline
 
 ## Conversion Modules
 
