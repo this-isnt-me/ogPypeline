@@ -17,4 +17,5 @@ Contents
 
    installation
    conversion
+   drillingcon
    license
