@@ -18,4 +18,7 @@ Contents
    installation
    conversion
    drillingcon
+   productioncon
+   forcepowercon
+   fluidcon
    license
