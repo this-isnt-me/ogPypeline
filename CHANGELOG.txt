@@ -4,3 +4,7 @@ Change Log
 0.1.0 (27/10/2021)
 ==========
 - First Release - unit conversions only
+
+0.1.1 (27/10/2021)
+==========
+- Tidying up First Realease in comliance with PEP 8

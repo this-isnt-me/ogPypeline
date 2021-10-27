@@ -5,6 +5,25 @@ List Legend
 ------------
 
    #. "Unit Description" : 'Function Input String'
+   
+Example Code
+------------
+
+.. code-block:: console
+
+   from ogPypeline import drilling as dri
+
+   converted_dogleg  = dri.dogleg(2.1, 'deg/100ft')
+   print(converted_dogleg)
+   # outputs the following dictionary:
+   {
+	   'deg/100ft' : 2.1,
+	   'deg/30m' : 2.06703084
+   }
+   # Each key representing a different dogleg severity unit
+   print(converted_dogleg['deg/30m'])
+   # outputs the following float:
+   2.06703084
 
 Dogleg units
 ------------

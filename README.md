@@ -11,7 +11,7 @@ You can install ogPypeline from [PyPI](https://pypi.org/project/ogPypeline/):
 
 ## Documentation
 
-Docs are available at <https://ogpypelines.readthedocs.io/en/latest/index.html>
+Docs are available at [ReadTheDocs](https://ogpypeline.readthedocs.io/en/latest/index.html) 
 
 ## Reporting Issues
 To report bugs, errors or make a suggestion suggestions, click on the issues tab at the top of the repo and create a new case.

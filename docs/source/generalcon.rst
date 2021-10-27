@@ -5,6 +5,26 @@ List Legend
 ------------
 
    #. "Unit Description" : 'Function Input String'
+   
+Example Code
+------------
+
+.. code-block:: console
+
+   from ogPypeline import general as gen
+
+   converted_temps  = gen.temperature(37, 'c')
+   print(converted_temps)
+   # outputs the following dictionary:
+   {
+	   'c' : 37,
+	   'f' : 98.6,
+	   'k' : 310.15
+   }
+   # Each key representing a different temperature unit
+   print(converted_temps['k'])
+   # outputs the following float:
+   310.15
 
 Acceleration units
 ------------

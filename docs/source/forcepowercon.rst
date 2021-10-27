@@ -5,6 +5,32 @@ List Legend
 ------------
 
    #. "Unit Description" : 'Function Input String'
+   
+Example Code
+------------
+
+.. code-block:: console
+
+   from ogPypeline import force_and_power as fap
+
+   converted_angular_velocity  = fap.angular_velocity(85, 'rpm')
+   print(converted_angular_velocity)
+   # outputs the following dictionary:
+   {
+	   'deg/hr': 1836000.0, 
+       'deg/min': 30600.0, 
+       'deg/sec': 510.0, 
+       'rad/hr': 32044.245693, 
+       'rad/min': 534.070759, 
+       'rad/sec': 8.901183,
+       'rph': 5100.0,
+       'rpm': 85, 
+       'rps': 1.4166695
+   }
+   # Each key representing a different angular velocity unit
+   print(converted_angular_velocity['deg/min'])
+   # outputs the following float:
+   30600.0
 
 Electric Current units
 ------------

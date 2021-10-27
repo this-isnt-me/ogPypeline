@@ -5,6 +5,27 @@ List Legend
 ------------
 
    #. "Unit Description" : 'Function Input String'
+   
+Example Code
+------------
+
+.. code-block:: console
+
+   from ogPypeline import fluid as flu
+
+   converted_fluid_yield_point  = flu.fluid_yield_point(2.1, 'deg/100ft')
+   print(converted_fluid_yield_point)
+   # outputs the following dictionary:
+   {
+	   'dyne/cm2': 67.0600854,
+	   'kPa': 6.7032378,
+       'Mpa': 0.0067031999999999994, 
+       'lbf/100ft2': 14
+   }
+   # Each key representing a different fluid yield point unit
+   print(converted_fluid_yield_point['dyne/cm2'])
+   # outputs the following float:
+   67.0600854
 
 Fluid Consistency units
 ------------

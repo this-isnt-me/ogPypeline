@@ -5,6 +5,25 @@ List Legend
 ------------
 
    #. "Unit Description" : 'Function Input String'
+   
+Example Code
+------------
+
+.. code-block:: console
+
+   from ogPypeline import gas as gas
+
+   converted_gas_injection_rate  = gas.gas_injection_rate(5506, 'm3/min')
+   print(converted_gas_injection_rate)
+   # outputs the following dictionary:
+   {
+	   'm3/min': 5506,
+       'scfm': 194558.303634
+   }
+   # Each key representing a different gas injection rate unit
+   print(converted_gas_injection_rate['scfm'])
+   # outputs the following float:
+   194558.303634
 
 Gas Injection Rate units
 ------------
@@ -74,7 +93,7 @@ The specific_volume(value, units) function converts between different Specific V
 
 Volume units
 ------------
-The specific_volume(value, units) function converts between different Volume units. The input units are as per the list below:
+The volume_gas(value, units) function converts between different Volume units. The input units are as per the list below:
 
    #. Barrels : 'bbl'
    #. Cubic Centimeter : 'cm3'

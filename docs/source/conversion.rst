@@ -7,7 +7,7 @@ The functions in the conversion modules all work in the same manner. A value (in
 
 .. code-block:: console
 
-   import general as gen
+   from ogPypeline import general as gen
 
    converted_temps  = gen.temperature(37, 'c')
    print(converted_temps)
