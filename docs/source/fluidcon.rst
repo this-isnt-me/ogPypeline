@@ -1,6 +1,11 @@
 Fluid Conversions
 ==================
 
+List Legend
+^^^^^^^^^^^^
+
+   #. "Unit Description" : 'Function Input String'
+
 Fluid Consistency units
 ------------
 The fluid_consistency(value, units) function converts between different Fluid Consistency units. The input units are as per the list below:

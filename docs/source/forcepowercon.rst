@@ -1,6 +1,11 @@
 Force and Power Conversions
 ==================
 
+List Legend
+^^^^^^^^^^^^
+
+   #. "Unit Description" : 'Function Input String'
+
 Electric Current units
 ------------
 The electric_current(value, units) function converts between different Electric Current units. The input units are as per the list below

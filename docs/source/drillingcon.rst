@@ -1,6 +1,11 @@
 Drilling Conversions
 ==================
 
+List Legend
+^^^^^^^^^^^^
+
+   #. "Unit Description" : 'Function Input String'
+
 Dogleg units
 ------------
 The dogleg(value, units) function converts degrees per 100ft into degrees per 30m and vice versa. The input units are as per the list below:

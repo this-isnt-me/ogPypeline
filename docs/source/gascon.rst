@@ -1,6 +1,11 @@
 Gas Conversions
 ==================
 
+List Legend
+^^^^^^^^^^^^
+
+   #. "Unit Description" : 'Function Input String'
+
 Gas Injection Rate units
 ------------
 The gas_injection_rate(value, units) function converts between different Gas Injection Rate units. The input units are as per the list below:

@@ -1,6 +1,11 @@
 Production Conversions
 ==================
 
+List Legend
+^^^^^^^^^^^^
+
+   #. "Unit Description" : 'Function Input String'
+
 Nozzle Size units
 ------------
 The nozzle_size(value, units) function converts between different Nozzle Size units. The input units are as per the list below
