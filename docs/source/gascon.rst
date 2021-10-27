@@ -2,7 +2,7 @@ Gas Conversions
 ==================
 
 List Legend
-^^^^^^^^^^^^
+------------
 
    #. "Unit Description" : 'Function Input String'
 

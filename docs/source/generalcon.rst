@@ -1,6 +1,11 @@
 General Conversions
 ==================
 
+List Legend
+------------
+
+   #. "Unit Description" : 'Function Input String'
+
 Acceleration units
 ------------
 

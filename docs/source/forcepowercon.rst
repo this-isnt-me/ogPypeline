@@ -2,7 +2,7 @@ Force and Power Conversions
 ==================
 
 List Legend
-^^^^^^^^^^^^
+------------
 
    #. "Unit Description" : 'Function Input String'
 
