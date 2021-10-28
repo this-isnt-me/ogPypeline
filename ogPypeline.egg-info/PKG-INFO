@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ogPypeline
-Version: 0.1.0
+Version: 0.1.1
 Summary: Unit conversion for oil and gas calculations
 Home-page: https://github.com/this-isnt-me/ogPypeline
 Author: Tim Clarke
@@ -19,7 +19,7 @@ Description: # ogPypeline
         
         ## Documentation
         
-        Docs are available at <https://ogpypelines.readthedocs.io/en/latest/index.html>
+        Docs are available at [ReadTheDocs](https://ogpypeline.readthedocs.io/en/latest/index.html) 
         
         ## Reporting Issues
         To report bugs, errors or make a suggestion suggestions, click on the issues tab at the top of the repo and create a new case.
