@@ -8,3 +8,7 @@ Change Log
 0.1.1 (27/10/2021)
 ==========
 - Tidying up First Realease in comliance with PEP 8
+
+0.1.2 (28/10/2021)
+==========
+- Added basic_formulas and drilling_formulas
