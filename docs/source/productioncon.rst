@@ -9,7 +9,8 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: javascript
+
+.. code:: javascript
   :linenos:
 
   code . . .
