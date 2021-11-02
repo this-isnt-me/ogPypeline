@@ -10,24 +10,25 @@ Example Code
 ------------
 
 .. code:: python
+    :linenos:
 
-   # Example Code
-   from ogPypeline import production as pro
-
-   converted_permeability  = pro.permeability(100000, 'md')
-   print(converted_permeability)
-   # outputs the following dictionary:
-   {
-	   'darcy': 100.0,
+    # Example Code
+    from ogPypeline import production as pro
+    
+    converted_permeability  = pro.permeability(100000, 'md')
+    print(converted_permeability)
+    # outputs the following dictionary:
+    {
+       'darcy': 100.0,
        'md': 100000,
        'ud': 100000000,
        'm2': 9.869e-11,
        'ft2': 1.06235016146393e-09
-   }
-   # Each key representing a different permeability unit
-   print(converted_permeability['darcy'])
-   # outputs the following float:
-   100.0
+    }
+    # Each key representing a different permeability unit
+    print(converted_permeability['darcy'])
+    # outputs the following float:
+    100.0
 
 Nozzle Size units
 ------------
