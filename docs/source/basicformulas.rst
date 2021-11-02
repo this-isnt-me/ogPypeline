@@ -14,6 +14,7 @@ pressure_gradient(value, units)
 The pressure gradient function calculates the pressure gradient from the mud weight. The function takes in a value input(Integer or Float) and a units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different pressure gradient units and values, to see the range of pressure gradient units returned see the example code below or the Pressure Gradients units section under Drilling Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -44,6 +45,7 @@ pressure_to_mud_weight(pressure_value, pressure_units, depth_value, depth_units)
 The pressure to mud weight function calculates the equivalent mud weight from pressure and depth. The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of pressure units that can be input into the function see the pressure units section under General Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different mud weight units and values, to see the range of mud weight units returned see the example code below or the Mud Weight units section under Drilling Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -81,6 +83,7 @@ hydrostatic_pressure(mud_value, mud_units, depth_value, depth_units)
 The hydrostatic pressure function calculates the hydrostatic pressure using the mud weight and true vertical depth(TVD). The function takes in two value inputs(Integers or Floats) and two units input(Strings).To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -133,6 +136,7 @@ triplex_output(diameter_value, diameter_units, length_value, length_units, effic
 The Triplex Pump Output function calculates pump output. The function takes in two value inputs(Integers or Floats) and two units input(Strings).To see the range of diameter and length units that can be input into the function see the Length units section under General Conversions. Efficiency is input as a float between 0.0 and 1.0, with the default option being 1.0 to represent 100% efficiency. The function returns a dictionary of stroke-volume units and values, to see the range of stroke-volume units returned see the example code below or the Stroke Volume units section under Production Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -166,6 +170,7 @@ duplex_output(diameter_value, diameter_units, length_value, length_units, rod_va
 The Duplex Pump Output function calculates pump output. The function takes in three value inputs(Integers or Floats) and three units input(Strings).To see the range of liner diameter, rod diameter and length units that can be input into the function see the Length units section under General Conversions. Efficiency is input as a float between 0.0 and 1.0, with the default option being 1.0 to represent 100% efficiency. The function returns a dictionary of stroke-volume units and values, to see the range of stroke-volume units returned see the example code below or the Stroke Volume units section under Production Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -196,6 +201,7 @@ hydraulic_horsepower(pressure_value, pressure_units, circulating_value, circulat
 The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of pressure units that can be input into the function see the pressure units section under General Conversions. To see the range of flow rate units(circulating_units) that can be input into the function see the flow rate units section under Drilling Conversions. The function returns the hyraulic horsepower as a dictionary with a single entry 'hhp'.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -219,6 +225,7 @@ drill_collar_in_air(od_value, id_value, diameter_units, dc_type)
 The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the pressure units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. Drill Collar type(dc_type) is input as a string, either 'reg' or 'spiral', with the default option being 'reg' for regular drill collar. The function returns a dictionary of weight-length units and values, to see the range of weight-length units returned see the example code below or the Weight Length units section under Drilling Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -246,6 +253,7 @@ hole_tubular_capacity(diameter_value, diameter_units, washout_value)
 The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the pressure units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The washout is a decimal display of the percentage of washout in the hole, i.e. 20% washout is input into the function as 0.2, the default for washout is 0.0 . The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -283,6 +291,7 @@ tubular_displacement(od_value, id_value, diameter_units)
 The function is for the calculation of plain pipe such as casing or tubing that has no tool joints. It takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -320,6 +329,7 @@ annular_capacity(od_value, id_value, diameter_units)
 The function is for the calculation of fluid in the annulus between two tubulars. It takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -357,6 +367,7 @@ annular_capacity_multiple_tubulars(od_value, id_array, diameter_units)
 The function is for the calculation of fluid in the annulus between tubulars. It takes in one value input(Integer or Float), a list of values(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -395,6 +406,7 @@ cuttings_drilled(diameter_value, diameter_units, washout_value, porosity)
 This function is for the calculation of the volume of cuttings produced while drilling. It takes in three value inputs(Integers or Floats) and one unit input(String). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The washout and porosity values are a decimal display of the percentage i.e. 20% is input into the function as 0.2. The function returns a dictionary containing the capacity in volume by length. To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) units section of Production Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -429,6 +441,7 @@ annular_velocity_annular_capcity(output_value, output_units, annulus_value, annu
 This function is for the calculation of annular velocity from the annular capacity and flow rate. It takes in two value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of annular capacity units that can be input into the function see the Annular Capacity units section under Production Conversions. The function returns a dictionary containing the annular velocity with different units. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -472,6 +485,7 @@ annular_velocity_flow_rate(hole_id_value, pipe_od_value, dia_units, flow_value, 
 This function is for the calculation of annular velocity from the annular diameter and flow rate. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the annular velocity with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -515,6 +529,7 @@ pump_output_flow_rate(od_value, id_value, diameter_units, velocity_value, veloci
 This function is for the calculation of the flow rate from the required annular velocity. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. The function returns a dictionary containing the flow rate with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Flow Rate units section of Drilling Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -552,6 +567,7 @@ pump_output_spm(velocity_value, velocity_units, stroke_value, stroke_units, annu
 This function is for the calculation of the required Strokes per Minute from the required annular velocity, pump output and annular capacity. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings).To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions.  To see the range of Pump Output units that can be input into the function see the Stroke Volume units section under Production Conversions.  To see the range of Annular Capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a float giving the required strokes per minute.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -574,6 +590,7 @@ stroke_pressure_factor(old_spm, new_spm, pressure_old_value, pressure_new_value,
 This function is for the calculation of the relationship factor between pump pressure and pump stroke output. It takes in four value inputs(Integers or Floats) and one unit input(String).To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a float giving the stroke pressure factor.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -596,6 +613,7 @@ stroke_pressure_relationship(old_spm, new_spm, pressure_value, pressure_units, f
 This function is for the calculation of the new pump pressure from the pump stroke output and stroke pressure factor. It takes in four value inputs(Integers or Floats) and one unit input(String). The default input for factor is 2. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of the new pressure with the different pressure units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -645,6 +663,7 @@ buoyancy_factor(value, units)
 This function is used to calculate the buoyancy factor to compensate for weight loss due to the buoyancy in drilling fluid. It takes in one value input(Integer or Float) and one unit input(String).To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a float giving the buoyancy factor.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -668,6 +687,7 @@ formation_temp(depth_value, depth_units, gradient_value, gradient_units, temp_va
 This function is for the calculation of formation temperature using the geothermal gradient and total vertical depth. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of geothermal gradient units that can be input into the function see the Geothermal Gradient units section under Drilling Conversions. To see the range of temperature units that can be input into the function see the Temperature units section under General Conversions. The function returns a dictionary of formation temperatures with the different temperature units and values. To see the range of temperature units that can be returned, see the example code below or review the Temperature units section of General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -699,6 +719,7 @@ accumulator_capacity_surface(volume_value, volume_units, pre_charge_value, opera
 This function is used to calculate the usable volume of hydraulic fluid per bottle. It takes in four value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of accumulator volume with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -756,6 +777,7 @@ accumulator_capacity_subsea(volume_value, volume_units, pre_charge_value, operat
 This function is used to calculate the usable volume of hydraulic fluid per bottle for a subsea BOP. It takes in six value inputs(Integers or Floats) and four unit inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions.To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions.To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of accumulator volumes with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -808,6 +830,7 @@ washout_depth_plug(pipe_value, pipe_units, pump_value, pump_units, strokes)
 This function is for the calculation of washout depth by pumping material to plug the hole and using the number of strokes when a pressure increase is seen. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. The function returns a dictionary of the washout depth with the different depth units. To see the range of depth units that can be returned and values, see the example code below or review the Length units section of General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -852,6 +875,7 @@ washout_depth_pass(pipe_value, pipe_units, pump_value, pump_units, strokes, annu
 This function is for the calculation of washout depth by pumping material that will pass through the hole and using the number of strokes when material is seen at the shakers. It takes in four value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions.The function returns a dictionary of the washout depth with the different depth units and values. To see the range of depth units that can be returned, see the example code below or review the Length units section of General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -895,6 +919,7 @@ ecd(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)
 This is a simple version of the calculation, this function uses annular pressure loss, mud weight and depth to caculate the ECD. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of the ECD with the mud weight units. To see the range of mud weight units that can be returned, see the example code below or review the Mud Weight units section of Drilling Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -933,6 +958,7 @@ fit_test(fit_value, mud_value, mud_units, depth_value, depth_units)
 This function uses requried FIT value, mud weight and depth to caculate the required FIT pressure. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of the FIT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -986,6 +1012,7 @@ lot_test(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)
 This function uses LOT pressure value, mud weight and depth to caculate the LOT equivelent mud weight. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of the LOT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
@@ -1025,6 +1052,7 @@ bit_revolutions_mud_motor(bit_rotation_value, bit_rotation_units, flow_value, fl
 This function calculates the total bit rotations when using a mud motor. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of bit rotation units that can be input into the function see the Angular Elocity units section under Force and Power Conversions. To see the range ofmud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of flow on revolutions units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary of the total bit revolutions with the angualr velocity units and values. To see the range of angualr velocity units that can be returned, see the example code below or review the Angular Elocity units section under Force and Power Conversions.
 
 .. code-block:: console
+
    # Example Code
    from ogPypeline import basic_formulas as bas_for
 
