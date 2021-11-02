@@ -19,8 +19,8 @@ def max_drilling_rate(mud_in_value, mud_out_value, mud_units,
 
 def mud_on_drilling_rate(pv_1_value, pv_2_value, pv_units,
                          rop_value, rop_units):
-    pv1 = flu.viscocity(pv_1_value, pv_units)
-    pv2 = flu.viscocity(pv_2_value, pv_units)
+    pv1 = flu.viscosity(pv_1_value, pv_units)
+    pv2 = flu.viscosity(pv_2_value, pv_units)
     rop = dri.drilling_rate(rop_value, rop_units)
     factor = 0.003 * (pv1['cp'] - pv2['cp'])
     rop2 = rop['ft/hr'] * (10**factor)
@@ -58,16 +58,31 @@ def drilling_cost(fixed_cost, hourly_cost, rotating_hrs, tripping_hrs,
     return dri.footage_cost(footage_cost, 'cur/ft')
 
 
-def round_trip_ton_miles(dp_value, dp_units, depth_value, depth_units,
-                         stand_value, stand_units, block_value, block_units,
-                         bha_value, bha_units):
+def round_trip_ton_miles(mud_value, mud_units, dp_value, hwdp_value,
+                         collar_value, dp_units, depth_value, depth_units,
+                         stand_len_value, bha_len_value, hwdp_len_value,
+                         collar_len_value, stand_units, block_value,
+                         block_units, bha_weight_value, bha_weight_units):
+    mud_weight = dri.mud_weight(mud_value, mud_units)
     drillpipe = dri.weight_length(dp_value, dp_units)
-    depth = gen.length(depth_value, depth_units)
-    stand = gen.length(stand_value, stand_units)
+    hwdrillpipe = dri.weight_length(hwdp_value, dp_units)
+    collar = dri.weight_length(collar_value, dp_units)
     block = gen.weight(block_value, block_units)
-    bha = gen.weight(bha_value, bha_units)
-    return ((drillpipe['lb/ft'] * depth['ft'] * (stand['ft'] + depth['ft'])) +
-            ((2 * block['lb']) + bha['lb'])) / 10560000
+    depth = gen.length(depth_value, depth_units)
+    stand = gen.length(stand_len_value, stand_units)
+    hwdp_len = gen.length(hwdp_len_value, stand_units)
+    collar_len = gen.length(collar_len_value, stand_units)
+    bha_len = gen.length(bha_len_value, stand_units)
+    bha_weight = gen.weight(bha_weight_value, bha_weight_units)
+    buoyancy_factor = (65.5 - mud_weight['ppg']) / 65.5
+    drillpipe = drillpipe['lb/ft'] * buoyancy_factor
+    total_bha_weight = (((collar_len['ft'] * collar['lb/ft']) +
+                         (hwdp_len['ft'] * hwdrillpipe['lb/ft']) +
+                         bha_weight['lb']) * buoyancy_factor) -\
+        ((collar_len['ft'] + hwdp_len['ft'] + bha_len['ft']) * drillpipe)
+    return (drillpipe * depth['ft'] * (stand['ft'] + depth['ft']) +
+            (2 * depth['ft']) * (2 * block['lb'] +
+                                 total_bha_weight)) / 10560000
 
 
 def drilling_connection_ton_miles(ton_mile_1_value, ton_mile_2_value):
@@ -78,16 +93,18 @@ def coring_ton_miles(ton_mile_1_value, ton_mile_2_value):
     return 2 * (ton_mile_2_value - ton_mile_1_value)
 
 
-def setting_casing_ton_miles(casing_value, casing_units,
-                             depth_value, depth_units,
-                             stand_value, stand_units,
-                             block_value, block_units):
+def setting_casing_ton_miles(mud_value, mud_units, casing_value, casing_units,
+                             depth_value, depth_units, stand_value,
+                             stand_units, block_value, block_units):
+    mud_weight = dri.mud_weight(mud_value, mud_units)
     casing = dri.weight_length(casing_value, casing_units)
     depth = gen.length(depth_value, depth_units)
     stand = gen.length(stand_value, stand_units)
     block = gen.weight(block_value, block_units)
-    return (0.5 * (casing['lb/ft'] * depth['ft'] * (stand['ft'] + depth['ft'])
-                   + depth['ft'] * block['lb'])) / 10560000
+    buoyancy_factor = (65.5 - mud_weight['ppg']) / 65.5
+    casing = casing['lb/ft'] * buoyancy_factor
+    return ((casing * depth['ft'] * (stand['ft'] + depth['ft']) + depth['ft']
+             * block['lb']) * 0.5) / 10560000
 
 
 def short_trip_ton_miles(ton_mile_1_value, ton_mile_2_value):
@@ -114,7 +131,7 @@ def hydrostatic_decrease_dry(stands_value, avg_stand_value, avg_std_units,
 
 
 def hydrostatic_decrease_wet(stands_value, avg_stand_value, avg_std_units,
-                             disp_value, disp_units, 
+                             disp_value, disp_units,
                              pipe_capacity_value, pipe_capacity_units,
                              mud_value, mud_units,
                              annulus_value, annulus_units):
@@ -195,7 +212,7 @@ def mud_weight_balance_losses(volume_added_value, volume_added_units,
                               mud_value, mud_units):
     liquid_added = gen.volume(volume_added_value, volume_added_units)
     annular_vol = pro.pipe_capacity(annulus_value, annulus_units)
-    liquid_gradient = dri.pressureGrad(gradient_value, gradient_units)
+    liquid_gradient = dri.pressure_grad(gradient_value, gradient_units)
     depth = gen.length(depth_value, depth_units)
     mud_weight = dri.mud_weight(mud_value, mud_units)
     annular_vol = pro.pipe_capacity(annulus_value, annulus_units)
@@ -221,7 +238,7 @@ def fluid_drop_before_kick(pressure_value, pressure_units,
                            gradient_value, gradient_units,
                            annulus_value, annulus_units):
     pressure = gen.pressure(pressure_value, pressure_units)
-    mud_gradient = dri.pressureGrad(gradient_value, gradient_units)
+    mud_gradient = dri.pressure_grad(gradient_value, gradient_units)
     annular_vol = pro.pipe_capacity(annulus_value, annulus_units)
     fluid_drop_length = pressure['psi'] / mud_gradient['psi/ft']
     mud_loss = fluid_drop_length * annular_vol['bbl/ft']
@@ -237,8 +254,8 @@ def drill_collar_prevent_buckling(wob_value, weight_units,
     return gen.weight(weight_value, 'lb')
 
 
-def mud_weight_increase_cutting(mud_value, mud_units, flow_value, flow_units,
-                                rop_value, rop_units, hole_value, hole_units):
+def effective_mud_density(mud_value, mud_units, flow_value, flow_units,
+                          rop_value, rop_units, hole_value, hole_units):
     mud_weight = dri.mud_weight(mud_value, mud_units)
     flow_rate = dri.flow_rate(flow_value, flow_units)
     rop = dri.drilling_rate(rop_value, rop_units)
@@ -257,7 +274,7 @@ def ecd_yield_below_13(mud_value, mud_units, reading_300, reading_600,
     dp_od = gen.length(dp_od_value, dp_units)
     yp = reading_300 - (reading_600 - reading_300)
     ecd = mud_weight['ppg'] + ((0.1 * yp) / (hole_id['in'] - dp_od['in']))
-    return {'yp': flu.viscocity(yp, 'cp'),
+    return {'yp': flu.viscosity(yp, 'cp'),
             'ecd': dri.mud_weight(ecd, 'ppg')}
 
 
@@ -275,8 +292,8 @@ def ecd_yield_above_13(mud_value, mud_units, reading_300, reading_600,
                                (yp + ((pv * av) / (300 * (hole_id['in'] -
                                                           dp_od['in'])))))
     return {'av': fap.velocity(av, 'ft/min'),
-            'pv': flu.viscocity(pv, 'cp'),
-            'yp': flu.viscocity(yp, 'cp'),
+            'pv': flu.viscosity(pv, 'cp'),
+            'yp': flu.viscosity(yp, 'cp'),
             'ecd': dri.mud_weight(ecd, 'ppg')}
 
 
@@ -395,7 +412,7 @@ def ecd_engineering_formula(mud_value, mud_units, reading_300, reading_600,
                             hole_len_value, dp_len_value,
                             collar_len_value, len_units):
     mud_weight = dri.mud_weight(mud_value, mud_units)
-    viscosity = flu.viscocity(viscosity_value, viscosity_units)
+    viscosity = flu.viscosity(viscosity_value, viscosity_units)
     flow_rate = dri.flow_rate(flow_value, flow_units)
     hole_id = gen.length(hole_dia_value, dia_units)
     pipe_od = gen.length(dp_dia_value, dia_units)

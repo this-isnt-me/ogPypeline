@@ -56,7 +56,7 @@ Heat Capacity units
 ------------
 The heat_capacity(value, units) function converts between different Heat Capacity units. The input units are as per the list below
 
-   #. British Thermal Units per Pound - Degree Farenheit : 'Btu/lb-F'
+   #. British Thermal Units per Pound - Degree Fahrenheit : 'Btu/lb-F'
    #. Joule per Kilogram Celsius : 'J/kg-C'
 
 Power/Area units
@@ -87,7 +87,7 @@ The force(value, units) function converts between different Force units. The inp
    #. DekaNewtons : 'daN'
    #. Dynes : 'dyn'
    #. Gram-force : 'gf'
-   #. Kilogram-force	: 'kgf'
+   #. Kilogram-force : 'kgf'
    #. KiloNewtons : 'kN'
    #. KIPS : 'kip'
    #. KiloPounds-force : 'klbs'

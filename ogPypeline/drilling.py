@@ -101,17 +101,17 @@ def footage_cost(value, units):
         return_dict['cur/ft'] = value
         return_dict['cur/m'] = value * 3.2810014
         return_dict['cur/1000ft'] = value / 0.001
-        return_dict['cur/1000m'] = value / 0.003281
+        return_dict['cur/1000m'] = value * 3281.0014
     elif units == 'cur/m':
         return_dict['cur/ft'] = value * 0.304785
         return_dict['cur/m'] = value
         return_dict['cur/1000ft'] = value / 0.0003048
-        return_dict['cur/1000m'] = value / 0.001
+        return_dict['cur/1000m'] = value * 1000
     elif units == 'cur/1000ft':
         return_dict['cur/ft'] = value / 1000
         return_dict['cur/m'] = value / 3281.00
         return_dict['cur/1000ft'] = value
-        return_dict['cur/1000m'] = value * 3.2810003
+        return_dict['cur/1000m'] = value / 3.2810003
     elif units == 'cur/1000m':
         return_dict['cur/ft'] = value / 305
         return_dict['cur/m'] = value / 1000

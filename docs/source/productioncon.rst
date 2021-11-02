@@ -32,7 +32,7 @@ Nozzle Size units
 ------------
 The nozzle_size(value, units) function converts between different Nozzle Size units. The input units are as per the list below
 
-   #. Millimeters : 'mm'
+   #. Millimetres: 'mm'
    #. Eighth of an Inch : '1/8in'
    #. Sixteenth of an Inch : '1/16in'
    #. Thirty Seconds of an Inch : '1/32in'
@@ -116,7 +116,7 @@ Section Modulus - Moment of Section units
 ------------
 The moment_of_section(value, units) function converts between different Section Modulus - Moment of Section units. The input units are as per the list below
 
-   #. Centimeter to the Power of 4 : 'cm4'
+   #. Centimetre to the Power of 4 : 'cm4'
    #. Foot to the Power of 4 : 'ft4'
    #. Inch to the Power of 4 : 'in4'
    #. Meter to the Power of 4 : 'm4'

@@ -82,7 +82,7 @@ The yield_slurry(value, units) function converts between different Yield Slurry 
 
 Footage Cost units
 ------------
-The footage_cost(value, units) function converts between different Footage Cost units for drilling, currency is declared as a universal place holder using "cur". The input units are as per the list below:
+The footage_cost(value, units) function converts between different Footage Cost units for drilling, the currency is declared as a universal place holder using "cur". The input units are as per the list below:
 
    #. Currency per Foot : 'cur/ft'
    #. Currency per Meter	: 'cur/m'

@@ -8,7 +8,7 @@ import math
 def pressure_gradient(value, units):
     mud_weight = dri.mud_weight(value, units)
     press_grad = mud_weight['ppg'] * 0.052
-    return dri.pressureGrad(press_grad, 'psi/ft')
+    return dri.pressure_grad(press_grad, 'psi/ft')
 
 
 def pressure_to_mud_weight(pressure_value, pressure_units,
@@ -61,7 +61,7 @@ def drill_collar_in_air(od_value, id_value, diameter_units, dc_type='reg'):
     return dri.weight_length(dc_weight, 'lb/ft')
 
 
-def hole_tubular_capacity(diameter_value, diameter_units, washout_value):
+def hole_tubular_capacity(diameter_value, diameter_units, washout_value=0):
     diameter = gen.length(diameter_value, diameter_units)
     volume_alpha = ((diameter['in'] * (1 + washout_value))**2) / 1029.4
     volume_beta = 1029.4/((diameter['in'] * (1 + washout_value))**2)
@@ -108,7 +108,6 @@ def cuttings_drilled(diameter_value, diameter_units, washout_value, porosity):
     diameter = gen.length(diameter_value, diameter_units)
     cutting_vol = ((diameter['in'] * (1 + washout_value))**2 / 1029.4) *\
         (1 - porosity)
-    print(cutting_vol)
     return pro.pipe_capacity(cutting_vol, 'bbl/ft')
 
 
@@ -173,9 +172,9 @@ def formation_temp(depth_value, depth_units, gradient_value, gradient_units,
                    temp_value, temp_units):
     depth = gen.length(depth_value, depth_units)
     gradient = dri.geothermal_gradient(gradient_value, gradient_units)
-    temp = gen.Temperature(temp_value, temp_units)
+    temp = gen.temperature(temp_value, temp_units)
     formation_temp = temp['f'] + (gradient['f/100ft'] * (depth['ft']/100))
-    return gen.Temperature(formation_temp, 'f')
+    return gen.temperature(formation_temp, 'f')
 
 
 def accumulator_capacity_surface(volume_value, volume_units, pre_charge_value,

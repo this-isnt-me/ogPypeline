@@ -23,4 +23,7 @@ Contents
    fluidcon
    gascon
    generalcon
+   formulas
+   basicformulas
+   drillingformulas
    license
