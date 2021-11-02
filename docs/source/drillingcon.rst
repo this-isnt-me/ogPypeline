@@ -24,7 +24,7 @@ Example Code
 
 Dogleg units
 ------------
-The dogleg(value, units) function converts degrees per 100ft into degrees per 30m and vice versa. The input units are as per the list below:
+The dogleg(value, units) function converts degrees per 100ft into degrees per 30m and vice versa. The input units are as per the table below:
 
 .. list-table:: Dogleg units
    :widths: 60 40
@@ -39,7 +39,7 @@ The dogleg(value, units) function converts degrees per 100ft into degrees per 30
 
 Axial Spring Constant units
 ------------
-The axial_spring_con(value, units) function converts Newtons per Meter into Pounds per Inch and vice versa. The input units are as per the list below:
+The axial_spring_con(value, units) function converts Newtons per Meter into Pounds per Inch and vice versa. The input units are as per the table below:
 
 
 .. list-table:: Axial Spring Constant units
@@ -56,7 +56,7 @@ The axial_spring_con(value, units) function converts Newtons per Meter into Poun
 
 Axial Dampening Coefficient units
 ------------
-The axial_dampening_coef(value, units) function converts Newton Seconds per Meter into Pound Seconds per Inch and vice versa. The input units are as per the list below:
+The axial_dampening_coef(value, units) function converts Newton Seconds per Meter into Pound Seconds per Inch and vice versa. The input units are as per the table below:
 
 .. list-table:: Axial Dampening Coefficient units
    :widths: 60 40
@@ -71,7 +71,7 @@ The axial_dampening_coef(value, units) function converts Newton Seconds per Mete
 
 Torsional Spring Constant units
 ------------
-The torsional_spring_con(value, units) function converts Newton Meter per Radian into Pound Inch per Radian and vice versa. The input units are as per the list below:
+The torsional_spring_con(value, units) function converts Newton Meter per Radian into Pound Inch per Radian and vice versa. The input units are as per the table below:
 
 .. list-table:: Torsional Spring Constant units
    :widths: 60 40
@@ -86,7 +86,7 @@ The torsional_spring_con(value, units) function converts Newton Meter per Radian
 
 Torsional Dampening Coefficient units
 ------------
-The torsional_dampening_coef(value, units) function converts Newton Meter Second per Radian into Pound Inch Second per Radian and vice versa. The input units are as per the list below:
+The torsional_dampening_coef(value, units) function converts Newton Meter Second per Radian into Pound Inch Second per Radian and vice versa. The input units are as per the table below:
 
 .. list-table:: Torsional Dampening Coefficient units
    :widths: 60 40
@@ -101,7 +101,7 @@ The torsional_dampening_coef(value, units) function converts Newton Meter Second
 
 Pressure Gradient units
 ------------
-The pressure_grad(value, units) function converts between different pressure gradient units. The input units are as per the list below:
+The pressure_grad(value, units) function converts between different pressure gradient units. The input units are as per the table below:
 
 .. list-table:: Pressure Gradient units
    :widths: 60 40
@@ -120,7 +120,7 @@ The pressure_grad(value, units) function converts between different pressure gra
 
 Yield Slurry units
 ------------
-The yield_slurry(value, units) function converts between different Yield Slurry units for cementing. The input units are as per the list below:
+The yield_slurry(value, units) function converts between different Yield Slurry units for cementing. The input units are as per the table below:
 
 .. list-table:: Yield Slurry units
    :widths: 60 40
@@ -139,7 +139,7 @@ The yield_slurry(value, units) function converts between different Yield Slurry 
 
 Footage Cost units
 ------------
-The footage_cost(value, units) function converts between different Footage Cost units for drilling, the currency is declared as a universal place holder using "cur". The input units are as per the list below:
+The footage_cost(value, units) function converts between different Footage Cost units for drilling, the currency is declared as a universal place holder using "cur". The input units are as per the table below:
 
 .. list-table:: Footage Cost units
    :widths: 60 40
@@ -158,7 +158,7 @@ The footage_cost(value, units) function converts between different Footage Cost 
 
 Mud Weight units
 ------------
-The mud_weight(value, units) function converts between different Mud Weight units for drilling fluid. The input units are as per the list below:
+The mud_weight(value, units) function converts between different Mud Weight units for drilling fluid. The input units are as per the table below:
 
 .. list-table:: Mud Weight units
    :widths: 60 40
@@ -191,7 +191,7 @@ The mud_weight(value, units) function converts between different Mud Weight unit
 
 Flow Rate units
 ------------
-The flow_rate(value, units) function converts between different Flow Rate units for the circulation of drilling fluid. The input units are as per the list below:
+The flow_rate(value, units) function converts between different Flow Rate units for the circulation of drilling fluid. The input units are as per the table below:
 
 .. list-table:: Flow Rate units
    :widths: 60 40
@@ -220,7 +220,7 @@ The flow_rate(value, units) function converts between different Flow Rate units 
 
 Drilling Rate units
 ------------
-The drilling_rate(value, units) function converts between different Drilling Rate units for the Rate of Penetration(ROP). The input units are as per the list below:
+The drilling_rate(value, units) function converts between different Drilling Rate units for the Rate of Penetration(ROP). The input units are as per the table below:
 
 .. list-table:: Drilling Rate units
    :widths: 60 40
@@ -247,7 +247,7 @@ The drilling_rate(value, units) function converts between different Drilling Rat
 
 Weight Length units
 ------------
-The weight_length(value, units) function converts between different Weight by Length units. The input units are as per the list below:
+The weight_length(value, units) function converts between different Weight by Length units. The input units are as per the table below:
 
 .. list-table:: Weight Length units
    :widths: 60 40
@@ -262,7 +262,7 @@ The weight_length(value, units) function converts between different Weight by Le
 
 Geothermal Gradient units
 ------------
-The geothermal_gradient(value, units) function converts between different Geothermal Gradient units. The input units are as per the list below:
+The geothermal_gradient(value, units) function converts between different Geothermal Gradient units. The input units are as per the table below:
 
 .. list-table:: Geothermal Gradient units
    :widths: 60 40

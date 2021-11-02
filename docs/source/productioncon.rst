@@ -26,9 +26,9 @@ Example Code
 
 Nozzle Size units
 ------------
-The nozzle_size(value, units) function converts between different Nozzle Size units. The input units are as per the list below:
+The nozzle_size(value, units) function converts between different Nozzle Size units. The input units are as per the table below:
 
-.. list-table:: Dogleg units
+.. list-table:: Nozzle Size units
    :widths: 60 40
    :header-rows: 1
 
@@ -47,10 +47,10 @@ The nozzle_size(value, units) function converts between different Nozzle Size un
 
 Nozzle Speed units
 ------------
-The nozzle_speed(value, units) function converts between different Nozzle Speed units. The input units are as per the list below:
+The nozzle_speed(value, units) function converts between different Nozzle Speed units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Nozzle Speed units
    :widths: 60 40
    :header-rows: 1
 
@@ -63,10 +63,10 @@ The nozzle_speed(value, units) function converts between different Nozzle Speed 
 
 Oil Production Index units
 ------------
-The oil_production_index(value, units) function converts between different Oil Production Index units. The input units are as per the list below:
+The oil_production_index(value, units) function converts between different Oil Production Index units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Oil Production Index units
    :widths: 60 40
    :header-rows: 1
 
@@ -93,10 +93,10 @@ The oil_production_index(value, units) function converts between different Oil P
 
 Permeability units
 ------------
-The permeability(value, units) function converts between different Permeability units. The input units are as per the list below:
+The permeability(value, units) function converts between different Permeability units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Permeability units
    :widths: 60 40
    :header-rows: 1
 
@@ -115,10 +115,10 @@ The permeability(value, units) function converts between different Permeability 
 
 Pipe Capacity (Volume per Length) units
 ------------
-The pipe_capacity(value, units) function converts between different Pipe Capacity units in volume per length. The input units are as per the list below:
+The pipe_capacity(value, units) function converts between different Pipe Capacity units in volume per length. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Pipe Capacity (Volume per Length) units
    :widths: 60 40
    :header-rows: 1
 
@@ -143,10 +143,10 @@ The pipe_capacity(value, units) function converts between different Pipe Capacit
 
 Pipe Capacity (Length per Volume) units
 ------------
-The pipe_cap_length_vol(value, units) function converts between different Pipe Capacity units in length per volume. The input units are as per the list below:
+The pipe_cap_length_vol(value, units) function converts between different Pipe Capacity units in length per volume. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Pipe Capacity (Length per Volume) units
    :widths: 60 40
    :header-rows: 1
 
@@ -163,10 +163,10 @@ The pipe_cap_length_vol(value, units) function converts between different Pipe C
 
 Production Rate units
 ------------
-The production_rate(value, units) function converts between different Production Rate units. The input units are as per the list below:
+The production_rate(value, units) function converts between different Production Rate units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Production Rate units
    :widths: 60 40
    :header-rows: 1
 
@@ -179,10 +179,10 @@ The production_rate(value, units) function converts between different Production
 
 Rotation units
 ------------
-The rotation(value, units) function converts between different Rotation units. The input units are as per the list below:
+The rotation(value, units) function converts between different Rotation units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Rotation units
    :widths: 60 40
    :header-rows: 1
 
@@ -195,10 +195,10 @@ The rotation(value, units) function converts between different Rotation units. T
 
 Section Modulus units
 ------------
-The section_modulus(value, units) function converts between different Section Modulus units. The input units are as per the list below:
+The section_modulus(value, units) function converts between different Section Modulus units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Section Modulus units
    :widths: 60 40
    :header-rows: 1
 
@@ -211,10 +211,10 @@ The section_modulus(value, units) function converts between different Section Mo
 
 Section Modulus - Moment of Section units
 ------------
-The moment_of_section(value, units) function converts between different Section Modulus - Moment of Section units. The input units are as per the list below:
+The moment_of_section(value, units) function converts between different Section Modulus - Moment of Section units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Section Modulus - Moment of Section units
    :widths: 60 40
    :header-rows: 1
 
@@ -231,10 +231,10 @@ The moment_of_section(value, units) function converts between different Section 
 
 Stress Elastic Modulus units
 ------------
-The stress_elastic_modulus(value, units) function converts between different Stress Elastic Modulus units. The input units are as per the list below:
+The stress_elastic_modulus(value, units) function converts between different Stress Elastic Modulus units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Stress Elastic Modulus units
    :widths: 60 40
    :header-rows: 1
 
@@ -253,10 +253,10 @@ The stress_elastic_modulus(value, units) function converts between different Str
 
 Stroke Rate units
 ------------
-The stroke_rate(value, units) function converts between different Stroke Rate units. The input units are as per the list below:
+The stroke_rate(value, units) function converts between different Stroke Rate units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Stroke Rate units
    :widths: 60 40
    :header-rows: 1
 
@@ -269,10 +269,10 @@ The stroke_rate(value, units) function converts between different Stroke Rate un
 
 Stroke Volume units
 ------------
-The stroke_volume(value, units) function converts between different Stroke Volume units. The input units are as per the list below:
+The stroke_volume(value, units) function converts between different Stroke Volume units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: Stroke Volume units
    :widths: 60 40
    :header-rows: 1
 
