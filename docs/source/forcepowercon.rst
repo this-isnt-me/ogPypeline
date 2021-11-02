@@ -13,7 +13,7 @@ Example Code
    print(converted_angular_velocity)
    # outputs the following dictionary:
    {
-	   'deg/hr': 1836000.0, 
+       'deg/hr': 1836000.0, 
        'deg/min': 30600.0, 
        'deg/sec': 510.0, 
        'rad/hr': 32044.245693, 

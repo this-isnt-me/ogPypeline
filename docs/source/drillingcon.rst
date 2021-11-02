@@ -5,7 +5,6 @@ Example Code
 ------------
 
 .. code:: python
-    :linenos:
     
     # Example Code
     from ogPypeline import drilling as dri
