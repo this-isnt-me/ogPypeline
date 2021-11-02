@@ -45,7 +45,7 @@ The axial_spring_con(value, units) function converts Newtons per Meter into Poun
 .. list-table:: Axial Spring Constant units
    :widths: 60 40
    :header-rows: 1
-
+   
    * - Unit Description
      - Function Input String
    * - Newtons per Meter
@@ -62,6 +62,8 @@ The axial_dampening_coef(value, units) function converts Newton Seconds per Mete
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Newton Seconds per Meter
      - 'N-s/m'
    * - Pound Seconds per Inch
@@ -75,6 +77,8 @@ The torsional_spring_con(value, units) function converts Newton Meter per Radian
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Newton Meter per Radian
      - 'N-m/rad'
    * - Pound Inch per Radian
@@ -88,6 +92,8 @@ The torsional_dampening_coef(value, units) function converts Newton Meter Second
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Newton Meter Second per Radian
      - 'N-m-s/rad'
    * - Pound Inch Second per Radian
@@ -101,6 +107,8 @@ The pressure_grad(value, units) function converts between different pressure gra
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - pound per square inch per foot
      - 'psi/ft'
    * - KiloPascal per Meter
@@ -118,6 +126,8 @@ The yield_slurry(value, units) function converts between different Yield Slurry 
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Cubic Feet per Sack
      - 'ft3/sk'
    * - Cubic Meter per Sack
@@ -135,6 +145,8 @@ The footage_cost(value, units) function converts between different Footage Cost 
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Currency per Foot
      - 'cur/ft'
    * - Currency per Meter
@@ -152,6 +164,8 @@ The mud_weight(value, units) function converts between different Mud Weight unit
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Grams per Cubic Centimeter
      - 'g/cm3'
    * - Grams per Litre
@@ -183,6 +197,8 @@ The flow_rate(value, units) function converts between different Flow Rate units 
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Barrels per Hour
      - 'bbl/hr'
    * - Barrels per Minute
@@ -210,6 +226,8 @@ The drilling_rate(value, units) function converts between different Drilling Rat
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Feet Per Day
      - 'ft/d'
    * - Feet Per Hour
@@ -235,6 +253,8 @@ The weight_length(value, units) function converts between different Weight by Le
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Pounds per Foot
      - 'lb/ft'
    * - Kilograms per Meter
@@ -248,6 +268,8 @@ The geothermal_gradient(value, units) function converts between different Geothe
    :widths: 60 40
    :header-rows: 1
 
+   * - Unit Description
+     - Function Input String
    * - Degrees Centigrade per 100 Meters
      - 'c/100m'
    * - Degrees Fahrenheit per 100 Feet 
