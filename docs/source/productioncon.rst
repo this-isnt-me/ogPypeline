@@ -9,8 +9,9 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: console
+.. code:: python
 
+   # Example Code
    from ogPypeline import production as pro
 
    converted_permeability  = pro.permeability(100000, 'md')

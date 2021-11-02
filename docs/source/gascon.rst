@@ -9,8 +9,9 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: python
+.. code:: python
 
+   # Example Code
    from ogPypeline import gas as gas
 
    converted_gas_injection_rate  = gas.gas_injection_rate(5506, 'm3/min')

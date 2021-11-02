@@ -9,8 +9,9 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: python
+.. code:: python
 
+   # Example Code
    from ogPypeline import drilling as dri
 
    converted_dogleg  = dri.dogleg(2.1, 'deg/100ft')

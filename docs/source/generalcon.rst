@@ -9,8 +9,9 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: python
+.. code:: python
 
+   # Example Code
    from ogPypeline import general as gen
 
    converted_temps  = gen.temperature(37, 'c')

@@ -9,8 +9,9 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: python
+.. code:: python
 
+   # Example Code
    from ogPypeline import fluid as flu
 
    converted_fluid_yield_point  = flu.fluid_yield_point(2.1, 'deg/100ft')

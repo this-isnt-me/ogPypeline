@@ -9,8 +9,9 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: python
+.. code:: python
 
+   # Example Code
    from ogPypeline import force_and_power as fap
 
    converted_angular_velocity  = fap.angular_velocity(85, 'rpm')

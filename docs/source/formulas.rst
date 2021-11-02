@@ -7,8 +7,9 @@ Usage
 ------------
 Each of the formula functions is tailored specifically to the formula it is calculating, however, there are underlying principles. The formula functions take in value inputs (integers or floats) and unit inputs (strings). These inputs are then converted to the appropriate input for the specific formula, i.e. converting to the appropriate pressure units. Upon completion of the calculation, a dictionary is returned using the different units as the key. See example code below:
 
-.. code-block:: python
+.. code:: python
 
+   # Example Code
    from ogPypeline import basic_formulas as bas_for
    
    # This function takes in the pressure and depth to calculate the necessary mud weight. 
