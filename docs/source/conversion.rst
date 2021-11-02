@@ -25,13 +25,3 @@ The functions in the conversion modules all work in the same manner. A value (in
     print(converted_temps['k'])
     # outputs the following float:
     310.15
-
-
-.. code:: python
-   :linenos:
-   
-   def some_function():
-       interesting = False
-       print 'This line is highlighted.'
-       print 'This one is not...'
-       print '...but this one is.'

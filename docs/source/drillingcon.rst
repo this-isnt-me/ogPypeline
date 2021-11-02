@@ -34,6 +34,16 @@ The dogleg(value, units) function converts degrees per 100ft into degrees per 30
    #. degrees per 100ft : 'deg/100ft'
    #. degrees per 30m : 'deg/30m'
 
+.. list-table:: Dogleg units
+   :widths: 60 40
+   :header-rows: 1
+
+   * - Unit Description
+     - Function Input String
+   * - degrees per 100ft
+     - 'deg/100ft'
+   * - degrees per 30m
+     - 'deg/30m'
 
 Axial Spring Constant units
 ------------
