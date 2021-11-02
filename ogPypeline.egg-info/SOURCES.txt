@@ -3,11 +3,13 @@ setup.py
 ogPypeline/__init__.py
 ogPypeline/basic_formulas.py
 ogPypeline/drilling.py
-ogPypeline/drilling__formulas.py
+ogPypeline/drilling_formulas.py
 ogPypeline/fluid.py
 ogPypeline/force_and_power.py
 ogPypeline/gas.py
 ogPypeline/general.py
+ogPypeline/hydraulic_formulas.py
+ogPypeline/petrophysics_formulas.py
 ogPypeline/production.py
 ogPypeline.egg-info/PKG-INFO
 ogPypeline.egg-info/SOURCES.txt
