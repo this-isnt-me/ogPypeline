@@ -6,7 +6,7 @@ This module contains 33 useful drilling and completion functions for formulas re
 Controlled Drilling Large Diameter Holes(>14.75 inches) Function
 ------------
 
-max_drilling_rate(mud_in_value, mud_out_value, mud_units, circ_value, circ_units, diameter_value, diameter_units)
+*max_drilling_rate(mud_in_value, mud_out_value, mud_units, circ_value, circ_units, diameter_value, diameter_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -57,7 +57,7 @@ This function calculates the maximum drilling rate to keeep the mud at the requi
 Effect of Drilling on ROP Function
 ------------
 
-mud_on_drilling_rate(pv_1_value, pv_2_value, pv_units, rop_value, rop_units)
+*mud_on_drilling_rate(pv_1_value, pv_2_value, pv_units, rop_value, rop_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -104,7 +104,7 @@ This function calculates the effect of changes in mud viscosity on the rate of p
 "d" Exponent Function
 ------------
 
-d_exponent(rop_value, rop_units, rotary_value, rotary_units, wob_value, wob_units, bit_value, bit_units)
+*d_exponent(rop_value, rop_units, rotary_value, rotary_units, wob_value, wob_units, bit_value, bit_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -144,7 +144,7 @@ This function calculates the "d" Exponent using rop, rotary speed, wob, and bit 
 "d" Exponent Corrected Function
 ------------
 
-d_exponent_corrected(d_comp, mud_value, mud_units)
+*d_exponent_corrected(d_comp, mud_value, mud_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -174,7 +174,7 @@ This function corrects the "d" Exponent based on the mud weight. The function ta
 Drilling Cost Function
 ------------
 
-drilling_cost(fixed_cost, hourly_cost, rotating_hrs, tripping_hrs, drilled_value, drilled_units)
+*drilling_cost(fixed_cost, hourly_cost, rotating_hrs, tripping_hrs, drilled_value, drilled_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -219,7 +219,7 @@ This function calculates the footage cost of drilling operations. The function t
 Ton Mile Function
 ------------
 
-round_trip_ton_miles(mud_value, mud_units, dp_value, hwdp_value, collar_value, dp_units, depth_value, depth_units, stand_len_value, bha_len_value, hwdp_len_value, collar_len_value, stand_units, block_value,	block_units, bha_weight_value, bha_weight_units)
+*round_trip_ton_miles(mud_value, mud_units, dp_value, hwdp_value, collar_value, dp_units, depth_value, depth_units, stand_len_value, bha_len_value, hwdp_len_value, collar_len_value, stand_units, block_value,	block_units, bha_weight_value, bha_weight_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -277,7 +277,7 @@ This function calculates the round trip tons miles for an opertion. The function
 Drilling or Connection Ton Mile Function
 ------------
 
-drilling_connection_ton_miles(ton_mile_1_value, ton_mile_2_value)
+*drilling_connection_ton_miles(ton_mile_1_value, ton_mile_2_value)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -305,7 +305,7 @@ This function calculates ton miles of work doen during a drilling opertion. The 
 Coring Ton Mile Function
 ------------
 
-coring_ton_miles(ton_mile_1_value, ton_mile_2_value)
+*coring_ton_miles(ton_mile_1_value, ton_mile_2_value)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -333,7 +333,7 @@ This function calculates ton miles of work done during a coring opertion. The fu
 Ton Mile Setting Casing Function
 ------------
 
-setting_casing_ton_miles(mud_value, mud_units, casing_value, casing_units, depth_value, depth_units, stand_value, stand_units, block_value, block_units)
+*setting_casing_ton_miles(mud_value, mud_units, casing_value, casing_units, depth_value, depth_units, stand_value, stand_units, block_value, block_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -377,7 +377,7 @@ This function calculates the round trip tons miles for a casing setting opertion
 Short Trip Ton Mile Function
 ------------
 
-short_trip_ton_miles(ton_mile_1_value, ton_mile_2_value)
+*short_trip_ton_miles(ton_mile_1_value, ton_mile_2_value)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -405,7 +405,7 @@ This function calculates ton miles of work done during a short round trip. The f
 Hydrostatic Pressure Decrease POOH Dry Function
 ------------
 
-hydrostatic_decrease_dry(stands_value, avg_stand_value, avg_std_units, disp_value, disp_units, mud_value, mud_units, annulus_value, annulus_units)
+*hydrostatic_decrease_dry(stands_value, avg_stand_value, avg_std_units, disp_value, disp_units, mud_value, mud_units, annulus_value, annulus_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -477,7 +477,7 @@ This function calculates the hydrostatic pressure drop when pulling dry pipe out
 Hydrostatic Pressure Decrease POOH Wet Function
 ------------
 
-hydrostatic_decrease_wet(stands_value, avg_stand_value, avg_std_units, disp_value, disp_units, pipe_capacity_value, pipe_capacity_units, mud_value, mud_units, annulus_value, annulus_units)
+*hydrostatic_decrease_wet(stands_value, avg_stand_value, avg_std_units, disp_value, disp_units, pipe_capacity_value, pipe_capacity_units, mud_value, mud_units, annulus_value, annulus_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -553,7 +553,7 @@ This function calculates the hydrostatic pressure drop when pulling wet pipe out
 Loss of Overbalance POOH Dry Function
 ------------
 
-loss_of_overbalance_dry(pressure_value, pressure_units, disp_value, disp_units, annulus_value, annulus_units, mud_value, mud_units)
+*loss_of_overbalance_dry(pressure_value, pressure_units, disp_value, disp_units, annulus_value, annulus_units, mud_value, mud_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -613,7 +613,7 @@ This function calculates the length of dry pipe that can be pulled out of hole b
 Loss of Overbalance POOH Wet Function
 ------------
 
-loss_of_overbalance_wet(pressure_value, pressure_units, disp_value, disp_units, pipe_capacity_value, pipe_capacity_units, annulus_value, annulus_units, mud_value, mud_units)
+*loss_of_overbalance_wet(pressure_value, pressure_units, disp_value, disp_units, pipe_capacity_value, pipe_capacity_units, annulus_value, annulus_units, mud_value, mud_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -677,7 +677,7 @@ This function calculates the length of wet pipe that can be pulled out of hole b
 Lost Circulation Function
 ------------
 
-lost_circulation_mud_weight_at_tvd(volume_added_value, volume_added_units, riser_dia_value, riser_dia_units, dp_od_value, dp_id_value, dp_units, mud_value, mud_units, liquid_value, liquid_units, depth_value, depth_units)
+*lost_circulation_mud_weight_at_tvd(volume_added_value, volume_added_units, riser_dia_value, riser_dia_units, dp_od_value, dp_id_value, dp_units, mud_value, mud_units, liquid_value, liquid_units, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -794,7 +794,7 @@ This function calculates data related to lost circulation including annulus file
 Mud Weight to Balance Losses Function
 ------------
 
-mud_weight_balance_losses(volume_added_value, volume_added_units, annulus_value, annulus_units, gradient_value, gradient_units, depth_value, depth_units, mud_value, mud_units)
+*mud_weight_balance_losses(volume_added_value, volume_added_units, annulus_value, annulus_units, gradient_value, gradient_units, depth_value, depth_units, mud_value, mud_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -876,7 +876,7 @@ This function calculates the mud weight required to balance the formation losing
 Depth of Fluid Level with Loss of Circulation Function
 ------------
 
-fluid_level_depth_losses(weight_value, weight_units, dp_value, dp_units, buoyancy)
+*fluid_level_depth_losses(weight_value, weight_units, dp_value, dp_units, buoyancy)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -930,7 +930,7 @@ This function calculates the depth of fluid level. The function takes in three v
 Determine Mud Loss Before Kick Function
 ------------
 
-fluid_drop_before_kick(pressure_value, pressure_units, gradient_value, gradient_units, annulus_value, annulus_units)
+*fluid_drop_before_kick(pressure_value, pressure_units, gradient_value, gradient_units, annulus_value, annulus_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1018,7 +1018,7 @@ This function calculates the ammount of fluid that can be lost before taking a k
 Drill Collar Weight Prevent Drill Pipe Buckling Function
 ------------
 
-drill_collar_prevent_buckling(wob_value, weight_units, buoyancy_factor, safety_factor, angle)
+*drill_collar_prevent_buckling(wob_value, weight_units, buoyancy_factor, safety_factor, angle)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1075,7 +1075,7 @@ This function calculates the weight required to keep the drill sting in tension 
 Effective Mud Density Function
 ------------
 
-effective_mud_density(mud_value, mud_units, flow_value, flow_units, rop_value, rop_units, hole_value, hole_units)
+*effective_mud_density(mud_value, mud_units, flow_value, flow_units, rop_value, rop_units, hole_value, hole_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1131,7 +1131,7 @@ This function calculates the effective mud density. The function takes in four v
 ECD from yield point (below 13ppg) Function
 ------------
 
-ecd_yield_below_13(mud_value, mud_units, reading_300, reading_600, hole_id_value, dp_od_value, dp_units)
+*ecd_yield_below_13(mud_value, mud_units, reading_300, reading_600, hole_id_value, dp_od_value, dp_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1208,7 +1208,7 @@ This function calculates the Equivalent Circulating Density using the yield poin
 ECD from yield point (above 13ppg) Function
 ------------
 
-ecd_yield_above_13(mud_value, mud_units, reading_300, reading_600, hole_id_value, dp_od_value, dp_units, flow_value, flow_units)
+*ecd_yield_above_13(mud_value, mud_units, reading_300, reading_600, hole_id_value, dp_od_value, dp_units, flow_value, flow_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1329,7 +1329,7 @@ This function calculates the Equivalent Circulating Density using the yield poin
 Lag Time Function
 ------------
 
-lag_time(flow_value, flow_units, pump_value, pump_units, annulus_value, annulus_units)
+*lag_time(flow_value, flow_units, pump_value, pump_units, annulus_value, annulus_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1372,7 +1372,7 @@ This function calculates the theoretical lag time for drilling operations. The f
 Light Weight Pill to Balance Formation Pressure Function
 ------------
 
-light_weight_pill_height(mud_value, pill_value, mud_units, pressure_value, pressure_units, annulus_value, annulus_units)
+*light_weight_pill_height(mud_value, pill_value, mud_units, pressure_value, pressure_units, annulus_value, annulus_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1462,7 +1462,7 @@ This function calculates the height and volume of a light weight pill. The funct
 Max Rop Without Fracturing Formation Function
 ------------
 
-maximum_rop_fracturing_formation(mud_value, lot_value, mud_units, pressure_value, pressure_units, flow_value, flow_units, depth_value, depth_units, hole_value, hole_units)
+*maximum_rop_fracturing_formation(mud_value, lot_value, mud_units, pressure_value, pressure_units, flow_value, flow_units, depth_value, depth_units, hole_value, hole_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1521,7 +1521,7 @@ This function calculates the maximum rate of penetration before fracturing the f
 Pipe Thermal Expansion Function
 ------------
 
-pipe_thermal_expansion(pipe_value, pipe_units, surface_value, bottom_value, temp_units)
+*pipe_thermal_expansion(pipe_value, pipe_units, surface_value, bottom_value, temp_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1594,7 +1594,7 @@ This function calculates the thermal expansion of pipe due to higher downhole te
 Stuck Pipe Function
 ------------
 
-stuck_pipe(stretch_value, stretch_units, pull_value, pull_units, dp_od_value, dp_id_value, dp_units)
+*stuck_pipe(stretch_value, stretch_units, pull_value, pull_units, dp_od_value, dp_id_value, dp_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1658,7 +1658,7 @@ This function calculates the free point constant and the depth of stuck pipe. Th
 Annular Pressure Loss Function
 ------------
 
-annular_pressure_loss(mud_value, mud_units, length_value, length_unit, flow_value, flow_units, hole_value, dp_value, dp_units)
+*annular_pressure_loss(mud_value, mud_units, length_value, length_unit, flow_value, flow_units, hole_value, dp_value, dp_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1734,7 +1734,7 @@ This function calculates the annular pressure loss. The function takes in six va
 Critcal RPM Estimation Function
 ------------
 
-critical_rpm(pipe_length, pipe_units, od_value, id_value, dp_units)
+*critical_rpm(pipe_length, pipe_units, od_value, id_value, dp_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1782,7 +1782,7 @@ This function provides an estimation of the critcal RPM to minimise vibrations. 
 Equivalent Circulation Density Engineering Function
 ------------
 
-ecd_engineering_formula(mud_value, mud_units, reading_300, reading_600, viscosity_value, viscosity_units, flow_value,    flow_units, hole_dia_value, collar_dia_value, dp_dia_value, dia_units, hole_len_value, dp_len_value, collar_len_value, len_units)
+*ecd_engineering_formula(mud_value, mud_units, reading_300, reading_600, viscosity_value, viscosity_units, flow_value,    flow_units, hole_dia_value, collar_dia_value, dp_dia_value, dia_units, hole_len_value, dp_len_value, collar_len_value, len_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1854,7 +1854,7 @@ This function calculates the equivalent circulation density using a more complex
 Bottom Hole Pressure from Wellhead Pressure Function
 ------------
 
-bhp_wellhead_pressure(pressure_value, pressure_units, temp_value, temp_units, gas_value, depth_value, depth_units)
+*bhp_wellhead_pressure(pressure_value, pressure_units, temp_value, temp_units, gas_value, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
