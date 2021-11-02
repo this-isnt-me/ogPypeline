@@ -5,7 +5,7 @@ Usage
 ------------
 The functions in the conversion modules all work in the same manner. A value (integer or float) and units (string) are passed into the function and a dictionary is returned using the different units as the key. See example of temperature conversion in the code below:
 
-.. code-block:: console
+.. code:: python
 
    from ogPypeline import general as gen
 
