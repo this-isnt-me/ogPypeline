@@ -8,8 +8,16 @@ Pressure Gradient Function
 
 pressure_gradient(value, units)
 
-   #. value : mud weight (Integer or Float)
-   #. units : mud weight units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - value
+     - mud weight (Integer or Float)
+   * - units
+     - mud weight units (String)
 
 The pressure gradient function calculates the pressure gradient from the mud weight. The function takes in a value input(Integer or Float) and a units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different pressure gradient units and values, to see the range of pressure gradient units returned see the example code below or the Pressure Gradients units section under Drilling Conversions.
 
@@ -37,10 +45,20 @@ Pressure To Mud Weight Function
 
 pressure_to_mud_weight(pressure_value, pressure_units, depth_value, depth_units)
 
-   #. pressure_value : pressure (Integer or Float)
-   #. pressure_units : pressure units (String)
-   #. depth_value : depth value (Integer or Float)
-   #. depth_units : depth units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - pressure_value
+     - pressure (Integer or Float)
+   * - pressure_units
+     - pressure units (String)
+   * - depth_value
+     - depth value (Integer or Float)
+   * - depth_units
+     - depth units (String)
 
 The pressure to mud weight function calculates the equivalent mud weight from pressure and depth. The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of pressure units that can be input into the function see the pressure units section under General Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different mud weight units and values, to see the range of mud weight units returned see the example code below or the Mud Weight units section under Drilling Conversions.
 
@@ -75,10 +93,20 @@ Hydrostatic Pressure Function
 
 hydrostatic_pressure(mud_value, mud_units, depth_value, depth_units)
 
-   #. mud_value : mud weight (Integer or Float)
-   #. mud_units : mud weight units (String)
-   #. depth_value : true vertical depth value (Integer or Float)
-   #. depth_units : true vertical depth units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - mud_value
+     - mud weight (Integer or Float)
+   * - mud_units
+     - mud weight units (String)
+   * - depth_value
+     - true vertical depth value (Integer or Float)
+   * - depth_units
+     - true vertical depth units (String)
    
 The hydrostatic pressure function calculates the hydrostatic pressure using the mud weight and true vertical depth(TVD). The function takes in two value inputs(Integers or Floats) and two units input(Strings).To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
@@ -127,11 +155,22 @@ Triplex Pump Output Function
 
 triplex_output(diameter_value, diameter_units, length_value, length_units, efficiency)
 
-   #. diameter_value : liner diameter (Integer or Float)
-   #. diameter_units : liner diameter units (String)
-   #. length_value : stroke length  (Integer or Float)
-   #. length_units : stroke length units (String)
-   #. efficiency : efficiency (Float between 0.0 and 1.0)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - diameter_value
+     - liner diameter (Integer or Float)
+   * - diameter_units
+     - liner diameter units (String)
+   * - length_value
+     - stroke length  (Integer or Float)
+   * - length_units
+     - stroke length units (String)
+   * - efficiency
+     - efficiency (Float between 0.0 and 1.0)
 
 The Triplex Pump Output function calculates pump output. The function takes in two value inputs(Integers or Floats) and two units input(Strings).To see the range of diameter and length units that can be input into the function see the Length units section under General Conversions. Efficiency is input as a float between 0.0 and 1.0, with the default option being 1.0 to represent 100% efficiency. The function returns a dictionary of stroke-volume units and values, to see the range of stroke-volume units returned see the example code below or the Stroke Volume units section under Production Conversions.
 
@@ -159,13 +198,26 @@ Duplex Pump Output Function
 
 duplex_output(diameter_value, diameter_units, length_value, length_units, rod_value, rod_units, efficiency=1)
 
-   #. diameter_value : liner diameter (Integer or Float)
-   #. diameter_units : liner diameter units (String)
-   #. length_value : stroke length (Integer or Float)
-   #. length_units : stroke length units (String)
-   #. rod_value : rod diameter (Integer or Float)
-   #. rod_units : rod diameter units (String)
-   #. efficiency : efficiency (Float between 0.0 and 1.0)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - diameter_value
+     - liner diameter (Integer or Float)
+   * - diameter_units
+     - liner diameter units (String)
+   * - length_value
+     - stroke length (Integer or Float)
+   * - length_units
+     - stroke length units (String)
+   * - rod_value
+     - rod diameter (Integer or Float)
+   * - rod_units
+     - rod diameter units (String)
+   * - efficiency
+     - efficiency (Float between 0.0 and 1.0)
 
 The Duplex Pump Output function calculates pump output. The function takes in three value inputs(Integers or Floats) and three units input(Strings).To see the range of liner diameter, rod diameter and length units that can be input into the function see the Length units section under General Conversions. Efficiency is input as a float between 0.0 and 1.0, with the default option being 1.0 to represent 100% efficiency. The function returns a dictionary of stroke-volume units and values, to see the range of stroke-volume units returned see the example code below or the Stroke Volume units section under Production Conversions.
 
@@ -193,10 +245,20 @@ Hydraulic Horsepower Function
 
 hydraulic_horsepower(pressure_value, pressure_units, circulating_value, circulating_units)
 
-   #. pressure_value : pressure value (Integer or Float)
-   #. pressure_units : pressure units (String)
-   #. circulating_value : flow rate (Integer or Float)
-   #. circulating_units : flow rate units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - pressure_value
+     - pressure value (Integer or Float)
+   * - pressure_units
+     - pressure units (String)
+   * - circulating_value
+     - flow rate (Integer or Float)
+   * - circulating_units
+     - flow rate units (String)
 
 The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of pressure units that can be input into the function see the pressure units section under General Conversions. To see the range of flow rate units(circulating_units) that can be input into the function see the flow rate units section under Drilling Conversions. The function returns the hyraulic horsepower as a dictionary with a single entry 'hhp'.
 
@@ -217,10 +279,20 @@ Suspended Drill Collar Weight Function
 
 drill_collar_in_air(od_value, id_value, diameter_units, dc_type)
 
-   #. od_value : drill collar outer diameter value (Integer or Float)
-   #. id_value : drill collar inner diameter value (Integer or Float)
-   #. diameter_units : diameter units (String)
-   #. dc_type : drill collar type (String 'reg' or 'spiral')
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - od_value
+     - drill collar outer diameter value (Integer or Float)
+   * - id_value
+     - drill collar inner diameter value (Integer or Float)
+   * - diameter_units
+     - diameter units (String)
+   * - dc_type
+     - drill collar type (String 'reg' or 'spiral')
 
 The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the pressure units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. Drill Collar type(dc_type) is input as a string, either 'reg' or 'spiral', with the default option being 'reg' for regular drill collar. The function returns a dictionary of weight-length units and values, to see the range of weight-length units returned see the example code below or the Weight Length units section under Drilling Conversions.
 
@@ -246,9 +318,18 @@ Capacity of Hole or Tubular Function
 
 hole_tubular_capacity(diameter_value, diameter_units, washout_value)
 
-   #. diameter_value : inner diameter value of hole or tubular (Integer or Float)
-   #. diameter_units : diameter units (string)
-   #. washout_value : washout value of hole or tubular (Integer or Float)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - diameter_value
+     - inner diameter value of hole or tubular (Integer or Float)
+   * - diameter_units
+     - diameter units (string)
+   * - washout_value
+     - washout value of hole or tubular (Integer or Float)
 
 The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the pressure units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The washout is a decimal display of the percentage of washout in the hole, i.e. 20% washout is input into the function as 0.2, the default for washout is 0.0 . The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
@@ -284,9 +365,18 @@ Tubular Displacement Function
 
 tubular_displacement(od_value, id_value, diameter_units)
 
-   #. od_value : outer diameter value of tubular (Integer or Float)
-   #. id_value : inner diameter value of tubular (Integer or Float)
-   #. diameter_units : diameter units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - od_value
+     - outer diameter value of tubular (Integer or Float)
+   * - id_value
+     - inner diameter value of tubular (Integer or Float)
+   * - diameter_units
+     - diameter units (string)
 
 The function is for the calculation of plain pipe such as casing or tubing that has no tool joints. It takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
@@ -322,9 +412,18 @@ Annular Capacity Function
 
 annular_capacity(od_value, id_value, diameter_units)
 
-   #. od_value : outer diameter value of annulus (Integer or Float)
-   #. id_value : inner diameter value of annulus (Integer or Float)
-   #. diameter_units : diameter units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - od_value
+     - outer diameter value of annulus (Integer or Float)
+   * - id_value
+     - inner diameter value of annulus (Integer or Float)
+   * - diameter_units
+     - diameter units (string)
 
 The function is for the calculation of fluid in the annulus between two tubulars. It takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
@@ -360,9 +459,18 @@ Annular Capacity Multiple Tubulars Function
 
 annular_capacity_multiple_tubulars(od_value, id_array, diameter_units)
 
-   #. od_value : outer diameter value of annulus (Integer or Float)
-   #. id_array : a list of inner diameter value of annulus (list of Integers or Floats)
-   #. diameter_units : diameter units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - od_value
+     - outer diameter value of annulus (Integer or Float)
+   * - id_array
+     - a list of inner diameter value of annulus (list of Integers or Floats)
+   * - diameter_units
+     - diameter units (string)
 
 The function is for the calculation of fluid in the annulus between tubulars. It takes in one value input(Integer or Float), a list of values(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
@@ -398,10 +506,20 @@ Cuttings Drilled Function
 
 cuttings_drilled(diameter_value, diameter_units, washout_value, porosity)
 
-   #. diameter_value : outer diameter value of annulus (Integer or Float)
-   #. diameter_units : a list of inner diameter value of annulus (list of Integers or Floats)
-   #. washout_value : diameter units (string)
-   #. porosity : porosity (Float between 0.0 and 1.0)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - diameter_value
+     - outer diameter value of annulus (Integer or Float)
+   * - diameter_units
+     - a list of inner diameter value of annulus (list of Integers or Floats)
+   * - washout_value
+     - diameter units (string)
+   * - porosity
+     - porosity (Float between 0.0 and 1.0)
 
 This function is for the calculation of the volume of cuttings produced while drilling. It takes in three value inputs(Integers or Floats) and one unit input(String). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The washout and porosity values are a decimal display of the percentage i.e. 20% is input into the function as 0.2. The function returns a dictionary containing the capacity in volume by length. To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) units section of Production Conversions.
 
@@ -433,10 +551,20 @@ Annular Velocity from Annular Capacity Function
 
 annular_velocity_annular_capcity(output_value, output_units, annulus_value, annulus_units)
 
-   #. output_value : pump output / flow rate value (Integer or Float)
-   #. output_units : pump output / flow rate units (string)
-   #. annulus_value : annular capacity value value (Integer or Float)
-   #. annulus_units : annular capacity value units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - output_value
+     - pump output / flow rate value (Integer or Float)
+   * - output_units
+     - pump output / flow rate units (string)
+   * - annulus_value
+     - annular capacity value value (Integer or Float)
+   * - annulus_units
+     - annular capacity value units (string)
 
 This function is for the calculation of annular velocity from the annular capacity and flow rate. It takes in two value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of annular capacity units that can be input into the function see the Annular Capacity units section under Production Conversions. The function returns a dictionary containing the annular velocity with different units. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
 
@@ -476,11 +604,22 @@ Annular Velocity from Annulus Diameter Function
 
 annular_velocity_flow_rate(hole_id_value, pipe_od_value, dia_units, flow_value, flow_units)
 
-   #. hole_id_value : hole inner diameter value (Integer or Float)
-   #. pipe_od_value : pipe outer diameter value (Integer or Float)
-   #. dia_unit : diameter units (string)
-   #. flow_value : pump output / flow rate value (Integer or Float)
-   #. flow_units : pump output / flow rate units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - hole_id_value
+     - hole inner diameter value (Integer or Float)
+   * - pipe_od_value
+     - pipe outer diameter value (Integer or Float)
+   * - dia_unit
+     - diameter units (string)
+   * - flow_value
+     - pump output / flow rate value (Integer or Float)
+   * - flow_units
+     - pump output / flow rate units (string)
 
 This function is for the calculation of annular velocity from the annular diameter and flow rate. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the annular velocity with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
 
@@ -520,11 +659,22 @@ Flow Rate from Required Annular Velocity Function
 
 pump_output_flow_rate(od_value, id_value, diameter_units, velocity_value, velocity_units)
 
-   #. od_value : hole inner diameter value (Integer or Float)
-   #. id_value : pipe outer diameter units (Integer or Float)
-   #. diameter_units : diameter units (string)
-   #. velocity_value : required annular velocity value (Integer or Float)
-   #. velocity_units : required annular velocity units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - od_value
+     - hole inner diameter value (Integer or Float)
+   * - id_value
+     - pipe outer diameter units (Integer or Float)
+   * - diameter_units
+     - diameter units (string)
+   * - velocity_value
+     - required annular velocity value (Integer or Float)
+   * - velocity_units
+     - required annular velocity units (string)
 
 This function is for the calculation of the flow rate from the required annular velocity. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. The function returns a dictionary containing the flow rate with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Flow Rate units section of Drilling Conversions.
 
@@ -557,12 +707,24 @@ Stroke Rate from Required Annular Velocity Function
 
 pump_output_spm(velocity_value, velocity_units, stroke_value, stroke_units, annulus_value, annulus_units)
 
-   #. velocity_value : required annular velocity value (Integer or Float)
-   #. velocity_units : required annular velocity units (string)
-   #. stroke_value : pump output value (Integer or Float)
-   #. stroke_units : pump output units (string)
-   #. annulus_value : annular capacity value (Integer or Float)
-   #. annulus_units : annular capacity units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - velocity_value
+     - required annular velocity value (Integer or Float)
+   * - velocity_units
+     - required annular velocity units (string)
+   * - stroke_value
+     - pump output value (Integer or Float)
+   * - stroke_units
+     - pump output units (string)
+   * - annulus_value
+     - annular capacity value (Integer or Float)
+   * - annulus_units
+     - annular capacity units (string)
 
 This function is for the calculation of the required Strokes per Minute from the required annular velocity, pump output and annular capacity. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings).To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions.  To see the range of Pump Output units that can be input into the function see the Stroke Volume units section under Production Conversions.  To see the range of Annular Capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a float giving the required strokes per minute.
 
@@ -581,11 +743,22 @@ Stroke Pressure Factor Function
 
 stroke_pressure_factor(old_spm, new_spm, pressure_old_value, pressure_new_value, pressure_units)
 
-   #. old_spm : old strokes per minute value (Integer or Float)
-   #. new_spm : new strokes per minute value (Integer or Float)
-   #. pressure_old_value : old pressure value (Integer or Float)
-   #. pressure_new_value : new pressure value (Integer or Float)
-   #. pressure_units : pressure units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - old_spm
+     - old strokes per minute value (Integer or Float)
+   * - new_spm
+     - new strokes per minute value (Integer or Float)
+   * - pressure_old_value
+     - old pressure value (Integer or Float)
+   * - pressure_new_value
+     - new pressure value (Integer or Float)
+   * - pressure_units
+     - pressure units (string)
 
 This function is for the calculation of the relationship factor between pump pressure and pump stroke output. It takes in four value inputs(Integers or Floats) and one unit input(String).To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a float giving the stroke pressure factor.
 
@@ -604,11 +777,22 @@ New Pressure from Stroke Pressure Factor Function
 
 stroke_pressure_relationship(old_spm, new_spm, pressure_value, pressure_units, factor)
 
-   #. old_spm : old strokes per minute value (Integer or Float)
-   #. new_spm : new strokes per minute value (Integer or Float)
-   #. pressure_value : old pressure value (Integer or Float)
-   #. pressure_units : pressure units (string)
-   #. factor : stroke pressure factor (Integer or Float)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - old_spm
+     - old strokes per minute value (Integer or Float)
+   * - new_spm
+     - new strokes per minute value (Integer or Float)
+   * - pressure_value
+     - old pressure value (Integer or Float)
+   * - pressure_units
+     - pressure units (string)
+   * - factor
+     - stroke pressure factor (Integer or Float)
 
 This function is for the calculation of the new pump pressure from the pump stroke output and stroke pressure factor. It takes in four value inputs(Integers or Floats) and one unit input(String). The default input for factor is 2. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of the new pressure with the different pressure units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
 
@@ -657,8 +841,16 @@ Buoyancy Factor Function
 
 buoyancy_factor(value, units)
 
-   #. value : mud weight value (Integer or Float)
-   #. units : mud weight units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - value
+     - mud weight value (Integer or Float)
+   * - units
+     - mud weight units (string)
 
 This function is used to calculate the buoyancy factor to compensate for weight loss due to the buoyancy in drilling fluid. It takes in one value input(Integer or Float) and one unit input(String).To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a float giving the buoyancy factor.
 
@@ -677,12 +869,24 @@ Formation Temperature Function
 
 formation_temp(depth_value, depth_units, gradient_value, gradient_units, temp_value, temp_units)
 
-   #. depth_value : depth value (Integer or Float)
-   #. depth_units : depth units (string)
-   #. gradient_value : geothermal gradient value (Integer or Float)
-   #. gradient_units : geothermal gradient units (string)
-   #. temp_value : surface temperature value (Integer or Float)
-   #. temp_units : surface temperature units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - depth_value
+     - depth value (Integer or Float)
+   * - depth_units
+     - depth units (string)
+   * - gradient_value
+     - geothermal gradient value (Integer or Float)
+   * - gradient_units
+     - geothermal gradient units (string)
+   * - temp_value
+     - surface temperature value (Integer or Float)
+   * - temp_units
+     - surface temperature units (string)
 
 This function is for the calculation of formation temperature using the geothermal gradient and total vertical depth. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of geothermal gradient units that can be input into the function see the Geothermal Gradient units section under Drilling Conversions. To see the range of temperature units that can be input into the function see the Temperature units section under General Conversions. The function returns a dictionary of formation temperatures with the different temperature units and values. To see the range of temperature units that can be returned, see the example code below or review the Temperature units section of General Conversions.
 
@@ -709,12 +913,24 @@ Surface Accumulator Capacity Function
 
 accumulator_capacity_surface(volume_value, volume_units, pre_charge_value, operating_value, minimum_value, pressure_units)
 
-   #. volume_value : volume per bottle value (Integer or Float)
-   #. volume_units : volume units (string)
-   #. pre_charge_value : pre-charge pressure value (Integer or Float)
-   #. operating_value : operating pressure value (Integer or Float)
-   #. minimum_value : minimum system pressure value (Integer or Float)
-   #. pressure_units : pressure units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - volume_value
+     - volume per bottle value (Integer or Float)
+   * - volume_units
+     - volume units (string)
+   * - pre_charge_value
+     - pre-charge pressure value (Integer or Float)
+   * - operating_value
+     - operating pressure value (Integer or Float)
+   * - minimum_value
+     - minimum system pressure value (Integer or Float)
+   * - pressure_units
+     - pressure units (string)
 
 This function is used to calculate the usable volume of hydraulic fluid per bottle. It takes in four value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of accumulator volume with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
 
@@ -763,16 +979,32 @@ Subsea Accumulator Capacity Function
 
 accumulator_capacity_subsea(volume_value, volume_units, pre_charge_value, operating_value, minimum_value, pressure_units, pres_grad_value, pres_grad_units, depth_value, depth_units)
 
-   #. volume_value : volume per bottle value (Integer or Float)
-   #. volume_units : volume units (string)
-   #. pre_charge_value : pre-charge pressure value (Integer or Float)
-   #. operating_value : operating pressure value (Integer or Float)
-   #. minimum_value : minimum system pressure value (Integer or Float)
-   #. pressure_units : pressure units (string)
-   #. pres_grad_value : pressure gradient value (Integer or Float)
-   #. pres_grad_units : pressure gradient units (string)
-   #. depth_value : water depth value (Integer or Float)
-   #. depth_units : water depth units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - volume_value
+     - volume per bottle value (Integer or Float)
+   * - volume_units
+     - volume units (string)
+   * - pre_charge_value
+     - pre-charge pressure value (Integer or Float)
+   * - operating_value
+     - operating pressure value (Integer or Float)
+   * - minimum_value
+     - minimum system pressure value (Integer or Float)
+   * - pressure_units
+     - pressure units (string)
+   * - pres_grad_value
+     - pressure gradient value (Integer or Float)
+   * - pres_grad_units
+     - pressure gradient units (string)
+   * - depth_value
+     - water depth value (Integer or Float)
+   * - depth_units
+     - water depth units (string)
 
 This function is used to calculate the usable volume of hydraulic fluid per bottle for a subsea BOP. It takes in six value inputs(Integers or Floats) and four unit inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions.To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions.To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of accumulator volumes with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
 
@@ -821,11 +1053,22 @@ Depth of Washout Plugging Function
 
 washout_depth_plug(pipe_value, pipe_units, pump_value, pump_units, strokes)
 
-   #. pipe_value : pipe capacity value (Integer or Float)
-   #. pipe_units : pipe capacity units (string)
-   #. pump_value : stroke volume value (Integer or Float)
-   #. pump_units : stroke volume units (string)
-   #. strokes : number of strokes until pressure increase is seen value (Integer or Float)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - pipe_value
+     - pipe capacity value (Integer or Float)
+   * - pipe_units
+     - pipe capacity units (string)
+   * - pump_value
+     - stroke volume value (Integer or Float)
+   * - pump_units
+     - stroke volume units (string)
+   * - strokes
+     - number of strokes until pressure increase is seen value (Integer or Float)
 
 This function is for the calculation of washout depth by pumping material to plug the hole and using the number of strokes when a pressure increase is seen. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. The function returns a dictionary of the washout depth with the different depth units. To see the range of depth units that can be returned and values, see the example code below or review the Length units section of General Conversions.
 
@@ -864,13 +1107,26 @@ Depth of Washout Passing Function
 
 washout_depth_pass(pipe_value, pipe_units, pump_value, pump_units, strokes, annular_value, annular_units)
 
-   #. pipe_value : pipe capacity value (Integer or Float)
-   #. pipe_units : pipe capacity units (string)
-   #. pump_value : stroke volume value (Integer or Float)
-   #. pump_units : stroke volume units (string)
-   #. strokes : number of strokes until passing material is seen at shakers (Integer or Float)
-   #. annular_value : annular capacity value (Integer or Float)
-   #. annular_units : annular capacity units (string)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - pipe_value
+     - pipe capacity value (Integer or Float)
+   * - pipe_units
+     - pipe capacity units (string)
+   * - pump_value
+     - stroke volume value (Integer or Float)
+   * - pump_units
+     - stroke volume units (string)
+   * - strokes
+     - number of strokes until passing material is seen at shakers (Integer or Float)
+   * - annular_value
+     - annular capacity value (Integer or Float)
+   * - annular_units
+     - annular capacity units (string)
 
 This function is for the calculation of washout depth by pumping material that will pass through the hole and using the number of strokes when material is seen at the shakers. It takes in four value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions.The function returns a dictionary of the washout depth with the different depth units and values. To see the range of depth units that can be returned, see the example code below or review the Length units section of General Conversions.
 
@@ -909,12 +1165,24 @@ Basic Equivalent Circulating Density Function
 
 ecd(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)
 
-   #. pres_value : annular pressure loss value (Integer or Float)
-   #. pres_units : annular pressure loss units (string)
-   #. mud_value : mud weight value (Integer or Float)
-   #. mud_units : mud weight units (string)
-   #. depth_value : true vertical depth value (Integer or Float)
-   #. depth_units : true vertical depth units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - pres_value
+     - annular pressure loss value (Integer or Float)
+   * - pres_units
+     - annular pressure loss units (string)
+   * - mud_value
+     - mud weight value (Integer or Float)
+   * - mud_units
+     - mud weight units (string)
+   * - depth_value
+     - true vertical depth value (Integer or Float)
+   * - depth_units
+     - true vertical depth units (String)
 
 This is a simple version of the calculation, this function uses annular pressure loss, mud weight and depth to caculate the ECD. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of the ECD with the mud weight units. To see the range of mud weight units that can be returned, see the example code below or review the Mud Weight units section of Drilling Conversions.
 
@@ -949,11 +1217,22 @@ Formation Integrity Test Function
 
 fit_test(fit_value, mud_value, mud_units, depth_value, depth_units)
 
-   #. fit_value : required FIT value (Integer or Float)
-   #. mud_value : mud weight value (Integer or Float)
-   #. mud_units : mud weight units (string)
-   #. depth_value : true vertical depth of shoe value (Integer or Float)
-   #. depth_units : true vertical depth units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - fit_value
+     - required FIT value (Integer or Float)
+   * - mud_value
+     - mud weight value (Integer or Float)
+   * - mud_units
+     - mud weight units (string)
+   * - depth_value
+     - true vertical depth of shoe value (Integer or Float)
+   * - depth_units
+     - true vertical depth units (String)
 
 This function uses requried FIT value, mud weight and depth to caculate the required FIT pressure. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of the FIT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
 
@@ -1002,12 +1281,24 @@ Leak Off Test Function
 
 lot_test(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)
 
-   #. pres_value : lot pressure value (Integer or Float)
-   #. pres_units : lot pressure loss units (string)
-   #. mud_value : mud weight value (Integer or Float)
-   #. mud_units : mud weight units (string)
-   #. depth_value : true vertical depth of shoe value (Integer or Float)
-   #. depth_units : true vertical depth units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - pres_value
+     - lot pressure value (Integer or Float)
+   * - pres_units
+     - lot pressure loss units (string)
+   * - mud_value
+     - mud weight value (Integer or Float)
+   * - mud_units
+     - mud weight units (string)
+   * - depth_value
+     - true vertical depth of shoe value (Integer or Float)
+   * - depth_units
+     - true vertical depth units (String)
 
 This function uses LOT pressure value, mud weight and depth to caculate the LOT equivelent mud weight. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of the LOT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
 
@@ -1042,12 +1333,24 @@ Mud Motor Bit Revolutions Function
 
 bit_revolutions_mud_motor(bit_rotation_value, bit_rotation_units, flow_value, flow_units, rev_value, rev_units)
 
-   #. bit_rotation_value : bit rotation value (Integer or Float)
-   #. bit_rotation_units : bit rotation units (string)
-   #. flow_value : mud flow rate value (Integer or Float)
-   #. flow_units : mud flow rate units (string)
-   #. rev_value : mud motor data flow on revolutions value (Integer or Float)
-   #. rev_units : mud motor data flow on revolutions units (String)
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - bit_rotation_value
+     - bit rotation value (Integer or Float)
+   * - bit_rotation_units
+     - bit rotation units (string)
+   * - flow_value
+     - mud flow rate value (Integer or Float)
+   * - flow_units
+     - mud flow rate units (string)
+   * - rev_value
+     - mud motor data flow on revolutions value (Integer or Float)
+   * - rev_units
+     - mud motor data flow on revolutions units (String)
 
 This function calculates the total bit rotations when using a mud motor. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of bit rotation units that can be input into the function see the Angular Elocity units section under Force and Power Conversions. To see the range ofmud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of flow on revolutions units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary of the total bit revolutions with the angualr velocity units and values. To see the range of angualr velocity units that can be returned, see the example code below or review the Angular Elocity units section under Force and Power Conversions.
 

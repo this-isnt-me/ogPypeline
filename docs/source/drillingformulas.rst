@@ -14,19 +14,19 @@ max_drilling_rate(mud_in_value, mud_out_value, mud_units, circ_value, circ_units
 
    * - Input Name
      - Input Description
-   * - value
+   * - mud_in_value
      - mud weight in value (Integer or Float)
-   * - value
+   * - mud_out_value
      - required mud weight out value (Integer or Float)
-   * - units
+   * - mud_units
      - mud weight units (String)
-   * - value
+   * - circ_value
      - flow rate values (Integer or Float)
-   * - units
+   * - circ_units
      - flow rate units (String)
-   * - value
+   * - diameter_value
      - hole diameter value (Integer or Float)
-   * - units
+   * - diameter_units
      - hole diameter units (String)
 
 This function calculates the maximum drilling rate to keeep the mud at the required rate out. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of hole diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different drilling rate units and values, to see the range of drilling rate units returned see the example code below or the Drilling Rate units section under Drilling Conversions.
