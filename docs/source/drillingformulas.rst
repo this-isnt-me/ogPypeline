@@ -19,6 +19,7 @@ max_drilling_rate(mud_in_value, mud_out_value, mud_units, circ_value, circ_units
 This function calculates the maximum drilling rate to keeep the mud at the required rate out. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of hole diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different drilling rate units and values, to see the range of drilling rate units returned see the example code below or the Drilling Rate units section under Drilling Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -54,6 +55,7 @@ mud_on_drilling_rate(pv_1_value, pv_2_value, pv_units, rop_value, rop_units)
 This function calculates the effect of changes in mud viscosity on the rate of penetration. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluid Conversions. To see the range of rop units that can be input into the function see the Drilling Rate units section under Drilling Conversions. The function returns a dictionary of different drilling rate units and values, to see the range of drilling rate units returned see the example code below or the Drilling Rate units section under Drilling Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -92,6 +94,7 @@ d_exponent(rop_value, rop_units, rotary_value, rotary_units, wob_value, wob_unit
 This function calculates the "d" Exponent using rop, rotary speed, wob, and bit size. The function takes in four value inputs(Integers or Floats) and four units inputs(Strings). To see the range of rate of penetration units that can be input into the function see the Drilling Rate units section under Force and Power Conversions. To see the range of weight on bit units that can be input into the function see the Weight units section under General Conversions. To see the range of bit size units that can be input into the function see the Length units section under General Conversions. The function returns the calculated "d" Exponent.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -112,6 +115,7 @@ d_exponent_corrected(d_comp, mud_value, mud_units)
 This function corrects the "d" Exponent based on the mud weight. The function takes in two value inputs(Integers or Floats) and one units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns the corrected "d" Exponent.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -135,6 +139,7 @@ drilling_cost(fixed_cost, hourly_cost, rotating_hrs, tripping_hrs, drilled_value
 This function calculates the footage cost of drilling operations. The function takes in five value inputs(Integers or Floats) and one units input(String). To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of rop units that can be input into the function see the Drilling Rate units section under General Conversions. The function returns a dictionary of different footage cost units and values, to see the range of footage cost units returned see the example code below or the Footage Cost units section under Drilling Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -178,6 +183,7 @@ round_trip_ton_miles(mud_value, mud_units, dp_value, hwdp_value, collar_value, d
 This function calculates the round trip tons miles for an opertion. The function takes in eleven value inputs(Integers or Floats) and six units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of weight per length units that can be input into the function see the Weight Length units section under Drilling Conversions. To see the range of weight units that can be input into the function see the Weight units section under General Conversions. The function returns a float for the calculated ton miles.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -197,6 +203,7 @@ drilling_connection_ton_miles(ton_mile_1_value, ton_mile_2_value)
 This function calculates ton miles of work doen during a drilling opertion. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton miles.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -216,6 +223,7 @@ coring_ton_miles(ton_mile_1_value, ton_mile_2_value)
 This function calculates ton miles of work done during a coring opertion. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton miles.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -243,6 +251,7 @@ setting_casing_ton_miles(mud_value, mud_units, casing_value, casing_units, depth
 This function calculates the round trip tons miles for a casing setting opertion. The function takes in five value inputs(Integers or Floats) and five units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of weight per length units that can be input into the function see the Weight Length units section under Drilling Conversions. To see the range of weight units that can be input into the function see the Weight units section under General Conversions. The function returns a float for the calculated ton miles.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -262,6 +271,7 @@ short_trip_ton_miles(ton_mile_1_value, ton_mile_2_value)
 This function calculates ton miles of work done during a short round trip. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton miles.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -288,6 +298,7 @@ hydrostatic_decrease_dry(stands_value, avg_stand_value, avg_std_units, disp_valu
 This function calculates the hydrostatic pressure drop when pulling dry pipe out the hole . The function takes in five value inputs(Integers or Floats) and four units input(String). To see the range of average stand length units that can be input into the function see the Length units section under General Conversions. To see the range of displacement volume units that can be input into the function see the Pipe Capacity units section under production Conversions. The function returns a dictionary of different hydrostatic pressure loss units and values, to see the range of hydrostatic pressure loss units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -346,6 +357,7 @@ hydrostatic_decrease_wet(stands_value, avg_stand_value, avg_std_units, disp_valu
 This function calculates the hydrostatic pressure drop when pulling wet pipe out the hole . The function takes in five value inputs(Integers or Floats) and four units input(String). To see the range of average stand length units that can be input into the function see the Length units section under General Conversions. To see the range of displacement volume, and pipe capacity units that can be input into the function see the Pipe Capacity units section under production Conversions. The function returns a dictionary of different hydrostatic pressure loss units and values, to see the range of hydrostatic pressure loss units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -401,6 +413,7 @@ loss_of_overbalance_dry(pressure_value, pressure_units, disp_value, disp_units, 
 This function calculates the length of dry pipe that can be pulled out of hole before the overbalance pressure is lost. The function takes in four value inputs(Integers or Floats) and four units input(String). To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of displacement volume, and annular units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -448,6 +461,7 @@ loss_of_overbalance_wet(pressure_value, pressure_units, disp_value, disp_units, 
 This function calculates the length of wet pipe that can be pulled out of hole before the overbalance pressure is lost. The function takes in four value inputs(Integers or Floats) and four units input(String). To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of displacement volume, pipe capacity and annular units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -503,6 +517,7 @@ This function calculates data related to lost circulation including annulus file
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -595,6 +610,7 @@ This function calculates the mud weight required to balance the formation losing
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -650,6 +666,7 @@ fluid_level_depth_losses(weight_value, weight_units, dp_value, dp_units, buoyanc
 This function calculates the depth of fluid level. The function takes in three value inputs(Integers or Floats) and two units input(String). To see the range of string weight increase units that can be input into the function see the Weight units section under General Conversions. To see the range of drill pipe weight per length units that can be input into the function see the Weight Length units section under Drilling Conversions. The function returns a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -697,6 +714,7 @@ This function calculates the ammount of fluid that can be lost before taking a k
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -766,6 +784,7 @@ drill_collar_prevent_buckling(wob_value, weight_units, buoyancy_factor, safety_f
 This function calculates the weight required to keep the drill sting in tension and prevent buckling. The function takes in four value inputs(Integers or Floats) and one units input(String). To see the range of string weight increase units that can be input into the function see the Weight units section under General Conversions. The safety factor is a decimal display of the safety factor percentage, i.e. a 20% safety factor is input into the function as 0.2, the default for safety factor is 0.0 . The angle is the hole angle, the default hole angle is 0.0 representing a vertical hole. The function returns a dictionary of different weight units and values, to see the range of weight units returned see the example code below or the Weight units section under General Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -814,6 +833,7 @@ effective_mud_density(mud_value, mud_units, flow_value, flow_units, rop_value, r
 This function calculates the effective mud density. The function takes in four value inputs(Integers or Floats) and four units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions.  To see the range of mud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions.  To see the range of rate of penetration units that can be input into the function see the Drilling Rate units section under Drilling Conversions.  To see the range of hole diameter units that can be input into the function see the length units section under General Conversions. The function returns a dictionary of different mud weight units and values, to see the range of weight units returned see the example code below or the Mud Weight units section under Drilling Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -858,6 +878,7 @@ This function calculates the Equivalent Circulating Density using the yield poin
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -924,6 +945,7 @@ This function calculates the Equivalent Circulating Density using the yield poin
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1019,6 +1041,7 @@ lag_time(flow_value, flow_units, pump_value, pump_units, annulus_value, annulus_
 This function calculates the theoretical lag time for drilling operations. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions.  To see the range ofpump stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions.  To see the range of annular volume units that can be input into the function see the Volume units section under General Conversions.  To see the range of hole diameter units that can be input into the function see the length units section under General Conversions.  The function returns a dictionary with the lag time in minutes and the lag strokes.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1054,6 +1077,7 @@ This function calculates the height and volume of a light weight pill. The funct
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1129,6 +1153,7 @@ maximum_rop_fracturing_formation(mud_value, lot_value, mud_units, pressure_value
 This function calculates the maximum rate of penetration before fracturing the formation. The function takes in six value inputs(Integers or Floats) and five units inputs(Strings).  To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions.  To see the range of pressure units that can be input into the function see the Pressure Volume units section under General Conversions. To see the range of mud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of depth and diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different rate of penetration units and values, to see the range of rate of penetration units returned see the example code below or the Drilling Rate units section under Drilling Conversions.
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1169,6 +1194,7 @@ This function calculates the thermal expansion of pipe due to higher downhole te
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1228,6 +1254,7 @@ This function calculates the free point constant and the depth of stuck pipe. Th
 
 
 .. code:: python
+   
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1276,6 +1303,7 @@ annular_pressure_loss(mud_value, mud_units, length_value, length_unit, flow_valu
 This function calculates the annular pressure loss. The function takes in six value inputs(Integers or Floats) and five units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of length, depth and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
+
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1328,6 +1356,7 @@ critical_rpm(pipe_length, pipe_units, od_value, id_value, dp_units)
 This function provides an estimation of the critcal RPM to minimise vibrations. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of length and diameter units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of different angular velocity units and values, to see the range of angular velocity units returned see the example code below or the Angular Velocity units section under Force and Power Conversions.
 
 .. code:: python
+
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1375,6 +1404,7 @@ ecd_engineering_formula(mud_value, mud_units, reading_300, reading_600, viscosit
 This function calculates the equivalent circulation density using a more complex and accurate formula. The function takes in ten value inputs(Integers or Floats) and five units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of mud circulating rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of length and diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different mud weight units and values, to see the range of mud weight units returned see the example code below or the Mud Weght units section under Drilling Conversions.
 
 .. code:: python
+
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 
@@ -1415,6 +1445,7 @@ bhp_wellhead_pressure(pressure_value, pressure_units, temp_value, temp_units, ga
 This function calculates the bottom hole pressure in a dry gas well using wellhead pressure. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of wellhead pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of wellbore temperature units that can be input into the function see the Temperature units section under General Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different bottomhole pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
+
    # Example Code
    from ogPypeline import drilling_formulas as dri_for
 

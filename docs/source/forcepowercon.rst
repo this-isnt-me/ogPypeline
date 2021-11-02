@@ -9,7 +9,7 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: console
+.. code-block:: python
 
    from ogPypeline import force_and_power as fap
 

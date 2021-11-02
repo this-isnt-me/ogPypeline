@@ -9,7 +9,7 @@ List Legend
 Example Code
 ------------
 
-.. code-block:: console
+.. code-block:: python
 
    from ogPypeline import fluid as flu
 
