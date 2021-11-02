@@ -34,10 +34,3 @@ Each of the formula functions is tailored specifically to the formula it is calc
    print(mud_weight['ppg'])
    # outputs the following float:
    12.01923076923077
-
-   .. toctree::
- :numbered:
- :maxdepth: 1
-   
-   basicformulas
-   drillingformulas

@@ -24,14 +24,3 @@ The functions in the conversion modules all work in the same manner. A value (in
    print(converted_temps['k'])
    # outputs the following float:
    310.15
-   
-   .. toctree::
- :numbered:
- :maxdepth: 1
- 
-   drillingcon
-   productioncon
-   forcepowercon
-   fluidcon
-   gascon
-   generalcon
