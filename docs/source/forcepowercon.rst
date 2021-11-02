@@ -30,7 +30,7 @@ Example Code
 
 Electric Current units
 ------------
-The electric_current(value, units) function converts between different Electric Current units. The input units are as per the list below:
+The electric_current(value, units) function converts between different Electric Current units. The input units are as per the table below:
 
 .. list-table:: Electric Current units
    :widths: 60 40
@@ -57,7 +57,7 @@ The electric_current(value, units) function converts between different Electric 
 
 Fracture Conductivity units
 ------------
-The fracture_conductivity(value, units) function converts between different Fracture Conductivity units. The input units are as per the list below:
+The fracture_conductivity(value, units) function converts between different Fracture Conductivity units. The input units are as per the table below:
 
 .. list-table:: Fracture Conductivity units
    :widths: 60 40
@@ -72,7 +72,7 @@ The fracture_conductivity(value, units) function converts between different Frac
 
 Heat Capacity units
 ------------
-The heat_capacity(value, units) function converts between different Heat Capacity units. The input units are as per the list below:
+The heat_capacity(value, units) function converts between different Heat Capacity units. The input units are as per the table below:
 
 .. list-table:: Heat Capacity units
    :widths: 60 40
@@ -87,7 +87,7 @@ The heat_capacity(value, units) function converts between different Heat Capacit
 
 Power/Area units
 ------------
-The power_area(value, units) function converts between different Power/Area units. The input units are as per the list below:
+The power_area(value, units) function converts between different Power/Area units. The input units are as per the table below:
 
 .. list-table:: Power/Area units
    :widths: 60 40
@@ -102,7 +102,7 @@ The power_area(value, units) function converts between different Power/Area unit
 
 Angular Velocity units
 ------------
-The angular_velocity(value, units) function converts between different Angular Velocity units. The input units are as per the list below:
+The angular_velocity(value, units) function converts between different Angular Velocity units. The input units are as per the table below:
 
 .. list-table:: Angular Velocity units
    :widths: 60 40
@@ -131,7 +131,7 @@ The angular_velocity(value, units) function converts between different Angular V
 
 Force units
 ------------
-The force(value, units) function converts between different Force units. The input units are as per the list below:
+The force(value, units) function converts between different Force units. The input units are as per the table below:
 
 .. list-table:: Force units
    :widths: 60 40
@@ -180,7 +180,7 @@ The force(value, units) function converts between different Force units. The inp
 
 Power units
 ------------
-The power(value, units) function converts between different Power units. The input units are as per the list below:
+The power(value, units) function converts between different Power units. The input units are as per the table below:
 
 .. list-table:: Power units
    :widths: 60 40
@@ -231,7 +231,7 @@ The power(value, units) function converts between different Power units. The inp
 
 Velocity units
 ------------
-The velocity(value, units) function converts between different Velocity units. The input units are as per the list below:
+The velocity(value, units) function converts between different Velocity units. The input units are as per the table below:
 
 .. list-table:: Velocity units
    :widths: 60 40

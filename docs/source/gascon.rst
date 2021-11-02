@@ -22,7 +22,7 @@ Example Code
 
 Gas Injection Rate units
 ------------
-The gas_injection_rate(value, units) function converts between different Gas Injection Rate units. The input units are as per the list below:
+The gas_injection_rate(value, units) function converts between different Gas Injection Rate units. The input units are as per the table below:
 
 .. list-table:: Gas Injection Rate units
    :widths: 60 40
@@ -37,7 +37,7 @@ The gas_injection_rate(value, units) function converts between different Gas Inj
 
 Gas Production Index units
 ------------
-The gas_production_index(value, units) function converts between different Gas Production Index units. The input units are as per the list below:
+The gas_production_index(value, units) function converts between different Gas Production Index units. The input units are as per the table below:
 
 .. list-table:: Gas Production Index units
    :widths: 60 40
@@ -64,7 +64,7 @@ The gas_production_index(value, units) function converts between different Gas P
 
 Gas Production Rate units
 ------------
-The gas_production_rate(value, units) function converts between different Gas Production Rate units. The input units are as per the list below:
+The gas_production_rate(value, units) function converts between different Gas Production Rate units. The input units are as per the table below:
 
 .. list-table:: Gas Production Rate units
    :widths: 60 40
@@ -83,7 +83,7 @@ The gas_production_rate(value, units) function converts between different Gas Pr
 
 Gas Volume units
 ------------
-The gas_volume(value, units) function converts between different Gas Volume units. The input units are as per the list below:
+The gas_volume(value, units) function converts between different Gas Volume units. The input units are as per the table below:
 
 .. list-table:: Gas Volume units
    :widths: 60 40
@@ -110,10 +110,10 @@ The gas_volume(value, units) function converts between different Gas Volume unit
 
 LNG Volume units
 ------------
-The lng_volume(value, units) function converts between different LNG Volume units. The input units are as per the list below:
+The lng_volume(value, units) function converts between different LNG Volume units. The input units are as per the table below:
 
 
-.. list-table:: Dogleg units
+.. list-table:: LNG Volume units
    :widths: 60 40
    :header-rows: 1
 
@@ -132,7 +132,7 @@ The lng_volume(value, units) function converts between different LNG Volume unit
 
 Specific Volume units
 ------------
-The specific_volume(value, units) function converts between different Specific Volume units. The input units are as per the list below:
+The specific_volume(value, units) function converts between different Specific Volume units. The input units are as per the table below:
 
 .. list-table:: Specific Volume units
    :widths: 60 40
@@ -161,7 +161,7 @@ The specific_volume(value, units) function converts between different Specific V
 
 Volume units
 ------------
-The volume_gas(value, units) function converts between different Volume units. The input units are as per the list below:
+The volume_gas(value, units) function converts between different Volume units. The input units are as per the table below:
 
 .. list-table:: Volume units
    :widths: 60 40
