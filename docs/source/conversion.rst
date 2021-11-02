@@ -29,7 +29,6 @@ The functions in the conversion modules all work in the same manner. A value (in
  :numbered:
  :maxdepth: 1
  
-   conversion
    drillingcon
    productioncon
    forcepowercon

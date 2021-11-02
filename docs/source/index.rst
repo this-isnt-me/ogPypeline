@@ -20,13 +20,5 @@ Contents
 
    installation
    conversion
-   drillingcon
-   productioncon
-   forcepowercon
-   fluidcon
-   gascon
-   generalcon
    formulas
-   basicformulas
-   drillingformulas
    license
