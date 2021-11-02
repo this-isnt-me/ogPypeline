@@ -6,7 +6,7 @@ This module contains 27 basic functions for formulas related to oil and gas, the
 Pressure Gradient Function
 ------------
 
-pressure_gradient(value, units)
+*pressure_gradient(value, units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -43,7 +43,7 @@ The pressure gradient function calculates the pressure gradient from the mud wei
 Pressure To Mud Weight Function
 ------------
 
-pressure_to_mud_weight(pressure_value, pressure_units, depth_value, depth_units)
+*pressure_to_mud_weight(pressure_value, pressure_units, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -91,7 +91,7 @@ The pressure to mud weight function calculates the equivalent mud weight from pr
 Hydrostatic Pressure Function
 ------------
 
-hydrostatic_pressure(mud_value, mud_units, depth_value, depth_units)
+*hydrostatic_pressure(mud_value, mud_units, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -153,7 +153,7 @@ The hydrostatic pressure function calculates the hydrostatic pressure using the 
 Triplex Pump Output Function
 ------------
 
-triplex_output(diameter_value, diameter_units, length_value, length_units, efficiency)
+*triplex_output(diameter_value, diameter_units, length_value, length_units, efficiency)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -196,7 +196,7 @@ The Triplex Pump Output function calculates pump output. The function takes in t
 Duplex Pump Output Function
 ------------
 
-duplex_output(diameter_value, diameter_units, length_value, length_units, rod_value, rod_units, efficiency=1)
+*duplex_output(diameter_value, diameter_units, length_value, length_units, rod_value, rod_units, efficiency=1)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -243,7 +243,7 @@ The Duplex Pump Output function calculates pump output. The function takes in th
 Hydraulic Horsepower Function
 ------------
 
-hydraulic_horsepower(pressure_value, pressure_units, circulating_value, circulating_units)
+*hydraulic_horsepower(pressure_value, pressure_units, circulating_value, circulating_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -277,7 +277,7 @@ The function takes in two value inputs(Integers or Floats) and two units input(S
 Suspended Drill Collar Weight Function
 ------------
 
-drill_collar_in_air(od_value, id_value, diameter_units, dc_type)
+*drill_collar_in_air(od_value, id_value, diameter_units, dc_type)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -316,7 +316,7 @@ The function takes in two value inputs(Integers or Floats) and one units input(S
 Capacity of Hole or Tubular Function
 ------------
 
-hole_tubular_capacity(diameter_value, diameter_units, washout_value)
+*hole_tubular_capacity(diameter_value, diameter_units, washout_value)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -363,7 +363,7 @@ The function takes in two value inputs(Integers or Floats) and one units input(S
 Tubular Displacement Function
 ------------
 
-tubular_displacement(od_value, id_value, diameter_units)
+*tubular_displacement(od_value, id_value, diameter_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -410,7 +410,7 @@ The function is for the calculation of plain pipe such as casing or tubing that 
 Annular Capacity Function
 ------------
 
-annular_capacity(od_value, id_value, diameter_units)
+*annular_capacity(od_value, id_value, diameter_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -457,7 +457,7 @@ The function is for the calculation of fluid in the annulus between two tubulars
 Annular Capacity Multiple Tubulars Function
 ------------
 
-annular_capacity_multiple_tubulars(od_value, id_array, diameter_units)
+*annular_capacity_multiple_tubulars(od_value, id_array, diameter_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -504,7 +504,7 @@ The function is for the calculation of fluid in the annulus between tubulars. It
 Cuttings Drilled Function
 ------------
 
-cuttings_drilled(diameter_value, diameter_units, washout_value, porosity)
+*cuttings_drilled(diameter_value, diameter_units, washout_value, porosity)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -549,7 +549,7 @@ This function is for the calculation of the volume of cuttings produced while dr
 Annular Velocity from Annular Capacity Function
 ------------
 
-annular_velocity_annular_capcity(output_value, output_units, annulus_value, annulus_units)
+*annular_velocity_annular_capcity(output_value, output_units, annulus_value, annulus_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -602,7 +602,7 @@ This function is for the calculation of annular velocity from the annular capaci
 Annular Velocity from Annulus Diameter Function
 ------------
 
-annular_velocity_flow_rate(hole_id_value, pipe_od_value, dia_units, flow_value, flow_units)
+*annular_velocity_flow_rate(hole_id_value, pipe_od_value, dia_units, flow_value, flow_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -657,7 +657,7 @@ This function is for the calculation of annular velocity from the annular diamet
 Flow Rate from Required Annular Velocity Function
 ------------
 
-pump_output_flow_rate(od_value, id_value, diameter_units, velocity_value, velocity_units)
+*pump_output_flow_rate(od_value, id_value, diameter_units, velocity_value, velocity_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -705,7 +705,7 @@ This function is for the calculation of the flow rate from the required annular 
 Stroke Rate from Required Annular Velocity Function
 ------------
 
-pump_output_spm(velocity_value, velocity_units, stroke_value, stroke_units, annulus_value, annulus_units)
+*pump_output_spm(velocity_value, velocity_units, stroke_value, stroke_units, annulus_value, annulus_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -741,7 +741,7 @@ This function is for the calculation of the required Strokes per Minute from the
 Stroke Pressure Factor Function
 ------------
 
-stroke_pressure_factor(old_spm, new_spm, pressure_old_value, pressure_new_value, pressure_units)
+*stroke_pressure_factor(old_spm, new_spm, pressure_old_value, pressure_new_value, pressure_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -775,7 +775,7 @@ This function is for the calculation of the relationship factor between pump pre
 New Pressure from Stroke Pressure Factor Function
 ------------
 
-stroke_pressure_relationship(old_spm, new_spm, pressure_value, pressure_units, factor)
+*stroke_pressure_relationship(old_spm, new_spm, pressure_value, pressure_units, factor)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -839,7 +839,7 @@ This function is for the calculation of the new pump pressure from the pump stro
 Buoyancy Factor Function
 ------------
 
-buoyancy_factor(value, units)
+*buoyancy_factor(value, units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -867,7 +867,7 @@ This function is used to calculate the buoyancy factor to compensate for weight 
 Formation Temperature Function
 ------------
 
-formation_temp(depth_value, depth_units, gradient_value, gradient_units, temp_value, temp_units)
+*formation_temp(depth_value, depth_units, gradient_value, gradient_units, temp_value, temp_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -911,7 +911,7 @@ This function is for the calculation of formation temperature using the geotherm
 Surface Accumulator Capacity Function
 ------------
 
-accumulator_capacity_surface(volume_value, volume_units, pre_charge_value, operating_value, minimum_value, pressure_units)
+*accumulator_capacity_surface(volume_value, volume_units, pre_charge_value, operating_value, minimum_value, pressure_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -977,7 +977,7 @@ This function is used to calculate the usable volume of hydraulic fluid per bott
 Subsea Accumulator Capacity Function
 ------------
 
-accumulator_capacity_subsea(volume_value, volume_units, pre_charge_value, operating_value, minimum_value, pressure_units, pres_grad_value, pres_grad_units, depth_value, depth_units)
+*accumulator_capacity_subsea(volume_value, volume_units, pre_charge_value, operating_value, minimum_value, pressure_units, pres_grad_value, pres_grad_units, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1051,7 +1051,7 @@ This function is used to calculate the usable volume of hydraulic fluid per bott
 Depth of Washout Plugging Function
 ------------
 
-washout_depth_plug(pipe_value, pipe_units, pump_value, pump_units, strokes)
+*washout_depth_plug(pipe_value, pipe_units, pump_value, pump_units, strokes)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1105,7 +1105,7 @@ This function is for the calculation of washout depth by pumping material to plu
 Depth of Washout Passing Function
 ------------
 
-washout_depth_pass(pipe_value, pipe_units, pump_value, pump_units, strokes, annular_value, annular_units)
+*washout_depth_pass(pipe_value, pipe_units, pump_value, pump_units, strokes, annular_value, annular_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1163,7 +1163,7 @@ This function is for the calculation of washout depth by pumping material that w
 Basic Equivalent Circulating Density Function
 ------------
 
-ecd(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)
+*ecd(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1215,7 +1215,7 @@ This is a simple version of the calculation, this function uses annular pressure
 Formation Integrity Test Function
 ------------
 
-fit_test(fit_value, mud_value, mud_units, depth_value, depth_units)
+*fit_test(fit_value, mud_value, mud_units, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1279,7 +1279,7 @@ This function uses requried FIT value, mud weight and depth to caculate the requ
 Leak Off Test Function
 ------------
 
-lot_test(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)
+*lot_test(pres_value, pres_units, mud_value, mud_units, depth_value, depth_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -1331,7 +1331,7 @@ This function uses LOT pressure value, mud weight and depth to caculate the LOT 
 Mud Motor Bit Revolutions Function
 ------------
 
-bit_revolutions_mud_motor(bit_rotation_value, bit_rotation_units, flow_value, flow_units, rev_value, rev_units)
+*bit_revolutions_mud_motor(bit_rotation_value, bit_rotation_units, flow_value, flow_units, rev_value, rev_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
