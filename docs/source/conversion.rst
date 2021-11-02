@@ -6,7 +6,6 @@ Usage
 The functions in the conversion modules all work in the same manner. A value (integer or float) and units (string) are passed into the function and a dictionary is returned using the different units as the key. See example of temperature conversion in the code below:
 
 .. code:: python
-    :linenos:
     
     # Example Code
     from ogPypeline import general as gen
@@ -26,3 +25,12 @@ The functions in the conversion modules all work in the same manner. A value (in
     print(converted_temps['k'])
     # outputs the following float:
     310.15
+    
+.. code-block:: python
+   :linenos:
+   
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'

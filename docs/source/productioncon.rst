@@ -9,14 +9,7 @@ List Legend
 Example Code
 ------------
 
-
-.. code:: javascript
-  :linenos:
-
-  code . . .
-
 .. code:: python
-    :linenos:
 
     # Example Code
     from ogPypeline import production as pro
