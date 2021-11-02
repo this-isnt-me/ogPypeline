@@ -27,7 +27,7 @@ This function calculates the maximum drilling rate to keeep the mud at the requi
    print(max_drilling_rate)
    # outputs the following dictionary:
    {
-	   'ft/d': 1947.9771428571407,
+       'ft/d': 1947.9771428571407,
        'ft/hr': 81.1657142857142,
        'ft/min': 1.352764610285713,
        'ft/s': 0.022547835428571403,
