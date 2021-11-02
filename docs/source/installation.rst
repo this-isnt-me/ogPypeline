@@ -4,5 +4,5 @@ Installation
 You can install ogPypeline from PyPI `<https://pypi.org/project/ogPypeline/>`_:
 
 .. code-block:: python
-  :linenos:
-  $ pip install ogPypeline
+
+   $ pip install ogPypeline
