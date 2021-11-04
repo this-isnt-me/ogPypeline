@@ -26,4 +26,5 @@ Contents
    formulas
    basicformulas
    drillingformulas
+   directionalformulas
    license
