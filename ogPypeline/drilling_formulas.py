@@ -103,8 +103,8 @@ def setting_casing_ton_miles(mud_value, mud_units, casing_value, casing_units,
     block = gen.weight(block_value, block_units)
     buoyancy_factor = (65.5 - mud_weight['ppg']) / 65.5
     casing = casing['lb/ft'] * buoyancy_factor
-    return ((casing * depth['ft'] * (stand['ft'] + depth['ft']) + depth['ft']
-             * block['lb']) * 0.5) / 10560000
+    return ((casing * depth['ft'] * (stand['ft'] + depth['ft']) + depth['ft'] *
+             block['lb']) * 0.5) / 10560000
 
 
 def short_trip_ton_miles(ton_mile_1_value, ton_mile_2_value):
