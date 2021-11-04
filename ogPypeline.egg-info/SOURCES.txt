@@ -2,6 +2,7 @@ README.md
 setup.py
 ogPypeline/__init__.py
 ogPypeline/basic_formulas.py
+ogPypeline/directional_formulas.py
 ogPypeline/drilling.py
 ogPypeline/drilling_formulas.py
 ogPypeline/fluid.py

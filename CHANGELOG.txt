@@ -16,3 +16,7 @@ Change Log
 0.1.3 (28/10/2021)
 ==========
 - Added documentation for basic_formulas and drilling_formulas
+
+0.1.4 (04/11/2021)
+==========
+- Added directional_formulas plus documentation

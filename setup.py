@@ -3,7 +3,7 @@ from setuptools import setup
 # This call to setup() does all the work
 setup(
     name="ogPypeline",
-    version='0.1.3',
+    version='0.1.4',
     description='Unit conversion for oil and gas calculations',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
