@@ -27,4 +27,7 @@ Contents
    basicformulas
    drillingformulas
    directionalformulas
+   drillingfluidformulas
+   hydraulicformulas
+   wellcontrolformulas
    license

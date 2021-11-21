@@ -30,6 +30,11 @@ def fluid_consistency(value, units):
         returnDict['lbf-s^n/100ft2'] = value * 2.0885
         returnDict['lbf-s^n/ft2'] = value * 0.020885
         returnDict['Pa-s^n'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -55,6 +60,11 @@ def fluid_yield_point(value, units):
         returnDict['kPa'] = value * 0.4788027
         returnDict['Mpa'] = value * 0.0004788
         returnDict['lbf/100ft2'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -440,6 +450,11 @@ def liquid_production_rates(value, units):
         returnDict['UK gph'] = value * 3600.0
         returnDict['UK gpm'] = value * 60.0
         returnDict['UK gal/sec'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -685,6 +700,11 @@ def viscocity(value, units):
         returnDict['lb/(ft.s)'] = value * 4633.062992
         returnDict['poundal.s/ft2'] = value * 4633.062992
         returnDict['reyn'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -746,4 +766,121 @@ def oil_volume(value, units):
         returnDict['MMBOE'] = value * 7.3e-06
         returnDict['KBOE'] = value * 0.0073333
         returnDict['toe'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
+    return returnDict
+
+
+def surface_tension(value, units):
+    returnDict = {}
+    if units == 'N/m':
+        returnDict['N/m'] = value * 1.0
+        returnDict['mN/m'] = value * 1000.0
+        returnDict['gf/cm'] = value * 1.019716213
+        returnDict['dyn/cm'] = value * 1000.0
+        returnDict['erg/cm2'] = value * 1000.0
+        returnDict['erg/mm2'] = value * 10.0
+        returnDict['pdl/in'] = value * 0.1837185501
+        returnDict['lbf/ft'] = value * 0.005710147098
+    elif units == 'mN/m':
+        returnDict['N/m'] = value * 0.001
+        returnDict['mN/m'] = value * 1.0
+        returnDict['gf/cm'] = value * 0.001019716213
+        returnDict['dyn/cm'] = value * 1.0
+        returnDict['erg/cm2'] = value * 1.0
+        returnDict['erg/mm2'] = value * 0.01
+        returnDict['pdl/in'] = value * 0.0001837185501
+        returnDict['lbf/ft'] = value * 5.710147098e-06
+    elif units == 'gf/cm':
+        returnDict['N/m'] = value * 0.9806649999787735
+        returnDict['mN/m'] = value * 980.6649999787735
+        returnDict['gf/cm'] = value * 1.0
+        returnDict['dyn/cm'] = value * 980.6649999788
+        returnDict['erg/cm2'] = value * 980.6649999788
+        returnDict['erg/mm2'] = value * 9.806649999788
+        returnDict['pdl/in'] = value * 0.1801663519299
+        returnDict['lbf/ft'] = value * 0.005599741403739
+    elif units == 'dyn/cm':
+        returnDict['N/m'] = value * 0.001
+        returnDict['mN/m'] = value * 1.0
+        returnDict['gf/cm'] = value * 0.0010197162129999724
+        returnDict['dyn/cm'] = value * 1.0
+        returnDict['erg/cm2'] = value * 1.0
+        returnDict['erg/mm2'] = value * 0.01
+        returnDict['pdl/in'] = value * 0.0001837185501
+        returnDict['lbf/ft'] = value * 5.710147098e-06
+    elif units == 'erg/cm2':
+        returnDict['N/m'] = value * 0.001
+        returnDict['mN/m'] = value * 1.0
+        returnDict['gf/cm'] = value * 0.0010197162129999724
+        returnDict['dyn/cm'] = value * 1.0
+        returnDict['erg/cm2'] = value * 1.0
+        returnDict['erg/mm2'] = value * 0.01
+        returnDict['pdl/in'] = value * 0.0001837185501
+        returnDict['lbf/ft'] = value * 5.710147098e-06
+    elif units == 'erg/mm2':
+        returnDict['N/m'] = value * 0.1
+        returnDict['mN/m'] = value * 100.0
+        returnDict['gf/cm'] = value * 0.10197162129999725
+        returnDict['dyn/cm'] = value * 100.0
+        returnDict['erg/cm2'] = value * 100.0
+        returnDict['erg/mm2'] = value * 1.0
+        returnDict['pdl/in'] = value * 0.01837185501
+        returnDict['lbf/ft'] = value * 0.0005710147098
+    elif units == 'pdl/in':
+        returnDict['N/m'] = value * 5.443108490980847
+        returnDict['mN/m'] = value * 5443.108490980846
+        returnDict['gf/cm'] = value * 5.550425977371651
+        returnDict['dyn/cm'] = value * 5443.108490980846
+        returnDict['erg/cm2'] = value * 5443.108490980846
+        returnDict['erg/mm2'] = value * 54.43108490980846
+        returnDict['pdl/in'] = value * 1.0
+        returnDict['lbf/ft'] = value * 0.03108095015387
+    elif units == 'lbf/ft':
+        returnDict['N/m'] = value * 175.1268369864331
+        returnDict['mN/m'] = value * 175126.8369864331
+        returnDict['gf/cm'] = value * 178.57967500647274
+        returnDict['dyn/cm'] = value * 175126.8369864331
+        returnDict['erg/cm2'] = value * 175126.8369864331
+        returnDict['erg/mm2'] = value * 1751.268369864331
+        returnDict['pdl/in'] = value * 32.1740485747501
+        returnDict['lbf/ft'] = value * 1.0
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
+    return returnDict
+
+
+def additive_volume(value, units):
+    returnDict = {}
+    if units == 'sack':
+        returnDict['sack'] = value
+        returnDict['ft3'] = value * 3.7333680555556
+        returnDict['m3'] = value * 0.10571721050064
+        returnDict['bbl'] = value * 0.88658833230262
+    elif units == 'ft3':
+        returnDict['sack'] = value * 0.267854651649442
+        returnDict['ft3'] = value
+        returnDict['m3'] = value * 0.0283168
+        returnDict['bbl'] = value * 0.17811
+    elif units == 'm3':
+        returnDict['sack'] = value * 9.45919775280058
+        returnDict['ft3'] = value * 35.3147248276641
+        returnDict['m3'] = value
+        returnDict['bbl'] = value * 6.2898
+    elif units == 'bbl':
+        returnDict['sack'] = value * 1.12791919718008
+        returnDict['ft3'] = value * 5.61450788838358
+        returnDict['m3'] = value * 0.158987567172247
+        returnDict['bbl'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict

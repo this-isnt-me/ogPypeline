@@ -20,3 +20,7 @@ Change Log
 0.1.4 (04/11/2021)
 ==========
 - Added directional_formulas plus documentation
+
+0.1.5 (17/11/2021)
+==========
+- Added drilling_fluids_formulas, hydraulic_formulas, well_control_formulas plus documentation

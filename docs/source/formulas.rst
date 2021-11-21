@@ -1,7 +1,7 @@
 Formula Modules
 ==================
 
-These modules contain over 100 commonly used formulas for the oil and gas industry. 
+These modules contain over 130 commonly used formulas for the oil and gas industry. 
 
 Usage
 ------------

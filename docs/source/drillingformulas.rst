@@ -605,7 +605,7 @@ This function calculates the length of dry pipe that can be pulled out of hole b
        'nm': 0.38425016722408034,
        'yd': 778.1493090301004
    }
-   # Each key representing a different depth unit
+   # Each key representing a different unit
    print(max_pipe_pull['ft'])
    # outputs the following float:
    2334.4481605351175 
@@ -669,7 +669,7 @@ This function calculates the length of wet pipe that can be pulled out of hole b
        'nm': 0.08505970018827604,
        'yd': 172.25534970090325
    }
-   # Each key representing a different depth unit
+   # Each key representing a different unit
    print(max_pipe_pull['ft'])
    # outputs the following float:
    516.7661007793198 
@@ -922,7 +922,7 @@ This function calculates the depth of fluid level. The function takes in three v
        'nm': 0.21671981524833248,
        'yd': 438.8817204867375
    }
-   # Each key representing a different depth unit
+   # Each key representing a different unit
    print(fluid_level['ft'])
    # outputs the following float:
    1316.6452931247418 
@@ -1067,7 +1067,7 @@ This function calculates the weight required to keep the drill sting in tension 
        'KdaN': 30.870767052514143,
        'daN': 30870.766887730126
    }
-   # Each key representing a different depth unit
+   # Each key representing a different unit
    print(required_weight['t_metric'])
    # outputs the following float:
    34.70012239902081 
@@ -1123,7 +1123,7 @@ This function calculates the effective mud density. The function takes in four v
        'psi/100ft': 48.82271760085507,
        'SG': 1.125656566559118
    }
-   # Each key representing a different depth unit
+   # Each key representing a different unit
    print(effective_density['ppg'])
    # outputs the following float:
    9.394061463576625 
@@ -1364,7 +1364,7 @@ This function calculates the theoretical lag time for drilling operations. The f
        'lag_time': 35.000035000035,
        'lag_strokes': 2450.9803921568628
    }
-   # Each key representing a different depth unit
+   # Each key representing a different category
    print(lag_time['lag_time'])
    # outputs the following float:
    35.000035000035 
@@ -1513,7 +1513,7 @@ This function calculates the maximum rate of penetration before fracturing the f
        'm/min': 3.2879100765638434,
        'm/s': 0.054820075489164864
    }
-   # Each key representing a different depth unit
+   # Each key representing a different rop unit
    print(max_rop['ft/hr'])
    # outputs the following float:
    647.2263930243786 
@@ -1726,7 +1726,7 @@ This function calculates the annular pressure loss. The function takes in six va
        'psi': 531.6454500124446,
        'torr': 27494.00861449024
    }
-   # Each key representing a different depth unit
+   # Each key representing a different pressure unit
    print(pressure_loss['psi'])
    # outputs the following float:
    531.6454500124446 
@@ -1774,7 +1774,7 @@ This function provides an estimation of the critcal RPM to minimise vibrations. 
        'rpm': 171.5720067577851,
        'rps': 2.8595391650299766
    }
-   # Each key representing a different depth unit
+   # Each key representing a different angular velocity unit
    print(critical_rpm['rpm'])
    # outputs the following float:
    171.5720067577851 
@@ -1846,7 +1846,7 @@ This function calculates the equivalent circulation density using a more complex
        'psi/100ft': 53.290913638543,
        'SG': 1.2286752934480278
    }
-   # Each key representing a different depth unit
+   # Each key representing a different mud weight unit
    print(ecd['SG'])
    # outputs the following float:
    1.2286752934480278 
@@ -1914,7 +1914,406 @@ This function calculates the bottom hole pressure in a dry gas well using wellhe
        'psi': 2452.6724587368467,
        'torr': 126839.7908934523
    }
-   # Each key representing a different depth unit
+   # Each key representing a different pressure unit
    print(downhole_pressure['psi'])
    # outputs the following float:
-   1.2286752934480278
+   1.2286752934480278 
+
+Loss of Hydrostatic Pressure After Filling Annulus due to Losses Function
+------------
+
+*pressure_decrease_annular_filling(mud_value, fluid_value, mud_units, depth_value, depth_units, annular_value, annular_units, volume_value, volume_units)*
+
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - mud_value
+     - mud weight value (Integer or Float)
+   * - fluid_value
+     - fluid weight value (Integer or Float)
+   * - mud_units
+     - mud weight units (String)
+   * - depth_value
+     - true vertical depth value (Integer or Float)
+   * - depth_units
+     - depth units (String)
+   * - annular_value
+     - annular capacity value (Integer or Float)
+   * - annular_units
+     - annular capacity units (String)
+   * - volume_value
+     - added fluid volume value (Integer or Float)
+   * - volume_units
+     - fluid volume units (String)
+
+This function calculates the tensile capacity of drillpipe. The function takes in five value inputs(Integers or Floats) and four units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions.  To see the range of volume units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary with three sub-dictionaries:
+
+   * - "pressure_decrease" which is a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+   * - "fluid_length" which is a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
+   * - "mud_weight_td" which is a dictionary of different mud weight units and values, to see the range of mud weight units returned see the example code below or the Mud Weight units section under Drilling Conversions.
+
+.. code:: python
+
+   # Example Code
+   from ogPypeline import drilling_formulas as dri_for
+
+   pressure_decrease = dri_for.pressure_decrease_annular_filling(13, 8.6, 'ppg', 6000, 'ft', 0.1422, 'bbl/ft', 140, 'bbl')
+   print(pressure_decrease)
+   # outputs the following dictionary:
+   {
+       'pressure_decrease': 
+          {
+              'atm': 15.32804720344198,
+              'bar': 15.531143825875619,
+              'cm_Hg': 1164.9318728296737,
+              'cm_h2o': 15837.407416405935,
+              'dyne/cm2': 15535185.993501138,
+              'ft_air': 401963.23502099665,
+              'ft_hg': 38.219534692887244,
+              'ft_h2o': 519.5984035747825,
+              'in_air': 4823558.82025196,
+              'in_hg': 458.63436962519415,
+              'in_h2o': 6235.179404654278,
+              'kg/cm2': 15.837359202724617,
+              'kg/m2': 158377.41468450153,
+              'kPa': 1553.1147895048427,
+              'Mpa': 1.5531143858000656,
+              'm_Hg': 11.649315896811196,
+              'm_h2o': 158.37359536767588,
+              'mbar': 15531.115770057952,
+              'N/cm2': 155.31143611708686,
+              'N/m2': 1553518.599350114,
+              'N/mm2': 1.5531143858000656,
+              'Pa': 1553518.599350114,
+              'psf': 32437.675955556493,
+              'psi': 225.26019690576652,
+              'torr': 11649.315900444444
+          },
+       'fluid_length':
+          {
+              'cm': 30008.438818565402,
+              'dm': 3000.84388185654,
+              'dam': 30.008438818565402,
+              'fath': 164.08817158931083,
+              'ft': 984.5288326300985,
+              'hm': 3.00084388185654,
+              'in': 11814.345991561182,
+              'km': 0.30008438818565397,
+              'league': 0.06212376933895922,
+              'm': 300.084388185654,
+              'mi': 0.18646976090014064,
+              'mm': 300084.388185654,
+              'nleague': 0.05405063291139241,
+              'nm': 0.1620534458509142,
+              'yd': 328.1762447257384
+          },
+       'mud_weight_td':
+          {
+              'g/cm3': 1.4712299998124707,
+              'g/L': 1471.2299998124706,
+              'kg/m3': 1471.2299998124706,
+              'kg/L': 1.4712299998124707,
+              'kPa/m': 14.434862351289263,
+              'lb/ft3': 91.85427952498827,
+              'lb/bbl': 515.676511954993,
+              'ppg': 12.278012189404594,
+              'psi/ft': 0.6384910122831692,
+              'psi/100ft': 63.81115603164557,
+              'SG': 1.4712299998124707
+          }
+      } 
+
+Margin of Overpull Function
+------------
+
+*overpull_margin(max_value, hook_value, weight_units)*
+
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - max_value
+     - maximum allowable weight value (Integer or Float)
+   * - hook_value
+     - hook load value (Integer or Float)
+   * - weight_units
+     - weight units (String)
+
+This function calculates the additional tension that can be applied to the drillstring. The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of weight units that can be input into the function see the Weight units section under General Conversions. The function returns a dictionary with one sub-dictionary and a safety factor value:
+
+   * - "margin_of_overpull" which is a dictionary of different weight units and values, to see the range of weight units returned see the example code below or the Weight units section under General Conversions.
+   * - "safety_factor" which is a float.
+
+.. code:: python
+
+   # Example Code
+   from ogPypeline import drilling_formulas as dri_for
+
+   overpull_margin = dri_for.overpull_margin(300000, 100000, 'lb')
+   print(overpull_margin)
+   # outputs the following dictionary:
+   {
+       'margin_of_overpull': 
+          {
+              'ct': 453592370.0,
+              'cg': 9071847400.0,
+              'dg': 907184740.0,
+              'dram': 51199999.86,
+              'gr': 1400000216.06,
+              'g': 90718474.0,
+              'kg': 90718.48,
+              'kip': 200.0,
+              't_long': 89.28,
+              't_metric': 90.72,
+              'mg': 90718474000.0,
+              'oz': 3200000.0,
+              'lb': 200000,
+              'slug': 6216.2,
+              't_short': 100.0,
+              'toz': 2916666.66,
+              'KdaN': 80.70853338209297,
+              'daN': 80708.53295128162
+          },
+       'safety_factor': 3.0
+      } 
+
+Pressure Required to Break Circulation in Drill String Function
+------------
+
+*break_circ_pipe(gel_value, gel_units, length_value, length_units, diameter_value, diameter_units)*
+
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - gel_value
+     - gel strength value (Integer or Float)
+   * - gel_units
+     - gel strength units (String)
+   * - length_value
+     - drill string length value (Integer or Float)
+   * - length_units
+     - drill string length units (String)
+   * - diameter_value
+     - drill pipe inner diameter value (Integer or Float)
+   * - diameter_units
+     - drill pipe inner diameter units (String)
+
+This function calculates the pressure required to break circulation in the drill string. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of gel strength units that can be input into the function see the Fluid Yield Point units section under Fluids Conversions. To see the range of diameter and length units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+
+.. code:: python
+
+   # Example Code
+   from ogPypeline import drilling_formulas as dri_for
+
+   required_pressure = dri_for.break_circ_pipe(12, 'lbf/100ft2', 11500, 'ft', 3.32, 'in')
+   print(required_pressure)
+   # outputs the following dictionary:
+   {
+       'atm': 9.428055224816099,
+       'bar': 9.552976954692294,
+       'cm_Hg': 716.5323726117126,
+       'cm_h2o': 9741.35516142315,
+       'dyne/cm2': 9555463.2322393,
+       'ft_air': 247241.64323245877,
+       'ft_hg': 23.508270751567146,
+       'ft_h2o': 319.5972962902466,
+       'in_air': 2966899.7187895053,
+       'in_hg': 282.0992203008136,
+       'in_h2o': 3835.1666708408843,
+       'kg/cm2': 9.741325505900562,
+       'kg/m2': 97415.60631896919,
+       'kPa': 955.2979457580332,
+       'Mpa': 0.955297697445193,
+       'm_Hg': 7.1653219845122305,
+       'm_h2o': 97.41325711365455,
+       'mbar': 9552.959697973625,
+       'N/cm2': 95.52976822961381,
+       'N/m2': 955546.3232239302,
+       'N/mm2': 0.955297697445193,
+       'Pa': 955546.3232239302,
+       'psf': 19951.93492129916,
+       'psi': 138.55421686746988,
+       'torr': 7165.321986746987
+   }
+   # Each key representing a different pressure unit
+   print(downhole_pressure['psi'])
+   # outputs the following float:
+   138.55421686746988 
+
+Pressure Required to Break Circulation in the Annulus Function
+------------
+
+*break_circ_annulus(gel_value, gel_units, length_value, length_units, hole_value, pipe_value, diameter_units)*
+
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - gel_value
+     - gel strength value (Integer or Float)
+   * - gel_units
+     - gel strength units (String)
+   * - length_value
+     - drill string length value (Integer or Float)
+   * - length_units
+     - drill string length units (String)
+   * - hole_value
+     - hole inner diameter value (Integer or Float)
+   * - pipe_value
+     - drill pipe outer diameter value (Integer or Float)
+   * - diameter_units
+     - drill pipe inner diameter units (String)
+
+This function calculates the pressure required to break circulation in the annulus. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of gel strength units that can be input into the function see the Fluid Yield Point units section under Fluids Conversions. To see the range of diameter and length units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+
+.. code:: python
+
+   # Example Code
+   from ogPypeline import drilling_formulas as dri_for
+
+   required_pressure = dri_for.break_circ_annulus(12, 'lbf/100ft2', 11500, 'ft', 6.5, 4, 'in')
+   print(required_pressure)
+   # outputs the following dictionary:
+   {
+       'atm': 12.52045733855578,
+       'bar': 12.686353395831368,
+       'cm_Hg': 951.5549908283544,
+       'cm_h2o': 12936.519654369944,
+       'dyne/cm2': 12689655.172413792,
+       'ft_air': 328336.90221270523,
+       'ft_hg': 31.218983558081174,
+       'ft_h2o': 424.42520947344747,
+       'in_air': 3940042.8265524628,
+       'in_hg': 374.6277645594805,
+       'in_h2o': 5093.101338876694,
+       'kg/cm2': 12.936480271835947,
+       'kg/m2': 129367.92519159109,
+       'kPa': 1268.635671966668,
+       'Mpa': 1.2686353422072163,
+       'm_Hg': 9.515547595432242,
+       'm_h2o': 129.36480544693325,
+       'mbar': 12686.330478908976,
+       'N/cm2': 126.86353220892714,
+       'N/m2': 1268965.5172413792,
+       'N/mm2': 1.2686353422072163,
+       'Pa': 1268965.5172413792,
+       'psf': 26496.16957548528,
+       'psi': 184.0,
+       'torr': 9515.5475984
+   }
+   # Each key representing a different pressure unit
+   print(downhole_pressure['psi'])
+   # outputs the following float:
+   184.0 
+
+Drillpipe Tensile Capacity Function
+------------
+
+*drillpipe_tensile_capacity(od_value, id_value, diameter_units, pressure_value, pressure_units)*
+
+.. list-table:: Function Inputs
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Input Name
+     - Input Description
+   * - od_value
+     - outer diameter value (Integer or Float)
+   * - id_value
+     - inner diameter value (Integer or Float)
+   * - diameter_units
+     - diameter units (String)
+   * - pressure_value
+     - yield strength value (Integer or Float)
+   * - pressure_units
+     - yield strength units (String)
+
+This function calculates the tensile capacity of drillpipe. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of yield strength units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary with three sub-dictionaries of different drill pipe grades:
+
+   * - "new_pipe" which is a dictionary of different weight units and values, to see the range of weight units returned see the example code below or the Weight units section under General Conversions.
+   * - "premium" which is a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
+   * - "class_two" which is a dictionary of different mud weight units and values, to see the range of mud weight units returned see the example code below or the Mud Weight units section under Drilling Conversions.
+
+.. code:: python
+
+   # Example Code
+   from ogPypeline import drilling_formulas as dri_for
+
+   tensile_capacity = dri_for.drillpipe_tensile_capacity(5.5, 4.276, 'in', 135000, 'psi')
+   print(tensile_capacity)
+   # outputs the following dictionary:
+   {
+       'new_pipe': 
+          {
+              'ct': 2877411701.8938413,
+              'cg': 57548234037.87682,
+              'dg': 5754823403.787683,
+              'dram': 324792673.9467135,
+              'gr': 8881051073.11428,
+              'g': 575482340.3787683,
+              'kg': 575482.3784404099,
+              'kip': 1268.7213860735096,
+              't_long': 566.3572267432147,
+              't_metric': 575.4920207229441,
+              'mg': 575482340378.7683,
+              'oz': 20299542.177176155,
+              'lb': 1268721.3860735097,
+              'slug': 39433.12940055076,
+              't_short': 634.3606930367548,
+              'toz': 18502186.83794797,
+              'KdaN': 511.9832117024456,
+              'daN': 511983.2089695478
+          },
+       'premium':
+          {
+              'ct': 2244286940.5147786,
+              'cg': 44885738810.29557,
+              'dg': 4488573881.029557,
+              'dram': 253327654.16701454,
+              'gr': 6926929131.593034,
+              'g': 448857388.10295576,
+              'kg': 448857.41778979026,
+              'kip': 989.5611517957318,
+              't_long': 441.74009816161464,
+              't_metric': 448.86493845454396,
+              'mg': 448857388102.9557,
+              'oz': 15832978.428731708,
+              'lb': 989561.1517957317,
+              'slug': 30756.55015896314,
+              't_short': 494.7805758978659,
+              'toz': 14431100.097369049,
+              'KdaN': 399.3301462666409,
+              'daN': 399330.1441350701
+          },
+       'class_two':
+          {
+              'ct': 1938532513.7628002,
+              'cg': 38770650275.256004,
+              'dg': 3877065027.5256004,
+              'dram': 218815110.21285656,
+              'gr': 5983226609.625852,
+              'g': 387706502.75256,
+              'kg': 387706.52839495585,
+              'kip': 854.7465266061685,
+              't_long': 381.5588494769936,
+              't_metric': 387.71302446855805,
+              'mg': 387706502752.56,
+              'oz': 13675944.425698696,
+              'lb': 854746.5266061685,
+              'slug': 26566.376793446325,
+              't_short': 427.37326330308423,
+              'toz': 12465053.484515073,
+              'KdaN': 344.92669287910985,
+              'daN': 344926.69103793736
+          }
+      }

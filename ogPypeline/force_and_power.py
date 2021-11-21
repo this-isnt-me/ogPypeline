@@ -72,6 +72,11 @@ def electric_current(value, units):
         returnDict['mamp'] = value * 1000.0
         returnDict['v/ohm'] = value
         returnDict['w/v'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -83,6 +88,11 @@ def fracture_conductivity(value, units):
     elif units == 'mu.m2-m':
         returnDict['darcy-in'] = value * 0.043891
         returnDict['mu.m2-m'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -94,6 +104,11 @@ def heat_capacity(value, units):
     elif units == 'J/kg-C':
         returnDict['Btu/lb-F'] = value * 0.0002388
         returnDict['J/kg-C'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -105,6 +120,11 @@ def power_area(value, units):
     elif units == 'kW/mm2':
         returnDict['HP/in2'] = value * 865.0519031
         returnDict['kW/mm2'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -200,6 +220,11 @@ def angular_velocity(value, units):
         returnDict['rph'] = value * 3600.0
         returnDict['rpm'] = value * 60.0
         returnDict['rps'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -585,6 +610,11 @@ def force(value, units):
         returnDict['hN'] = value * 9.8e-06
         returnDict['J/m'] = value * 0.00098
         returnDict['mN'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -1010,6 +1040,11 @@ def power(value, units):
         returnDict['ton-ref'] = value * 0.0002843
         returnDict['var'] = value
         returnDict['W'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict
 
 
@@ -1287,4 +1322,301 @@ def velocity(value, units):
         returnDict['mph'] = value * 3600.0
         returnDict['mi/min'] = value * 60.0
         returnDict['mi/sec'] = value
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
+    return returnDict
+
+
+def conductivity(value, units):
+    returnDict = {}
+    if units == 'S/m':
+        returnDict['S/m'] = value * 1.0
+        returnDict['pS/m'] = value * 1000000000000.0
+        returnDict['mho/m'] = value * 1.0
+        returnDict['mho/cm'] = value * 0.01
+        returnDict['abmho/m'] = value * 1e-09
+        returnDict['abmho/cm'] = value * 1e-11
+        returnDict['stmho/m'] = value * 898752432400.0
+        returnDict['stmho/cm'] = value * 8987524324.0
+        returnDict['S/cm'] = value * 0.01
+        returnDict['mS/m'] = value * 1000.0
+        returnDict['mS/cm'] = value * 10.0
+        returnDict['uS/m'] = value * 1000000.0
+        returnDict['uS/cm'] = value * 10000.0
+    elif units == 'pS/m':
+        returnDict['S/m'] = value * 1e-12
+        returnDict['pS/m'] = value * 1.0
+        returnDict['mho/m'] = value * 1e-12
+        returnDict['mho/cm'] = value * 1e-14
+        returnDict['abmho/m'] = value * 1e-21
+        returnDict['abmho/cm'] = value * 1e-23
+        returnDict['stmho/m'] = value * 0.8987524324
+        returnDict['stmho/cm'] = value * 0.008987524324
+        returnDict['S/cm'] = value * 1e-14
+        returnDict['mS/m'] = value * 1e-09
+        returnDict['mS/cm'] = value * 1e-11
+        returnDict['uS/m'] = value * 1e-06
+        returnDict['uS/cm'] = value * 1e-08
+    elif units == 'mho/m':
+        returnDict['S/m'] = value * 1.0
+        returnDict['pS/m'] = value * 1000000000000.0
+        returnDict['mho/m'] = value * 1.0
+        returnDict['mho/cm'] = value * 0.01
+        returnDict['abmho/m'] = value * 1e-09
+        returnDict['abmho/cm'] = value * 1e-11
+        returnDict['stmho/m'] = value * 898752432400.0
+        returnDict['stmho/cm'] = value * 8987524324.0
+        returnDict['S/cm'] = value * 0.01
+        returnDict['mS/m'] = value * 1000.0
+        returnDict['mS/cm'] = value * 10.0
+        returnDict['uS/m'] = value * 1000000.0
+        returnDict['uS/cm'] = value * 10000.0
+    elif units == 'mho/cm':
+        returnDict['S/m'] = value * 100.0
+        returnDict['pS/m'] = value * 100000000000000.0
+        returnDict['mho/m'] = value * 100.0
+        returnDict['mho/cm'] = value * 1.0
+        returnDict['abmho/m'] = value * 1e-07
+        returnDict['abmho/cm'] = value * 1e-09
+        returnDict['stmho/m'] = value * 89875243240000.0
+        returnDict['stmho/cm'] = value * 898752432400.0
+        returnDict['S/cm'] = value * 1.0
+        returnDict['mS/m'] = value * 100000.0
+        returnDict['mS/cm'] = value * 1000.0
+        returnDict['uS/m'] = value * 100000000.0
+        returnDict['uS/cm'] = value * 1000000.0
+    elif units == 'abmho/m':
+        returnDict['S/m'] = value * 999999999.9999999
+        returnDict['pS/m'] = value * 1.0000000000000001e+21
+        returnDict['mho/m'] = value * 999999999.9999999
+        returnDict['mho/cm'] = value * 10000000.0
+        returnDict['abmho/m'] = value * 1.0
+        returnDict['abmho/cm'] = value * 0.01
+        returnDict['stmho/m'] = value * 8.987524324e+20
+        returnDict['stmho/cm'] = value * 8.987524324e+18
+        returnDict['S/cm'] = value * 10000000.0
+        returnDict['mS/m'] = value * 1000000000000.0
+        returnDict['mS/cm'] = value * 10000000000.0
+        returnDict['uS/m'] = value * 1000000000000000.0
+        returnDict['uS/cm'] = value * 10000000000000.0
+    elif units == 'abmho/cm':
+        returnDict['S/m'] = value * 100000000000.0
+        returnDict['pS/m'] = value * 1.0000000000000001e+23
+        returnDict['mho/m'] = value * 100000000000.0
+        returnDict['mho/cm'] = value * 999999999.9999999
+        returnDict['abmho/m'] = value * 100.0
+        returnDict['abmho/cm'] = value * 1.0
+        returnDict['stmho/m'] = value * 8.987524324e+22
+        returnDict['stmho/cm'] = value * 8.987524324e+20
+        returnDict['S/cm'] = value * 1000000000.0
+        returnDict['mS/m'] = value * 100000000000000.0
+        returnDict['mS/cm'] = value * 1000000000000.0
+        returnDict['uS/m'] = value * 1e+17
+        returnDict['uS/cm'] = value * 1000000000000000.0
+    elif units == 'stmho/m':
+        returnDict['S/m'] = value * 1.112653456001929e-12
+        returnDict['pS/m'] = value * 1.112653456001929
+        returnDict['mho/m'] = value * 1.112653456001929e-12
+        returnDict['mho/cm'] = value * 1.1126534560019289e-14
+        returnDict['abmho/m'] = value * 1.112653456001929e-21
+        returnDict['abmho/cm'] = value * 1.1126534560019288e-23
+        returnDict['stmho/m'] = value * 1.0
+        returnDict['stmho/cm'] = value * 0.01
+        returnDict['S/cm'] = value * 1.112653456002e-14
+        returnDict['mS/m'] = value * 1.112653456002e-09
+        returnDict['mS/cm'] = value * 1.112653456002e-11
+        returnDict['uS/m'] = value * 1.112653456002e-06
+        returnDict['uS/cm'] = value * 1.112653456002e-08
+    elif units == 'stmho/cm':
+        returnDict['S/m'] = value * 1.112653456001929e-10
+        returnDict['pS/m'] = value * 111.26534560019289
+        returnDict['mho/m'] = value * 1.112653456001929e-10
+        returnDict['mho/cm'] = value * 1.112653456001929e-12
+        returnDict['abmho/m'] = value * 1.112653456001929e-19
+        returnDict['abmho/cm'] = value * 1.112653456001929e-21
+        returnDict['stmho/m'] = value * 100.0
+        returnDict['stmho/cm'] = value * 1.0
+        returnDict['S/cm'] = value * 1.112653456002e-12
+        returnDict['mS/m'] = value * 1.112653456002e-07
+        returnDict['mS/cm'] = value * 1.112653456002e-09
+        returnDict['uS/m'] = value * 0.0001112653456002
+        returnDict['uS/cm'] = value * 1.112653456002e-06
+    elif units == 'S/cm':
+        returnDict['S/m'] = value * 100.0
+        returnDict['pS/m'] = value * 100000000000000.0
+        returnDict['mho/m'] = value * 100.0
+        returnDict['mho/cm'] = value * 1.0
+        returnDict['abmho/m'] = value * 1e-07
+        returnDict['abmho/cm'] = value * 1e-09
+        returnDict['stmho/m'] = value * 89875243239994.25
+        returnDict['stmho/cm'] = value * 898752432399.9426
+        returnDict['S/cm'] = value * 1.0
+        returnDict['mS/m'] = value * 100000.0
+        returnDict['mS/cm'] = value * 1000.0
+        returnDict['uS/m'] = value * 100000000.0
+        returnDict['uS/cm'] = value * 1000000.0
+    elif units == 'mS/m':
+        returnDict['S/m'] = value * 0.001
+        returnDict['pS/m'] = value * 999999999.9999999
+        returnDict['mho/m'] = value * 0.001
+        returnDict['mho/cm'] = value * 1e-05
+        returnDict['abmho/m'] = value * 1e-12
+        returnDict['abmho/cm'] = value * 1e-14
+        returnDict['stmho/m'] = value * 898752432.3999426
+        returnDict['stmho/cm'] = value * 8987524.323999427
+        returnDict['S/cm'] = value * 1e-05
+        returnDict['mS/m'] = value * 1.0
+        returnDict['mS/cm'] = value * 0.01
+        returnDict['uS/m'] = value * 1000.0
+        returnDict['uS/cm'] = value * 10.0
+    elif units == 'mS/cm':
+        returnDict['S/m'] = value * 0.1
+        returnDict['pS/m'] = value * 100000000000.0
+        returnDict['mho/m'] = value * 0.1
+        returnDict['mho/cm'] = value * 0.001
+        returnDict['abmho/m'] = value * 1e-10
+        returnDict['abmho/cm'] = value * 1e-12
+        returnDict['stmho/m'] = value * 89875243239.99426
+        returnDict['stmho/cm'] = value * 898752432.3999426
+        returnDict['S/cm'] = value * 0.001
+        returnDict['mS/m'] = value * 100.0
+        returnDict['mS/cm'] = value * 1.0
+        returnDict['uS/m'] = value * 100000.0
+        returnDict['uS/cm'] = value * 1000.0
+    elif units == 'uS/m':
+        returnDict['S/m'] = value * 1e-06
+        returnDict['pS/m'] = value * 1000000.0
+        returnDict['mho/m'] = value * 1e-06
+        returnDict['mho/cm'] = value * 1e-08
+        returnDict['abmho/m'] = value * 1e-15
+        returnDict['abmho/cm'] = value * 1e-17
+        returnDict['stmho/m'] = value * 898752.4323999427
+        returnDict['stmho/cm'] = value * 8987.524323999425
+        returnDict['S/cm'] = value * 1e-08
+        returnDict['mS/m'] = value * 0.001
+        returnDict['mS/cm'] = value * 1e-05
+        returnDict['uS/m'] = value * 1.0
+        returnDict['uS/cm'] = value * 0.01
+    elif units == 'uS/cm':
+        returnDict['S/m'] = value * 0.0001
+        returnDict['pS/m'] = value * 100000000.0
+        returnDict['mho/m'] = value * 0.0001
+        returnDict['mho/cm'] = value * 1e-06
+        returnDict['abmho/m'] = value * 1e-13
+        returnDict['abmho/cm'] = value * 1e-15
+        returnDict['stmho/m'] = value * 89875243.23999426
+        returnDict['stmho/cm'] = value * 898752.4323999427
+        returnDict['S/cm'] = value * 1e-06
+        returnDict['mS/m'] = value * 0.1
+        returnDict['mS/cm'] = value * 0.001
+        returnDict['uS/m'] = value * 100.0
+        returnDict['uS/cm'] = value * 1.0
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
+    return returnDict
+
+
+def resistivity(value, units):
+    returnDict = {}
+    if units == 'ohm.m':
+        returnDict['ohm.m'] = value * 1.0
+        returnDict['ohm.cm'] = value * 100.0
+        returnDict['ohm.in'] = value * 39.37007874
+        returnDict['m-ohm.cm'] = value * 100000000.0
+        returnDict['m-ohm.in'] = value * 39370078.74
+        returnDict['ab-ohm.cm'] = value * 100000000000.0
+        returnDict['stat-ohm.cm'] = value * 1.112653456e-10
+        returnDict['circular_mil-ohm/ft'] = value * 601530493.4
+        returnDict['ohm.mm2/m'] = value * 1000000.0
+    elif units == 'ohm.cm':
+        returnDict['ohm.m'] = value * 0.01
+        returnDict['ohm.cm'] = value * 1.0
+        returnDict['ohm.in'] = value * 0.3937007874
+        returnDict['m-ohm.cm'] = value * 1000000.0
+        returnDict['m-ohm.in'] = value * 393700.7874
+        returnDict['ab-ohm.cm'] = value * 1000000000.0
+        returnDict['stat-ohm.cm'] = value * 1.112653456e-12
+        returnDict['circular_mil-ohm/ft'] = value * 6015304.934
+        returnDict['ohm.mm2/m'] = value * 10000.0
+    elif units == 'ohm.in':
+        returnDict['ohm.m'] = value * 0.0254000000001016
+        returnDict['ohm.cm'] = value * 2.5400000000101604
+        returnDict['ohm.in'] = value * 1.0
+        returnDict['m-ohm.cm'] = value * 2540000.00001
+        returnDict['m-ohm.in'] = value * 999999.9999999
+        returnDict['ab-ohm.cm'] = value * 2540000000.01
+        returnDict['stat-ohm.cm'] = value * 2.826139778251e-12
+        returnDict['circular_mil-ohm/ft'] = value * 15278874.53242
+        returnDict['ohm.mm2/m'] = value * 25400.0000001
+    elif units == 'm-ohm.cm':
+        returnDict['ohm.m'] = value * 1e-08
+        returnDict['ohm.cm'] = value * 1e-06
+        returnDict['ohm.in'] = value * 3.937007874000248e-07
+        returnDict['m-ohm.cm'] = value * 1.0
+        returnDict['m-ohm.in'] = value * 0.3937007874
+        returnDict['ab-ohm.cm'] = value * 1000.0
+        returnDict['stat-ohm.cm'] = value * 1.112653456e-18
+        returnDict['circular_mil-ohm/ft'] = value * 6.015304934
+        returnDict['ohm.mm2/m'] = value * 0.01
+    elif units == 'm-ohm.in':
+        returnDict['ohm.m'] = value * 2.54000000001016e-08
+        returnDict['ohm.cm'] = value * 2.54000000001016e-06
+        returnDict['ohm.in'] = value * 1.0000000000001e-06
+        returnDict['m-ohm.cm'] = value * 2.5400000000101604
+        returnDict['m-ohm.in'] = value * 1.0
+        returnDict['ab-ohm.cm'] = value * 2540.00000001
+        returnDict['stat-ohm.cm'] = value * 2.826139778251e-18
+        returnDict['circular_mil-ohm/ft'] = value * 15.27887453242
+        returnDict['ohm.mm2/m'] = value * 0.0254000000001
+    elif units == 'ab-ohm.cm':
+        returnDict['ohm.m'] = value * 1e-11
+        returnDict['ohm.cm'] = value * 1e-09
+        returnDict['ohm.in'] = value * 3.9370078740002477e-10
+        returnDict['m-ohm.cm'] = value * 0.001
+        returnDict['m-ohm.in'] = value * 0.0003937007874000248
+        returnDict['ab-ohm.cm'] = value * 1.0
+        returnDict['stat-ohm.cm'] = value * 1.112653456e-21
+        returnDict['circular_mil-ohm/ft'] = value * 0.006015304934
+        returnDict['ohm.mm2/m'] = value * 1e-05
+    elif units == 'stat-ohm.cm':
+        returnDict['ohm.m'] = value * 8987524324.015581
+        returnDict['ohm.cm'] = value * 898752432401.558
+        returnDict['ohm.in'] = value * 353839540314.19684
+        returnDict['m-ohm.cm'] = value * 8.987524324015581e+17
+        returnDict['m-ohm.in'] = value * 3.538395403141968e+17
+        returnDict['ab-ohm.cm'] = value * 8.987524324015581e+20
+        returnDict['stat-ohm.cm'] = value * 1.0
+        returnDict['circular_mil-ohm/ft'] = value * 5.40626994107e+18
+        returnDict['ohm.mm2/m'] = value * 8987524324016000.0
+    elif units == 'circular_mil-ohm/ft':
+        returnDict['ohm.m'] = value * 1.662426113010084e-09
+        returnDict['ohm.cm'] = value * 1.6624261130100838e-07
+        returnDict['ohm.in'] = value * 6.544984696864392e-08
+        returnDict['m-ohm.cm'] = value * 0.1662426113010084
+        returnDict['m-ohm.in'] = value * 0.06544984696864392
+        returnDict['ab-ohm.cm'] = value * 166.24261130100842
+        returnDict['stat-ohm.cm'] = value * 1.8497041599851776e-19
+        returnDict['circular_mil-ohm/ft'] = value * 1.0
+        returnDict['ohm.mm2/m'] = value * 0.00166242611301
+    elif units == 'ohm.mm2/m':
+        returnDict['ohm.m'] = value * 1e-06
+        returnDict['ohm.cm'] = value * 0.0001
+        returnDict['ohm.in'] = value * 3.937007874000248e-05
+        returnDict['m-ohm.cm'] = value * 100.0
+        returnDict['m-ohm.in'] = value * 39.370078740002484
+        returnDict['ab-ohm.cm'] = value * 99999.99999999999
+        returnDict['stat-ohm.cm'] = value * 1.1126534559999482e-16
+        returnDict['circular_mil-ohm/ft'] = value * 601.5304934000304
+        returnDict['ohm.mm2/m'] = value * 1.0
+    else:
+        raise Exception("""Invalid Input. Make sure values are passed as
+        integers, units are passed as stings and that the
+        correct units are input. Consult the
+        documnetation for more information on each function.""")
     return returnDict

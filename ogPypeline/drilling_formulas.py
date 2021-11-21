@@ -470,3 +470,77 @@ def bhp_wellhead_pressure(pressure_value, pressure_units,
         math.exp(((gas_value / 53.36) * tvd_depth['ft']) /
                  (average_temp['f'] + 460))
     return gen.pressure(bottom_hole_pressure, 'psi')
+
+
+def pressure_decrease_annular_filling(mud_value, fluid_value, mud_units,
+                                      depth_value, depth_units,
+                                      annular_value, annular_units,
+                                      volume_value, volume_units):
+    mud_weight = dri.mud_weight(mud_value, mud_units)
+    fluid_weight = dri.mud_weight(fluid_value, mud_units)
+    tvd = gen.length(depth_value, depth_units)
+    annular_capacity = pro.pipe_capacity(annular_value, annular_units)
+    fluid_added = gen.volume(volume_value, volume_units)
+    fluid_length = fluid_added['bbl'] / annular_capacity['bbl/ft']
+    pressure_decrease = ((mud_weight['ppg'] - fluid_weight['ppg']) *
+                         0.052 * fluid_length)
+    mud_weight_td = mud_weight['ppg'] - (pressure_decrease / 0.052 / tvd['ft'])
+    return {
+        'pressure_decrease': gen.pressure(pressure_decrease, 'psi'),
+        'fluid_length': gen.length(fluid_length, 'ft'),
+        'mud_weight_td': dri.mud_weight(mud_weight_td, 'ppg')
+        }
+
+
+def overpull_margin(max_value, hook_value, weight_units):
+    max_value = gen.weight(max_value, weight_units)
+    hook_value = gen.weight(hook_value, weight_units)
+    return {'margin_of_overpull': gen.weight(max_value['lb'] -
+                                             hook_value['lb'], weight_units),
+            'safety_factor': max_value['lb'] / hook_value['lb']}
+
+
+def break_circ_pipe(gel_value, gel_units, length_value, length_units,
+                    diameter_value, diameter_units):
+    gel_strength = flu.fluid_yield_point(gel_value, gel_units)
+    pipe_length = gen.length(length_value, length_units)
+    pipe_dia = gen.length(diameter_value, diameter_units)
+    pressure = ((gel_strength['lbf/100ft2'] / 300 /
+                 pipe_dia['in']) * pipe_length['ft'])
+    return gen.pressure(pressure, 'psi')
+
+
+def break_circ_annulus(gel_value, gel_units, length_value, length_units,
+                       hole_value, pipe_value, diameter_units):
+    gel_strength = flu.fluid_yield_point(gel_value, gel_units)
+    pipe_length = gen.length(length_value, length_units)
+    hole_dia = gen.length(hole_value, diameter_units)
+    pipe_dia = gen.length(pipe_value, diameter_units)
+    pressure = ((gel_strength['lbf/100ft2'] /
+                 (300 * (hole_dia['in'] - pipe_dia['in']))) *
+                pipe_length['ft'])
+    return gen.pressure(pressure, 'psi')
+
+
+def drillpipe_tensile_capacity(od_value, id_value, diameter_units,
+                               pressure_value, pressure_units):
+    yield_strength = gen.pressure(pressure_value, pressure_units)
+    id_dia = gen.length(id_value, diameter_units)
+    od_dia = gen.length(od_value, diameter_units)
+    wall_new = (od_dia['in'] - id_dia['in']) / 2
+    wall_premium = wall_new * 0.8
+    wall_two = wall_new * 0.7
+    area_new = math.pi / 4 * (od_dia['in']**2 - id_dia['in']**2)
+    area_premium = (math.pi /
+                    4 * ((id_dia['in'] +
+                          (2 * wall_premium))**2 - (id_dia['in'])**2))
+    area_two = (math.pi /
+                4 * ((id_dia['in'] +
+                      (2 * wall_two))**2 - (id_dia['in'])**2))
+    tensile_new = area_new * yield_strength['psi']
+    tensile_premium = area_premium * yield_strength['psi']
+    tensile_two = area_two * yield_strength['psi']
+    return {'new_pipe': gen.weight(tensile_new, 'lb'),
+            'premium': gen.weight(tensile_premium, 'lb'),
+            'class_two': gen.weight(tensile_two, 'lb')}
+

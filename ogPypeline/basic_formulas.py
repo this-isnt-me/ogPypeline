@@ -267,3 +267,53 @@ def bit_revolutions_mud_motor(bit_rotation_value, bit_rotation_units,
     rotor_rpm = gen.volume(rev_value, rev_units)
     bit_rpm = (rotor_rpm['gal_us'] * circ_rate['gpm']) + bit_rpm['rpm']
     return fap.angular_velocity(bit_rpm, 'rpm')
+
+
+def buoyancy_factor_different_fluids(inside_value, outside_value, fluid_units,
+                                     od_value, id_value, diameter_units):
+    fluid_inside = dri.mud_weight(inside_value, fluid_units)
+    fluid_outside = dri.mud_weight(outside_value, fluid_units)
+    od_dia = gen.length(od_value, diameter_units)
+    id_dia = gen.length(id_value, diameter_units)
+    area_outer = math.pi * (od_dia['in']**2) / 4
+    area_inner = math.pi * (id_dia['in']**2) / 4
+    return (((area_outer *
+              (1 - (fluid_outside['ppg'] / 65.4))) -
+             (area_inner * (1 - (fluid_inside['ppg'] / 65.4)))) /
+            (area_outer - area_inner))
+
+
+def slug_volume(length_pipe, length_units, capacity_value, capacity_units,
+                mud_value, slug_value, mud_units):
+    dry_length = gen.length(length_pipe, length_units)
+    pipe_capacity = pro.pipe_capacity(capacity_value, capacity_units)
+    mud_weight = dri.mud_weight(mud_value, mud_units)
+    slug_weight = dri.mud_weight(slug_value, mud_units)
+    hydrostatic_pressure = 0.052 * dry_length['ft'] * mud_weight['ppg']
+    pressure_gradient = (slug_weight['ppg'] - mud_weight['ppg']) * 0.052
+    slug_length = hydrostatic_pressure / pressure_gradient
+    slug_volume = pipe_capacity['bbl/ft'] * slug_length
+    return {
+        'hydrostatic_pressure': gen.pressure(hydrostatic_pressure, 'psi'),
+        'pressure_gradient': dri.pressure_grad(pressure_gradient, 'psi/ft'),
+        'slug_length': gen.length(slug_length, 'ft'),
+        'slug_volume': gen.volume(slug_volume, 'bbl')
+    }
+
+
+def slug_length(length_pipe, length_units, volume_value, volume_units,
+                capacity_value, capacity_units, mud_value, mud_units):
+    dry_length = gen.length(length_pipe, length_units)
+    slug_volume = gen.volume(volume_value, volume_units)
+    pipe_capacity = pro.pipe_capacity(capacity_value, capacity_units)
+    mud_weight = dri.mud_weight(mud_value, mud_units)
+    slug_length = slug_volume['bbl'] / pipe_capacity['bbl/ft']
+    hydrostatic_pressure = 0.052 * dry_length['ft'] * mud_weight['ppg']
+    slug_weight = (hydrostatic_pressure /
+                   (0.052 * slug_length) + mud_weight['ppg'])
+    return {
+        'hydrostatic_pressure': gen.pressure(hydrostatic_pressure, 'psi'),
+        'slug_length': gen.length(slug_length, 'ft'),
+        'slug_weight': dri.mud_weight(slug_weight, 'ppg')
+    }
+

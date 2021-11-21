@@ -180,3 +180,30 @@ The oil_volume(value, units) function converts between different Oil Volume unit
      - 'KBOE'
    * - Tonnes of Oil Equivalent
      - 'toe'
+
+Surface Tension units
+------------
+The surface_tension(value, units) function converts between different Surface Tension units. The input units are as per the table below:
+
+.. list-table:: Surface Tension units
+   :widths: 60 40
+   :header-rows: 1
+
+   * - Unit Description
+     - Function Input String
+   * - Newton/Meter
+     - 'N/m'
+   * - Millinewton/Meter
+     - 'mN/m'
+   * - Gram-Force/Centimeter
+     - 'gf/cm'
+   * - Dyne/Centimeter
+     - 'dyn/cm'
+   * - Erg per Square Centimeter
+     - 'erg/cm2'
+   * - Erg per Square Millimeter
+     - 'erg/mm2'
+   * - Poundal per Inch
+     - 'pdl/in'
+   * - Pound-Force per Inch
+     - 'lbf/ft'

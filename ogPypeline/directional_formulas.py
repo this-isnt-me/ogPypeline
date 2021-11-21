@@ -95,14 +95,6 @@ def minimum_curvature(depth, inc_one, inc_two, azi_one, azi_two):
     }
 
 
-def dogleg_severity(depth, inc_one, inc_two, azi_one, azi_two):
-    dog_leg = math.degrees(math.acos(
-        (math.cos(math.radians(inc_one)) * math.cos(math.radians(inc_two))) +
-        ((math.sin(math.radians(inc_one)) * math.sin(math.radians(inc_two))) *
-         (math.cos(math.radians(azi_two - azi_one)))))) * (100 / depth)
-    return dri.dogleg(dog_leg, 'deg/100ft')
-
-
 def directional_survey(depth_one, depth_two, depth_unit,
                        inc_one, inc_two, azi_one, azi_two, angle_units,
                        calc_type='roc'):
@@ -175,3 +167,35 @@ def directional_survey(depth_one, depth_two, depth_unit,
                                                azi_one,
                                                azi_two)
     return return_dict
+
+
+def new_tvd(tvd, depth_one, depth_two, depth_unit, angle_value, angle_units):
+    tvd = gen.length(tvd, depth_unit)
+    depth_one = gen.length(depth_one, depth_unit)
+    depth_two = gen.length(depth_two, depth_unit)
+    angle = gen.angle(angle_value, angle_units)
+    new_tvd = (math.cos(angle['rad']) * (depth_two['ft'] -
+                                         depth_one['ft']) + tvd['ft'])
+    return gen.length(new_tvd, 'ft')
+
+
+def directional_available_wob(weight, weight_unit, angle_value, angle_units):
+    weight = gen.weight(weight, weight_unit)
+    angle = gen.angle(angle_value, angle_units)
+    available_weight = (math.cos(angle['rad']) * weight['lb'])
+    return gen.weight(available_weight, 'lb')
+
+
+def departure_vertical(depth_value, depth_unit, angle_value, angle_units):
+    depth = gen.length(depth_value, depth_unit)
+    angle = gen.angle(angle_value, angle_units)
+    departure_vertical = (math.sin(angle['rad']) * depth['ft'])
+    return gen.length(departure_vertical, 'ft')
+
+
+def dogleg_severity(depth, inc_one, inc_two, azi_one, azi_two):
+    dog_leg = math.degrees(math.acos(
+        (math.cos(math.radians(inc_one)) * math.cos(math.radians(inc_two))) +
+        ((math.sin(math.radians(inc_one)) * math.sin(math.radians(inc_two))) *
+         (math.cos(math.radians(azi_two - azi_one)))))) * (100 / depth)
+    return dri.dogleg(dog_leg, 'deg/100ft')

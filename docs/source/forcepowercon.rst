@@ -271,3 +271,69 @@ The velocity(value, units) function converts between different Velocity units. T
      - 'mi/min'
    * - Miles per Second
      - 'mi/sec'
+
+Electrical Resistivity units
+------------
+The resistivity(value, units) function converts between different Electrical Resistivity units. The input units are as per the table below:
+
+.. list-table:: Electrical Resistivity units
+   :widths: 60 40
+   :header-rows: 1
+
+   * - Unit Description
+     - Function Input String
+   * - Ohm-Meter
+     - 'ohm.m'
+   * - Ohm-Centimeter
+     - 'ohm.cm'
+   * - Ohm-Inch
+     - 'ohm.in'
+   * - Microhm-Centimeter
+     - 'm-ohm.cm'
+   * - Microhm-Inch
+     - 'm-ohm.in'
+   * - Abohm-Centimeter
+     - 'ab-ohm.cm'
+   * - Statohm-Centimeter
+     - 'stat-ohm.cm'
+   * - Circular Mil-Ohm per Foot
+     - 'circular_mil-ohm/ft'
+   * - Ohm-Square Millimeter per Meter
+     - 'ohm.mm2/m'
+
+Electrical Conductivity units
+------------
+The conductivity(value, units) function converts between different Electrical Conductivity units. The input units are as per the table below:
+
+.. list-table:: Electrical Conductivity units
+   :widths: 60 40
+   :header-rows: 1
+
+   * - Unit Description
+     - Function Input String
+   * - Siemens per Meter
+     - 'S/m'
+   * - Picosiemens per Meter
+     - 'pS/m'
+   * - Mho per Meter
+     - 'mho/m'
+   * - Mho per Centimeter
+     - 'mho/cm'
+   * - Abmho per Meter
+     - 'abmho/m'
+   * - Abmho per Centimeter
+     - 'abmho/cm'
+   * - Statohm Meter
+     - 'stmho/m'
+   * - Statohm Centimeter
+     - 'stmho/cm'
+   * - Siemens per Centimeter
+     - 'S/cm'
+   * - Millisiemens per Meter
+     - 'mS/m'
+   * - Millisiemens per Centimeter
+     - 'mS/cm'
+   * - Microsiemens per Meter
+     - 'uS/m'
+   * - Microsiemens per Centimeter
+     - 'uS/cm'
