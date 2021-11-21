@@ -4,6 +4,7 @@ ogPypeline/__init__.py
 ogPypeline/basic_formulas.py
 ogPypeline/directional_formulas.py
 ogPypeline/drilling.py
+ogPypeline/drilling_fluid_formulas.py
 ogPypeline/drilling_formulas.py
 ogPypeline/fluid.py
 ogPypeline/force_and_power.py
@@ -12,6 +13,7 @@ ogPypeline/general.py
 ogPypeline/hydraulic_formulas.py
 ogPypeline/petrophysics_formulas.py
 ogPypeline/production.py
+ogPypeline/well_control_formulas.py
 ogPypeline.egg-info/PKG-INFO
 ogPypeline.egg-info/SOURCES.txt
 ogPypeline.egg-info/dependency_links.txt

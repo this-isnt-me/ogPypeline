@@ -133,7 +133,7 @@ Bit Aggressiveness Function
    * - bit_units
      - bit diammeter units (String)
 
-The Bit Agressiveness function calculates bit aggressiveness/coefficent of friction. The function takes in three value inputs(Integers or Floats) and three units input(Strings). To see the range of torque units that can be input into the function see the Torque units section under General Conversions. To see the range of weight on bit units that can be input into the function see the Weight units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a float.
+The Bit Aggressiveness function calculates bit aggressiveness/coefficient of friction. The function takes in three value inputs(Integers or Floats) and three units input(Strings). To see the range of torque units that can be input into the function see the Torque units section under General Conversions. To see the range of weight on bit units that can be input into the function see the Weight units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a float.
 
 .. code:: python
 
@@ -165,7 +165,7 @@ Bit Hydraulic Horsepower Function
    * - pressure_units
      - pressure drop units (String)
 
-The Bit Hydraulic Horsepower function calculates hyrdaulic horsepower from the flow rate and pressure drop. The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a float of the hydraulic horsepower.
+The Bit Hydraulic Horsepower function calculates hydraulic horsepower from the flow rate and pressure drop. The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a float of the hydraulic horsepower.
 
 .. code:: python
 
@@ -195,7 +195,7 @@ Bit Hydraulic Horse Power by Bit Area Function
    * - diameter_units
      - bit diameter units (String)
 
-The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictonary of hyraulic horsepower by area.
+The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of hydraulic horsepower by area.
 
 .. code:: python
 
@@ -375,7 +375,7 @@ Cutting Carrying Index Function
    * - yield_units
      - yield point units (string)
 
-This function calculates the cutting carrying index. The function takes in four value inputs(Integers or Floats) and four units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. To see the range of viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of yield point units that can be input into the function see the Fluid Yield Point units section under Fluids Conversions. The function returns a dictionary containing flow behavior index (n) consistency factor (K) the cuttings carrying index (cci) and hole cleaning performance.
+This function calculates the cutting carrying index. The function takes in four value inputs(Integers or Floats) and four units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. To see the range of viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of yield point units that can be input into the function see the Fluid Yield Point units section under Fluids Conversions. The function returns a dictionary containing flow behaviour index (n) consistency factor (K) the cuttings carrying index (cci) and hole cleaning performance.
 
 .. code:: python
 
@@ -544,7 +544,7 @@ Cutting Slip Velocity(Two) Function
    * - mud_units
      - mud weight units (string)
 
-The function is for the calculation of cuttings movement. It takes in eight value inputs(Integers or Floats) and five units input(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight and cutting density units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary with four sub-dictionaries and a string indicating cutting movement, floats of flow behavior index (n) and consistency factor (K):
+The function is for the calculation of cuttings movement. It takes in eight value inputs(Integers or Floats) and five units input(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight and cutting density units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary with four sub-dictionaries and a string indicating cutting movement, floats of flow behaviour index (n) and consistency factor (K):
 
    * - "n" flow behavior index (n).
    * - "K" consistency factor (K).
@@ -672,7 +672,7 @@ Effective Viscosity Function
    * - flow_units
      - flow rate units (string)
 
-The function is for the calculation of fluid in the annulus between two tubulars. It takes in five value inputs(Integers or Floats) and three units inputs(Strings). To see the range of consistency factor units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of diameter units that can be input into the function see the Diameter units section under General Conversions. To see the range of flow rate factor units that can be input into the function see the Flow Rate units section under Drilling Conversions. The function returns a dictionary of different viscosity units and values, to see the range of viscosity units returned see the example code below or the Viscosity units section under Fluid Conversions.
+The function is for the calculation of fluid in the annulus between two tubular. It takes in five value inputs(Integers or Floats) and three units inputs(Strings). To see the range of consistency factor units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of diameter units that can be input into the function see the Diameter units section under General Conversions. To see the range of flow rate factor units that can be input into the function see the Flow Rate units section under Drilling Conversions. The function returns a dictionary of different viscosity units and values, to see the range of viscosity units returned see the example code below or the Viscosity units section under Fluid Conversions.
 
 .. code:: python
 
@@ -855,7 +855,7 @@ Mechanical Specific Energy(Friction) Function
    * - dia_units
      - bit diameter units (String)
 
-This function is for the calculation of mechanical specific energy using the coefficient of friction. It takes in five value inputs(Integers or Floats) and four unit inputs(String). To see the range of weight on bit units that can be input into the function see the Weight units section under General Conversions. To see the range of rotary speed units that can be input into the function see the Angular Velocity units section under Force and Power Conversions. To see the range of rate of penetration units that can be input into the function see the Drilling Rate units section under Drilling Conversions. To see the range of bit diameter units that can be input into the function see the Length units section under General Conversions.  The function returns a dictionary containing pressure units to see the range of Pressure units that will be returned see the example code below or the Pressure units section of General Conversions.
+This function is for the calculation of mechanical specific energy using the coefficient of friction. It takes in five value inputs(Integers or Floats) and four units inputs(String). To see the range of weight on bit units that can be input into the function see the Weight units section under General Conversions. To see the range of rotary speed units that can be input into the function see the Angular Velocity units section under Force and Power Conversions. To see the range of rate of penetration units that can be input into the function see the Drilling Rate units section under Drilling Conversions. To see the range of bit diameter units that can be input into the function see the Length units section under General Conversions.  The function returns a dictionary containing pressure units to see the range of Pressure units that will be returned see the example code below or the Pressure units section of General Conversions.
 
 .. code:: python
 
@@ -929,7 +929,7 @@ Mechanical Specific Energy(Torque) Function
    * - dia_units
      - bit diameter units (String)
 
-This function is for the calculation of mechanical specific energy using the coefficient of friction. It takes in five value inputs(Integers or Floats) and five unit inputs(String). To see the range of weight on bit units that can be input into the function see the Weight units section under General Conversions. To see the range of drilling torque units that can be input into the function see the Torque units section under General Conversions. To see the range of rotary speed units that can be input into the function see the Angular Velocity units section under Force and Power Conversions. To see the range of rate of penetration units that can be input into the function see the Drilling Rate units section under Drilling Conversions. To see the range of bit diameter units that can be input into the function see the Length units section under General Conversions.  The function returns a dictionary containing pressure units to see the range of Pressure units that will be returned see the example code below or the Pressure units section of General Conversions.
+This function is for the calculation of mechanical specific energy using the coefficient of friction. It takes in five value inputs(Integers or Floats) and five units inputs(String). To see the range of weight on bit units that can be input into the function see the Weight units section under General Conversions. To see the range of drilling torque units that can be input into the function see the Torque units section under General Conversions. To see the range of rotary speed units that can be input into the function see the Angular Velocity units section under Force and Power Conversions. To see the range of rate of penetration units that can be input into the function see the Drilling Rate units section under Drilling Conversions. To see the range of bit diameter units that can be input into the function see the Length units section under General Conversions.  The function returns a dictionary containing pressure units to see the range of Pressure units that will be returned see the example code below or the Pressure units section of General Conversions.
 
 .. code:: python
 
@@ -1029,7 +1029,7 @@ Power Law Constant Function
    * - reading_300
      - 300 rpm sheer stress value (Integer or Float)
 
-This function is for the calculation of flow behavior index (n) and the consistency factor (K). It takes in two value inputs(Integers or Floats). The function returns a dictionary containing a float and a subdictionary. The flow behavior index (n) is returned as a float, while the subdictionary contains the consistency factor (K) data with different viscosity units. To see the range of viscosity units that can be returned, see the example code below or review the Viscosity units section of Fluids Conversions.
+This function is for the calculation of flow behaviour index (n) and the consistency factor (K). It takes in two value inputs(Integers or Floats). The function returns a dictionary containing a float and a subdictionary. The flow behaviour index (n) is returned as a float, while the subdictionary contains the consistency factor (K) data with different viscosity units. To see the range of viscosity units that can be returned, see the example code below or review the Viscosity units section of Fluids Conversions.
 
 .. code:: python
 
@@ -1087,7 +1087,7 @@ Pressure Drop Across Bit (Flow Rate) Function
    * - nozzle_unit
      - nozzle area units (string)
 
-This function is for the calculation of pressure drop across bit using flow rate. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of nozzle area units that can be input into the function see the Area units section under General Conversions. The function returns a dictionary containing the pressure drop with different units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
+This function is for the calculation of pressure drop across bit using flow rate. It takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of nozzle area units that can be input into the function see the Area units section under General Conversions. The function returns a dictionary containing the pressure drop with different units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
 
 .. code:: python
 
@@ -1140,7 +1140,7 @@ Pressure Drop Across Bit (Velocity) Function
    * - nozzle_unit
      - nozzle velocity units (string)
 
-This function is for the calculation of pressure drop across bit using flow rate. It takes in two value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of nozzle velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. The function returns a dictionary containing the pressure drop with different units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
+This function is for the calculation of pressure drop across bit using flow rate. It takes in two value inputs(Integers or Floats) and two units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of nozzle velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. The function returns a dictionary containing the pressure drop with different units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
 
 .. code:: python
 
@@ -1207,7 +1207,7 @@ Pressure Loss Annulus Function
    * - flow_units
      - flow rate units (String)
 
-This function is for the calculation of the general coefficent and pressure loss in the annulus. It takes in six value inputs(Integers or Floats) and five units inputs(Strings). To see the range of drill string length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. The function returns a dictionary containing a string and a subdictionary. The general coefficent is returned as a string, while the subdictionary contains the pressure loss data with different pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
+This function is for the calculation of the general coefficient and pressure loss in the annulus. It takes in six value inputs(Integers or Floats) and five units inputs(Strings). To see the range of drill string length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. The function returns a dictionary containing a string and a subdictionary. The general coefficient is returned as a string, while the subdictionary contains the pressure loss data with different pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
 
 .. code:: python
 
@@ -1289,7 +1289,7 @@ Pressure Loss Annulus(Tooljoint Corrected) Function
    * - flow_units
      - flow rate units (String)
 
-This function is for the calculation of the pressure loss in the annulus correcting for tooljoints. It takes in nine value inputs(Integers or Floats) and five units inputs(Strings). To see the range of drill string length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. The function returns a dictionary containing three subdictionaries. The subdictionaries, 'pressure_loss_pipe'; 'pressure_loss_collar'; 'total_pressure_loss', each contain the pressure loss data with different pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
+This function is for the calculation of the pressure loss in the annulus correcting for tooljoints. It takes in nine value inputs(Integers or Floats) and five units inputs(Strings). To see the range of drill string length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. The function returns a dictionary containing three subdictionaries. The subdictionaries, 'pressure_loss_pipe';  'pressure_loss_collar';  'total_pressure_loss', each contain the pressure loss data with different pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
 
 .. code:: python
 
@@ -1778,7 +1778,7 @@ Optimum Flow Rate Function
    * - pressure_units
      - pressure units (String)
 
-This function is for the calculation of the flow rate to optimise the hydraulic horse power, and the flow rate to optimise the pressure loss. It takes in seventeen value inputs(Integers or Floats) and six units inputs(Strings). To see the range of drill string length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range ofyield point units that can be input into the function see the Fluid Yield Point units section under Fluids Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary containing two subdictionaries. The subdictionaries, 'max_hydraulic_horsepower'; 'pressure_loss', each contain the the flow rate, to optimise pressure loss or hydraulic horsepower, with different flow rate units. To see the range of flow rate units that can be returned, see the example code below or review the Flow Rate units section of Drilling Conversions.
+This function is for the calculation of the flow rate to optimise the hydraulic horse power, and the flow rate to optimise the pressure loss. It takes in seventeen value inputs(Integers or Floats) and six units inputs(Strings). To see the range of drill string length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of yield point units that can be input into the function see the Fluid Yield Point units section under Fluids Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary containing two subdictionaries. The subdictionaries, 'max_hydraulic_horsepower'; 'pressure_loss', each contain the the flow rate, to optimise pressure loss or hydraulic horsepower, with different flow rate units. To see the range of flow rate units that can be returned, see the example code below or review the Flow Rate units section of Drilling Conversions.
 
 .. code:: python
 
@@ -1847,7 +1847,7 @@ Reynold Number Function
    * - power_law_value
      - power law constant value (Integer or Float)
 
-This function is for the calculation of the reynolds number to indicate the flow regime. It takes in six value inputs(Integers or Floats) and four unit inputs(Strings). To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of effective viscosity units that can be input into the function see the Viscosity units section under Drilling Conversions. The function returns a dictionary containing a float, reynolds number, and string, flow regime.
+This function is for the calculation of the Reynolds number to indicate the flow regime. It takes in six value inputs(Integers or Floats) and four unit inputs(Strings). To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of effective viscosity units that can be input into the function see the Viscosity units section under Drilling Conversions. The function returns a dictionary containing a float, Reynolds number, and string, flow regime.
 
 .. code:: python
 
@@ -2181,4 +2181,4 @@ This function is for the calculation of the total flow area of the bit nozzles. 
        'mm2': 218.19311199999999,
        'yd2': 0.000260414
    }
-      
+       

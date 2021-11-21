@@ -6,7 +6,7 @@ This module contains functions, outlined below, for formulas related to well con
 Gas Migration Rate Function
 ------------
 
-*gas_migrtion_rate(pressure_value, pressure_units, mud_value, mud_units)*
+*gas_migration_rate(pressure_value, pressure_units, mud_value, mud_units)*
 
 .. list-table:: Function Inputs
    :widths: 30 70
@@ -23,7 +23,7 @@ Gas Migration Rate Function
    * - mud_units
      - mud weight units (String)
 
-This function calculates the gas migration rate of a shut in well. The function takes in two value inputs(Integers or Floats) and two units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different velocity units and values, to see the range of velocity units returned see the example code below or the Velocity units section under Force and Power Conversions.
+This function calculates the gas migration rate of a shut-in well. The function takes in two value inputs(Integers or Floats) and two units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different velocity units and values, to see the range of velocity units returned see the example code below or the Velocity units section under Force and Power Conversions.
 
 .. code:: python
 
@@ -56,7 +56,7 @@ This function calculates the gas migration rate of a shut in well. The function 
    # outputs the following float:
    262.23776223776224 
 
-Max Shutin Casing Pressure Function
+Max Shut-in Casing Pressure Function
 ------------
 
 *max_shutin_casing_pressure(pressure_value, pressure_units, tvd_value, depth_units, original_mud_value, current_mud_value, mud_units)*
@@ -82,7 +82,7 @@ Max Shutin Casing Pressure Function
    * - mud_units
      - mud weight units (String)
 
-This function calculates the gas migration rate of a shut in well. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of depths units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the gas migration rate of a shut-in well. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of depths units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -305,7 +305,7 @@ Final Circulating Pressure Function
    * - mud_units
      - mud weight units (String)
 
-This function estimates the speed of gas migration based on the mud weight. The function takes in three value input(Integers or Floats) and two units input(String). To see the range of scr pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of final circulating pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function estimates the speed of gas migration based on the mud weight. The function takes in three value inputs (Integers or Floats) and two units input(String). To see the range of SCR pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of final circulating pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -347,7 +347,7 @@ This function estimates the speed of gas migration based on the mud weight. The 
    # outputs the following float:
    540.0 
 
-Inital Circulating Pressure Function
+Initial Circulating Pressure Function
 ------------
 
 *inital_circulating_pressure(scr_value, sidpp_value, pressure_units)*
@@ -365,7 +365,7 @@ Inital Circulating Pressure Function
    * - pressure_units
      - pressure units (String)
 
-This function estimates the speed of gas migration based on the mud weight. The function takes in two value input(Integers or Floats) and one units input(String). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of inital circulating pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function estimates the speed of gas migration based on the mud weight. The function takes in two value inputs (Integers or Floats) and one units input(String). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of initial circulating pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -431,7 +431,7 @@ Formation Pressure Kick Analysis Function
    * - mud_units
      - mud weight units (String)
 
-This function calculates the formation pressure using shutin drillpipe pressure. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of sidpp pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the formation pressure using shut-in drillpipe pressure. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of SIDPP pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -497,7 +497,7 @@ Pressure Loss due to Gas Cut Function
    * - gain_units
      - volume units (String)
 
-This function calculates the formation pressure loss due to gas cut. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings).  To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capcity units section under Production Conversions. To see the range of gain volume units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the formation pressure loss due to gas cut. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings).  To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of gain volume units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -745,7 +745,7 @@ Fluid Increment(Lube or Mud) Function
 
 This function calculates the fluid increment volume. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under General Conversions. The function returns a dictionary with two sub-dictionaries:
 
-   * - "annular_capacity" which is a dictionary of different annular capacity units and values, to see the range of annular capacity units returned see the example code below or the Pipe Capcity units section under Production Conversions.
+   * - "annular_capacity" which is a dictionary of different annular capacity units and values, to see the range of annular capacity units returned see the example code below or the Pipe Capacity units section under Production Conversions.
    * - "lube_increment" which is a dictionary of different volume units and values, to see the range of volume units returned see the example code below or the Volume units section under General Conversions.
 
 
@@ -821,7 +821,7 @@ Maximum Formation Pressure for Shutin Well Function
    * - depth_units
      - depth units (String)
 
-This function calculates the maximum formation pressure that can be withstood when the well is shutin. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of mud weight/kick factor units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the maximum formation pressure that can be withstood when the well is shut-in. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of mud weight/kick factor units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -885,7 +885,7 @@ Maximum Influx Height Function
    * - gradient_units
      - gradient units (String)
 
-This function calculates the maximum controllable influx height based on the maximum allowable shut in casing pressure. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions. The function returns a dictionary of different height units and values, to see the range of depth units returned see the example code below or the Length units section under General Conversions.
+This function calculates the maximum controllable influx height based on the maximum allowable shut-in casing pressure. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions. The function returns a dictionary of different height units and values, to see the range of depth units returned see the example code below or the Length units section under General Conversions.
 .. code:: python
 
    # Example Code
@@ -916,7 +916,7 @@ This function calculates the maximum controllable influx height based on the max
    # outputs the following float:
    665.988 
 
-Maximum Inital Shutin Casing Pressure Function
+Maximum Initial Shut-in Casing Pressure Function
 ------------
 
 *misicp(lot_value, mud_value, mud_units, tvd_value, depth_units)*
@@ -938,7 +938,7 @@ Maximum Inital Shutin Casing Pressure Function
    * - depth_units
      - depth units (String)
 
-This function calculates the maximum initial/allowable shutin casing pressure using the leak off test results. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). The function returns a dictionary of different pressure units and values,to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the maximum initial/allowable shut-in casing pressure using the leak-off test results. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 
 .. code:: python
@@ -981,7 +981,7 @@ This function calculates the maximum initial/allowable shutin casing pressure us
    # outputs the following float:
    582.4000000000001 
 
-Max Pit Gain from Gas Kick(Water Based Mud) Function
+Max Pit Gain from Gas Kick(Water-Based Mud) Function
 ------------
 
 *max_pit_gain_gas_kick_wbm(pressure_value, pressure_units, pit_gain, volume_units, mud_value, mud_units, annular_value, annular_units)*
@@ -1051,7 +1051,7 @@ This function calculates the required volume of fluid required to reduce the mud
    # outputs the following float:
    98.52204374376466 
 
-Maximum Surface Pressure from Gas Kick(Water Based Mud) Function
+Maximum Surface Pressure from Gas Kick(Water-Based Mud) Function
 ------------
 
 *def max_surface_pressure_gas_influx_wbm(pressure_value, pressure_units, pit_gain, volume_units, mud_value, mud_units, annular_value, annular_units)*
@@ -1460,7 +1460,7 @@ This function calculates the trip margin to compensate for the effect of swabbin
    # outputs the following float:
    0.2136752136752137
 
-Bottle Capcity Required in Accumulator Function
+Bottle Capacity Required in Accumulator Function
 ------------
 
 *accumulator_bottle_capacity_required(volume_value, volume_units, pre_charge_value, minimum_value, operating_value, pressure_units)*
@@ -1484,7 +1484,7 @@ Bottle Capcity Required in Accumulator Function
    * - pressure_units
      - pressure units (String)
 
-This function calculates the required bottle volume for accumulator. The function takes in four value inputs(Integers or Floats) and two units inputs(Strings). To see the range of volume point units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the required bottle volume for the accumulator. The function takes in four value inputs(Integers or Floats) and two units inputs(Strings). To see the range of volume point units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 

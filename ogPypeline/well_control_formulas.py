@@ -6,7 +6,7 @@ import production as pro
 import math
 
 
-def gas_migration(pressure_value, pressure_units, mud_value, mud_units):
+def gas_migration_rate(pressure_value, pressure_units, mud_value, mud_units):
     pressure = gen.pressure(pressure_value, pressure_units)
     mud_weight = dri.mud_weight(mud_value, mud_units)
     migration_rate = pressure['psi'] / (mud_weight['ppg'] * 0.052)

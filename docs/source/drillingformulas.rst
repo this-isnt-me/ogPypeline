@@ -29,7 +29,7 @@ Controlled Drilling Large Diameter Holes(>14.75 inches) Function
    * - diameter_units
      - hole diameter units (String)
 
-This function calculates the maximum drilling rate to keeep the mud at the required rate out. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of hole diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different drilling rate units and values, to see the range of drilling rate units returned see the example code below or the Drilling Rate units section under Drilling Conversions.
+This function calculates the maximum drilling rate to keep the mud at the required rate out. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of hole diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different drilling rate units and values, to see the range of drilling rate units returned see the example code below or the Drilling Rate units section under Drilling Conversions.
 
 .. code:: python
 
@@ -262,7 +262,7 @@ Ton Mile Function
    * - bha_weight_units
      - bha weight units (String)
 
-This function calculates the round trip tons miles for an opertion. The function takes in eleven value inputs(Integers or Floats) and six units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of weight per length units that can be input into the function see the Weight Length units section under Drilling Conversions. To see the range of weight units that can be input into the function see the Weight units section under General Conversions. The function returns a float for the calculated ton miles.
+This function calculates the round trip tons miles for an operation. The function takes in eleven value inputs(Integers or Floats) and six units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of weight per length units that can be input into the function see the Weight Length units section under Drilling Conversions. To see the range of weight units that can be input into the function see the Weight units section under General Conversions. The function returns a float for the calculated ton-miles.
 
 .. code:: python
 
@@ -290,7 +290,7 @@ Drilling or Connection Ton Mile Function
    * - ton_mile_2_value
      - ton miles for round trip of depth before drilling started (Integer or Float)
 
-This function calculates ton miles of work doen during a drilling opertion. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton miles.
+This function calculates ton-miles of work done during a drilling operation. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton-miles.
 
 .. code:: python
 
@@ -318,7 +318,7 @@ Coring Ton Mile Function
    * - ton_mile_2_value
      - ton miles for round trip of depth before coring started (Integer or Float)
 
-This function calculates ton miles of work done during a coring opertion. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton miles.
+This function calculates ton-miles of work done during a coring operation. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton-miles.
 
 .. code:: python
 
@@ -362,7 +362,7 @@ Ton Mile Setting Casing Function
    * - block_units
      - weight of travelling block units (String)
 
-This function calculates the round trip tons miles for a casing setting opertion. The function takes in five value inputs(Integers or Floats) and five units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of weight per length units that can be input into the function see the Weight Length units section under Drilling Conversions. To see the range of weight units that can be input into the function see the Weight units section under General Conversions. The function returns a float for the calculated ton miles.
+This function calculates the round trip tons miles for a casing setting operation. The function takes in five value inputs(Integers or Floats) and five units input(String). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of weight per length units that can be input into the function see the Weight Length units section under Drilling Conversions. To see the range of weight units that can be input into the function see the Weight units section under General Conversions. The function returns a float for the calculated ton-miles.
 
 .. code:: python
 
@@ -390,7 +390,7 @@ Short Trip Ton Mile Function
    * - ton_mile_2_value
      - ton miles for round trip of depth before coring started (Integer or Float)
 
-This function calculates ton miles of work done during a short round trip. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton miles.
+This function calculates ton-miles of work done during a short round trip. The function takes in two value inputs(Integers or Floats). The function returns a float for the calculated ton-miles.
 
 .. code:: python
 
@@ -432,7 +432,7 @@ Hydrostatic Pressure Decrease POOH Dry Function
    * - annulus_units
      - annular volume units (String)
 
-This function calculates the hydrostatic pressure drop when pulling dry pipe out the hole . The function takes in five value inputs(Integers or Floats) and four units input(String). To see the range of average stand length units that can be input into the function see the Length units section under General Conversions. To see the range of displacement volume units that can be input into the function see the Pipe Capacity units section under production Conversions. The function returns a dictionary of different hydrostatic pressure loss units and values, to see the range of hydrostatic pressure loss units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the hydrostatic pressure drop when pulling dry pipe out the hole. The function takes in five value inputs(Integers or Floats) and four units input(String). To see the range of average stand length units that can be input into the function see the Length units section under General Conversions. To see the range of displacement volume units that can be input into the function see the Pipe Capacity units section under production Conversions. The function returns a dictionary of different hydrostatic pressure loss units and values, to see the range of hydrostatic pressure loss units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -508,7 +508,7 @@ Hydrostatic Pressure Decrease POOH Wet Function
    * - annulus_units
      - annular volume units (String)
 
-This function calculates the hydrostatic pressure drop when pulling wet pipe out the hole . The function takes in five value inputs(Integers or Floats) and four units input(String). To see the range of average stand length units that can be input into the function see the Length units section under General Conversions. To see the range of displacement volume, and pipe capacity units that can be input into the function see the Pipe Capacity units section under production Conversions. The function returns a dictionary of different hydrostatic pressure loss units and values, to see the range of hydrostatic pressure loss units returned see the example code below or the Pressure units section under General Conversions.
+This function calculates the hydrostatic pressure drop when pulling wet pipe out the hole. The function takes in five value inputs(Integers or Floats) and four units input(String). To see the range of average stand length units that can be input into the function see the Length units section under General Conversions. To see the range of displacement volume, and pipe capacity units that can be input into the function see the Pipe Capacity units section under production Conversions. The function returns a dictionary of different hydrostatic pressure loss units and values, to see the range of hydrostatic pressure loss units returned see the example code below or the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -578,7 +578,7 @@ Loss of Overbalance POOH Dry Function
    * - mud_units
      - mud weight units (String)
 
-This function calculates the length of dry pipe that can be pulled out of hole before the overbalance pressure is lost. The function takes in four value inputs(Integers or Floats) and four units input(String). To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of displacement volume, and annular units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
+This function calculates the length of dry pipe that can be pulled out of the hole before the overbalance pressure is lost. The function takes in four value inputs(Integers or Floats) and four units input(String). To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of displacement volume, and annular units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
 
 .. code:: python
 
@@ -642,7 +642,7 @@ Loss of Overbalance POOH Wet Function
    * - mud_units
      - mud weight units (String)
 
-This function calculates the length of wet pipe that can be pulled out of hole before the overbalance pressure is lost. The function takes in four value inputs(Integers or Floats) and four units input(String). To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of displacement volume, pipe capacity and annular units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
+This function calculates the length of wet pipe that can be pulled out of the hole before the overbalance pressure is lost. The function takes in four value inputs(Integers or Floats) and four units input(String). To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of displacement volume, pipe capacity and annular units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
 
 .. code:: python
 
@@ -712,7 +712,7 @@ Lost Circulation Function
    * - depth_units
      - total vertical depth units (String)
 
-This function calculates data related to lost circulation including annulus filed, reduction in bottom hole pressure, and equivelant mud weight at TVD. The function takes in seven value inputs(Integers or Floats) and six units input(String). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of riser diameter, drillpipe diamenter and depth units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight and liquid added weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary with three sub-dictionaries:
+This function calculates data related to lost circulation including annulus filled, reduction in bottom hole pressure, and equivalent mud weight at TVD. The function takes in seven value inputs(Integers or Floats) and six units input(String). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of riser diameter, drillpipe diameter and depth units that can be input into the function see the Length units section under General Conversions. To see the range of mud weight and liquid added weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. The function returns a dictionary with three sub-dictionaries:
 
    * - "annulus_filled" which is a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
    * - "bottom_hole_pressure" which is a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
@@ -951,7 +951,7 @@ Determine Mud Loss Before Kick Function
    * - annulus_units
      - pipe capacity units (String)
 
-This function calculates the ammount of fluid that can be lost before taking a kick. The function takes in three value inputs(Integers or Floats) and three units input(String). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions. To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a dictionary with two sub-dictionaries:
+This function calculates the amount of fluid that can be lost before taking a kick. The function takes in three value inputs(Integers or Floats) and three units input(String). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions. To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a dictionary with two sub-dictionaries:
 
    * - "fluid_drop_length" which is a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
    * - "loss_before_kick"
@@ -1037,7 +1037,7 @@ Drill Collar Weight Prevent Drill Pipe Buckling Function
    * - angle
      - hole angle value (Integer or Float)
 
-This function calculates the weight required to keep the drill sting in tension and prevent buckling. The function takes in four value inputs(Integers or Floats) and one units input(String). To see the range of string weight increase units that can be input into the function see the Weight units section under General Conversions. The safety factor is a decimal display of the safety factor percentage, i.e. a 20% safety factor is input into the function as 0.2, the default for safety factor is 0.0 . The angle is the hole angle, the default hole angle is 0.0 representing a vertical hole. The function returns a dictionary of different weight units and values, to see the range of weight units returned see the example code below or the Weight units section under General Conversions.
+This function calculates the weight required to keep the drill sting in tension and prevent buckling. The function takes in four value inputs(Integers or Floats) and one units input(String). To see the range of string weight increase units that can be input into the function see the Weight units section under General Conversions. The safety factor is a decimal display of the safety factor percentage, i.e. a 20% safety factor is input into the function as 0.2, the default for safety factor is 0.0. The angle is the hole angle, the default hole angle is 0.0 representing a vertical hole. The function returns a dictionary of different weight units and values, to see the range of weight units returned see the example code below or the Weight units section under General Conversions.
 
 .. code:: python
 
@@ -1350,7 +1350,7 @@ Lag Time Function
    * - annulus_units
      - annular volume units (String)
 
-This function calculates the theoretical lag time for drilling operations. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions.  To see the range ofpump stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions.  To see the range of annular volume units that can be input into the function see the Volume units section under General Conversions.  To see the range of hole diameter units that can be input into the function see the length units section under General Conversions.  The function returns a dictionary with the lag time in minutes and the lag strokes.
+This function calculates the theoretical lag time for drilling operations. The function takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions.  To see the range of pump stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions.  To see the range of annular volume units that can be input into the function see the Volume units section under General Conversions.  To see the range of hole diameter units that can be input into the function see the length units section under General Conversions.  The function returns a dictionary with the lag time in minutes and the lag strokes.
 
 .. code:: python
 
@@ -1395,7 +1395,7 @@ Light Weight Pill to Balance Formation Pressure Function
    * - annulus_units
      - annular volume units (String)
 
-This function calculates the height and volume of a light weight pill. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions.  To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions.  To see the range of annular volume units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a dictionary with two sub-dictionaries:
+This function calculates the height and volume of a lightweight pill. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions.  To see the range of overbalance pressure units that can be input into the function see the Pressure units section under General Conversions.  To see the range of annular volume units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a dictionary with two sub-dictionaries:
 
    * - "pill_height" which is a dictionary of different height units and values, to see the range of height units returned see the example code below or the Length units section under General Conversions.
    * - "pill_volume"
@@ -1617,7 +1617,7 @@ Stuck Pipe Function
    * - dp_units
      - drill pipe diameter units (String)
 
-This function calculates the free point constant and the depth of stuck pipe. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings).  To see the range of stretch length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of pull force units that can be input into the function see the Force units section under Force and Power Conversions. The function returns a dictionary with two sub-dictionaries:
+This function calculates the free point constant and the depth of the stuck pipe. The function takes in four value inputs(Integers or Floats) and three units inputs(Strings).  To see the range of stretch length and diameter units that can be input into the function see the Length units section under General Conversions. To see the range of pull force units that can be input into the function see the Force units section under Force and Power Conversions. The function returns a dictionary with two sub-dictionaries:
 
    * - "free_point_constant"
      - which is a float representing the free point constant.
@@ -1731,7 +1731,7 @@ This function calculates the annular pressure loss. The function takes in six va
    # outputs the following float:
    531.6454500124446 
 
-Critcal RPM Estimation Function
+Critical RPM Estimation Function
 ------------
 
 *critical_rpm(pipe_length, pipe_units, od_value, id_value, dp_units)*
@@ -1753,7 +1753,7 @@ Critcal RPM Estimation Function
    * - dp_units
      - diameter units (String)
 
-This function provides an estimation of the critcal RPM to minimise vibrations. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of length and diameter units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of different angular velocity units and values, to see the range of angular velocity units returned see the example code below or the Angular Velocity units section under Force and Power Conversions.
+This function provides an estimation of the critical RPM to minimise vibrations. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of length and diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different angular velocity units and values, to see the range of angular velocity units returned see the example code below or the Angular Velocity units section under Force and Power Conversions.
 
 .. code:: python
 
@@ -1823,7 +1823,7 @@ Equivalent Circulation Density Engineering Function
    * - len_units
      - length/depth units (String)
 
-This function calculates the equivalent circulation density using a more complex and accurate formula. The function takes in ten value inputs(Integers or Floats) and five units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of mud circulating rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of length and diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different mud weight units and values, to see the range of mud weight units returned see the example code below or the Mud Weght units section under Drilling Conversions.
+This function calculates the equivalent circulation density using a more complex and accurate formula. The function takes in ten value inputs(Integers or Floats) and five units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of plastic viscosity units that can be input into the function see the Viscosity units section under Fluids Conversions. To see the range of mud circulating rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of length and diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of different mud weight units and values, to see the range of mud weight units returned see the example code below or the Mud Weight units section under Drilling Conversions.
 
 .. code:: python
 
@@ -1949,7 +1949,7 @@ Loss of Hydrostatic Pressure After Filling Annulus due to Losses Function
    * - volume_units
      - fluid volume units (String)
 
-This function calculates the tensile capacity of drillpipe. The function takes in five value inputs(Integers or Floats) and four units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions.  To see the range of volume units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary with three sub-dictionaries:
+This function calculates the tensile capacity of the drillpipe. The function takes in five value inputs(Integers or Floats) and four units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions.  To see the range of volume units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary with three sub-dictionaries:
 
    * - "pressure_decrease" which is a dictionary of different pressure units and values, to see the range of pressure units returned see the example code below or the Pressure units section under General Conversions.
    * - "fluid_length" which is a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.
@@ -2238,7 +2238,7 @@ Drillpipe Tensile Capacity Function
    * - pressure_units
      - yield strength units (String)
 
-This function calculates the tensile capacity of drillpipe. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of yield strength units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary with three sub-dictionaries of different drill pipe grades:
+This function calculates the tensile capacity of the drillpipe. The function takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of diameter units that can be input into the function see the Length units section under General Conversions. To see the range of yield strength units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary with three sub-dictionaries of different drill pipe grades:
 
    * - "new_pipe" which is a dictionary of different weight units and values, to see the range of weight units returned see the example code below or the Weight units section under General Conversions.
    * - "premium" which is a dictionary of different length units and values, to see the range of length units returned see the example code below or the Length units section under General Conversions.

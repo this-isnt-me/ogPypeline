@@ -1,7 +1,7 @@
 Directional Drilling Formulas
 ==================
 
-This module contains functions, outlined below, for formulas related todirectional drilling. 
+This module contains functions, outlined below, for formulas related to directional drilling. 
 
 Directional Drilling Function
 ------------
@@ -33,7 +33,7 @@ Directional Drilling Function
    * - calc_type
      - calculation method (String)
 
-This function calculates the North, East and TVD between surveys. The function takes in six value inputs(Integers or Floats) and three units inputs(Strings). To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of inclination and azimuth units that can be input into the function see the Angle units section under General Conversions. A number of different strings can be passed int as the calc_type input representing the different calulation methods, these are outlined in the table below, the default input is 'roc'.
+This function calculates the North, East and TVD between surveys. The function takes in six value inputs(Integers or Floats) and three units inputs(Strings). To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of inclination and azimuth units that can be input into the function see the Angle units section under General Conversions. Several different strings can be passed in as the calc_type input representing the different calculation methods, these are outlined in the table below, the default input is 'roc'.
 
 .. list-table:: calc_type Inputs
    :widths: 70 30
@@ -54,7 +54,7 @@ This function calculates the North, East and TVD between surveys. The function t
    * - All methods
      - 'all
 
-The function returns a dictionary with the dogleg severity and three subdictionaries of different depth units and values realting to the position of the survey. to see the range of depth units returned see the example code below or the Length units section under General Conversions. To see the range of dogleg severity units returned see the example code below or the Dogleg units section under Drilling Conversions.
+The function returns a dictionary with the dogleg severity and three subdictionaries of different depth units and values relating to the position of the survey. to see the range of depth units returned see the example code below or the Length units section under General Conversions. To see the range of dogleg severity units returned see the example code below or the Dogleg units section under Drilling Conversions.
 
 .. code:: python
 
@@ -257,7 +257,7 @@ Calculate Available Weight On Bit Function
    * - angle_units
      - hole angle units (String)
 
-This function calculates the available weight that can be trandfered to the bit in a directional well. The function takes in two value inputs(Integers or Floats) and two units inputs(Strings). To see the range of weight units that can be input into the function see the Weight units section under General Conversions. To see the range of angle units that can be input into the function see the Angle units section under General Conversions. The function returns a dictionary of different depth units and values, to see the range of depth units returned see the example code below or the Length units section under General Conversions.
+This function calculates the available weight that can be transferred to the bit in a directional well. The function takes in two value inputs(Integers or Floats) and two units inputs(Strings). To see the range of weight units that can be input into the function see the Weight units section under General Conversions. To see the range of angle units that can be input into the function see the Angle units section under General Conversions. The function returns a dictionary of different depth units and values, to see the range of depth units returned see the example code below or the Length units section under General Conversions.
 
 .. code:: python
 
