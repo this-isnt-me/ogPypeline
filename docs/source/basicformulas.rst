@@ -260,7 +260,7 @@ Hydraulic Horsepower Function
    * - circulating_units
      - flow rate units (String)
 
-The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of pressure units that can be input into the function see the pressure units section under General Conversions. To see the range of flow rate units(circulating_units) that can be input into the function see the flow rate units section under Drilling Conversions. The function returns the hyraulic horsepower as a dictionary with a single entry 'hhp'.
+The function takes in two value inputs(Integers or Floats) and two units input(Strings). To see the range of pressure units that can be input into the function see the pressure units section under General Conversions. To see the range of flow rate units(circulating_units) that can be input into the function see the flow rate units section under Drilling Conversions. The function returns the hydraulic horsepower as a dictionary with a single entry 'hhp'.
 
 .. code:: python
 
@@ -313,7 +313,7 @@ The function takes in two value inputs(Integers or Floats) and one units input(S
    # outputs the following float:
    149.198984375
 
-Capacity of Hole or Tubular Function
+The Capacity of Hole or Tubular Function
 ------------
 
 *hole_tubular_capacity(diameter_value, diameter_units, washout_value)*
@@ -331,7 +331,7 @@ Capacity of Hole or Tubular Function
    * - washout_value
      - washout value of hole or tubular (Integer or Float)
 
-The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the pressure units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The washout is a decimal display of the percentage of washout in the hole, i.e. 20% washout is input into the function as 0.2, the default for washout is 0.0 . The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
+The function takes in two value inputs(Integers or Floats) and one units input(Strings). To see the range of diameter units that can be input into the function see the pressure units section under General Conversions. To see the range of diameter units that can be input into the function see the Length units section under General Conversions. The washout is a decimal display of the percentage of washout in the hole, i.e. 20% washout is input into the function as 0.2, the default for washout is 0.0. The function returns a dictionary containing the capacity in volume by length and in length by volume, To see the range of capacity units that can be returned, see the example code below or review the Pipe Capacity (Volume per Length) and the Pipe Capacity (Length per Volume) units section of Production Conversions.
 
 .. code:: python
 
@@ -566,7 +566,7 @@ Annular Velocity from Annular Capacity Function
    * - annulus_units
      - annular capacity value units (string)
 
-This function is for the calculation of annular velocity from the annular capacity and flow rate. It takes in two value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of annular capacity units that can be input into the function see the Annular Capacity units section under Production Conversions. The function returns a dictionary containing the annular velocity with different units. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
+This function is for the calculation of annular velocity from the annular capacity and flow rate. It takes in two value inputs(Integers or Floats) and two units inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of annular capacity units that can be input into the function see the Annular Capacity units section under Production Conversions. The function returns a dictionary containing the annular velocity with different units. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
 
 .. code:: python
 
@@ -621,7 +621,7 @@ Annular Velocity from Annulus Diameter Function
    * - flow_units
      - pump output / flow rate units (string)
 
-This function is for the calculation of annular velocity from the annular diameter and flow rate. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the annular velocity with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
+This function is for the calculation of annular velocity from the annular diameter and flow rate. It takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary containing the annular velocity with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Velocity units section of Force and Power Conversions.
 
 .. code:: python
 
@@ -676,7 +676,7 @@ Flow Rate from Required Annular Velocity Function
    * - velocity_units
      - required annular velocity units (string)
 
-This function is for the calculation of the flow rate from the required annular velocity. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. The function returns a dictionary containing the flow rate with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Flow Rate units section of Drilling Conversions.
+This function is for the calculation of the flow rate from the required annular velocity. It takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of Diameter units that can be input into the function see the Length units section under General Conversions. To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions. The function returns a dictionary containing the flow rate with different units and values. To see the range of velocity units that can be returned, see the example code below or review the Flow Rate units section of Drilling Conversions.
 
 .. code:: python
 
@@ -726,7 +726,7 @@ Stroke Rate from Required Annular Velocity Function
    * - annulus_units
      - annular capacity units (string)
 
-This function is for the calculation of the required Strokes per Minute from the required annular velocity, pump output and annular capacity. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings).To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions.  To see the range of Pump Output units that can be input into the function see the Stroke Volume units section under Production Conversions.  To see the range of Annular Capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a float giving the required strokes per minute.
+This function is for the calculation of the required Strokes per Minute from the required annular velocity, pump output and annular capacity. It takes in three value inputs(Integers or Floats) and three units inputs(Strings).To see the range of annular velocity units that can be input into the function see the Velocity units section under Force and Power Conversions.  To see the range of Pump Output units that can be input into the function see the Stroke Volume units section under Production Conversions.  To see the range of Annular Capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a float giving the required strokes per minute.
 
 .. code:: python
 
@@ -794,7 +794,7 @@ New Pressure from Stroke Pressure Factor Function
    * - factor
      - stroke pressure factor (Integer or Float)
 
-This function is for the calculation of the new pump pressure from the pump stroke output and stroke pressure factor. It takes in four value inputs(Integers or Floats) and one unit input(String). The default input for factor is 2. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of the new pressure with the different pressure units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
+This function is for the calculation of the new pump pressure from the pump stroke output and stroke pressure factor. It takes in four value inputs(Integers or Floats) and one unit input(String). The default input factor is 2. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of the new pressure with the different pressure units and values. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section of General Conversions.
 
 .. code:: python
 
@@ -888,7 +888,7 @@ Formation Temperature Function
    * - temp_units
      - surface temperature units (string)
 
-This function is for the calculation of formation temperature using the geothermal gradient and total vertical depth. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of geothermal gradient units that can be input into the function see the Geothermal Gradient units section under Drilling Conversions. To see the range of temperature units that can be input into the function see the Temperature units section under General Conversions. The function returns a dictionary of formation temperatures with the different temperature units and values. To see the range of temperature units that can be returned, see the example code below or review the Temperature units section of General Conversions.
+This function is for the calculation of formation temperature using the geothermal gradient and total vertical depth. It takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of depth units that can be input into the function see the Length units section under General Conversions. To see the range of geothermal gradient units that can be input into the function see the Geothermal Gradient units section under Drilling Conversions. To see the range of temperature units that can be input into the function see the Temperature units section under General Conversions. The function returns a dictionary of formation temperatures with the different temperature units and values. To see the range of temperature units that can be returned, see the example code below or review the Temperature units section of General Conversions.
 
 .. code:: python
 
@@ -932,7 +932,7 @@ Surface Accumulator Capacity Function
    * - pressure_units
      - pressure units (string)
 
-This function is used to calculate the usable volume of hydraulic fluid per bottle. It takes in four value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of accumulator volume with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
+This function is used to calculate the usable volume of hydraulic fluid per bottle. It takes in four value inputs(Integers or Floats) and two units inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. The function returns a dictionary of accumulator volume with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
 
 .. code:: python
 
@@ -1006,7 +1006,7 @@ Subsea Accumulator Capacity Function
    * - depth_units
      - water depth units (string)
 
-This function is used to calculate the usable volume of hydraulic fluid per bottle for a subsea BOP. It takes in six value inputs(Integers or Floats) and four unit inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions.To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions.To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of accumulator volumes with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
+This function is used to calculate the usable volume of hydraulic fluid per bottle for a subsea BOP. It takes in six value inputs(Integers or Floats) and four units inputs(Strings). To see the range of volume units that can be input into the function see the Volume units section under General Conversions. To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of pressure gradient units that can be input into the function see the Pressure Gradient units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of accumulator volumes with the different volume units and values. To see the range of temperature units that can be returned, see the example code below or review the  Volume units section under General Conversions.
 
 .. code:: python
 
@@ -1070,7 +1070,7 @@ Depth of Washout Plugging Function
    * - strokes
      - number of strokes until pressure increase is seen value (Integer or Float)
 
-This function is for the calculation of washout depth by pumping material to plug the hole and using the number of strokes when a pressure increase is seen. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. The function returns a dictionary of the washout depth with the different depth units. To see the range of depth units that can be returned and values, see the example code below or review the Length units section of General Conversions.
+This function is for the calculation of washout depth by pumping material to plug the hole and using the number of strokes when a pressure increase is seen. It takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. The function returns a dictionary of the washout depth with the different depth units. To see the range of depth units that can be returned and values, see the example code below or review the Length units section of General Conversions.
 
 .. code:: python
 
@@ -1128,7 +1128,7 @@ Depth of Washout Passing Function
    * - annular_units
      - annular capacity units (string)
 
-This function is for the calculation of washout depth by pumping material that will pass through the hole and using the number of strokes when material is seen at the shakers. It takes in four value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions.The function returns a dictionary of the washout depth with the different depth units and values. To see the range of depth units that can be returned, see the example code below or review the Length units section of General Conversions.
+This function is for the calculation of washout depth by pumping material that will pass through the hole and using the number of strokes when material is seen at the shakers. It takes in four value inputs(Integers or Floats) and three units inputs(Strings). To see the range of pipe capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. To see the range of stroke volume units that can be input into the function see the Stroke Volume units section under Production Conversions. To see the range of annular capacity units that can be input into the function see the Pipe Capacity units section under Production Conversions. The function returns a dictionary of the washout depth with the different depth units and values. To see the range of depth units that can be returned, see the example code below or review the Length units section of General Conversions.
 
 .. code:: python
 
@@ -1184,7 +1184,7 @@ Basic Equivalent Circulating Density Function
    * - depth_units
      - true vertical depth units (String)
 
-This is a simple version of the calculation, this function uses annular pressure loss, mud weight and depth to caculate the ECD. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of the ECD with the mud weight units. To see the range of mud weight units that can be returned, see the example code below or review the Mud Weight units section of Drilling Conversions.
+This is a simple version of the calculation, this function uses annular pressure loss, mud weight and depth to calculate the ECD. It takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of the ECD with the mud weight units. To see the range of mud weight units that can be returned, see the example code below or review the Mud Weight units section of Drilling Conversions.
 
 .. code:: python
 
@@ -1234,7 +1234,7 @@ Formation Integrity Test Function
    * - depth_units
      - true vertical depth units (String)
 
-This function uses requried FIT value, mud weight and depth to caculate the required FIT pressure. It takes in three value inputs(Integers or Floats) and two unit inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions.The function returns a dictionary of the FIT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
+This function uses the required FIT value, mud weight and depth to calculate the required FIT pressure. It takes in three value inputs(Integers or Floats) and two units inputs(Strings). To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of the FIT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -1300,7 +1300,7 @@ Leak Off Test Function
    * - depth_units
      - true vertical depth units (String)
 
-This function uses LOT pressure value, mud weight and depth to caculate the LOT equivelent mud weight. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of the LOT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
+This function uses LOT pressure value, mud weight and depth to calculate the LOT equivalent mud weight. It takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of pressure units that can be input into the function see the Pressure units section under General Conversions. To see the range of mud weight units that can be input into the function see the Mud Weight units section under Drilling Conversions. To see the range of depth units that can be input into the function see the Length units section under General Conversions. The function returns a dictionary of the LOT with the pressure units. To see the range of pressure units that can be returned, see the example code below or review the Pressure units section under General Conversions.
 
 .. code:: python
 
@@ -1352,7 +1352,7 @@ Mud Motor Bit Revolutions Function
    * - rev_units
      - mud motor data flow on revolutions units (String)
 
-This function calculates the total bit rotations when using a mud motor. It takes in three value inputs(Integers or Floats) and three unit inputs(Strings). To see the range of bit rotation units that can be input into the function see the Angular Elocity units section under Force and Power Conversions. To see the range ofmud flow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of flow on revolutions units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary of the total bit revolutions with the angualr velocity units and values. To see the range of angualr velocity units that can be returned, see the example code below or review the Angular Elocity units section under Force and Power Conversions.
+This function calculates the total bit rotations when using a mud motor. It takes in three value inputs(Integers or Floats) and three units inputs(Strings). To see the range of bit rotation units that can be input into the function see the Angular Velocity units section under Force and Power Conversions. To see the range of mudflow rate units that can be input into the function see the Flow Rate units section under Drilling Conversions. To see the range of flow on revolutions units that can be input into the function see the Volume units section under General Conversions. The function returns a dictionary of the total bit revolutions with the angular velocity units and values. To see the range of angular velocity units that can be returned, see the example code below or review the Angular Velocity units section under Force and Power Conversions.
 
 .. code:: python
 
