@@ -1,6 +1,6 @@
 # ogPypeline
 
-A python package for the oil and gas industry. Initial release is focused on 64 useful unit conversions across multiple disciplines.
+A python package for the oil and gas industry. The initial release is focused on 64 useful unit conversions and over 100 common formulas across multiple disciplines.
 Developed by Tim Clarke (c) 2021
 
 ## Installation
@@ -14,7 +14,7 @@ You can install ogPypeline from [PyPI](https://pypi.org/project/ogPypeline/):
 Docs are available at [ReadTheDocs](https://ogpypeline.readthedocs.io/en/latest/index.html) 
 
 ## Reporting Issues
-To report bugs, errors or make a suggestion suggestions, click on the issues tab at the top of the repo and create a new case.
+To report bugs, errors or make suggestions for improvements, click on the issues tab at the top of the repo on [github](https://github.com/this-isnt-me/ogPypeline) and create a new case.
 
 ## License
 Copyright 2021 Timothy Clarke
